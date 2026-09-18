@@ -34,9 +34,9 @@
 
       <div class="header-actions">
         <div class="language-switcher" role="group" aria-label="Changer la langue">
-          <button type="button" data-lang="fr" class="active" aria-label="Français" title="Français"><span aria-hidden="true">🇫🇷</span></button>
-          <button type="button" data-lang="en" aria-label="English" title="English"><span aria-hidden="true">🇬🇧</span></button>
-          <button type="button" data-lang="zh" aria-label="中文" title="中文"><span aria-hidden="true">🇨🇳</span></button>
+          <button type="button" data-lang="fr" class="active" aria-label="Français" title="Français"><span class="flag flag-fr" aria-hidden="true"></span></button>
+          <button type="button" data-lang="en" aria-label="English" title="English"><span class="flag flag-gb" aria-hidden="true"></span></button>
+          <button type="button" data-lang="zh" aria-label="中文" title="中文"><span class="flag flag-cn" aria-hidden="true"></span></button>
         </div>
         <button class="header-cta" type="button" data-nav="contact">Parler d’un projet</button>
       </div>
@@ -133,12 +133,12 @@
               <g class="infra airport"><circle cx="122" cy="178" r="5"/><text x="82" y="166">✈ Paris CDG</text></g>
               <g class="infra port"><circle cx="137" cy="240" r="5"/><text x="86" y="258">⚓ Marseille</text></g>
               <g class="infra railhub"><circle cx="190" cy="165" r="5"/><text x="154" y="148">Germany / Duisburg</text></g>
-              <g class="infra airport"><circle cx="592" cy="135" r="5"/><text x="602" y="128">✈ Beijing</text></g>
-              <g class="infra port"><circle cx="640" cy="180" r="5"/><text x="648" y="174">⚓ Shanghai</text></g>
-              <g class="infra railhub"><circle cx="555" cy="195" r="5"/><text x="513" y="186">🚆 Chongqing</text></g>
-              <g class="infra port"><circle cx="603" cy="222" r="5"/><text x="550" y="245">⚓ Guangzhou</text></g>
-              <g class="infra port"><circle cx="619" cy="235" r="5"/><text x="628" y="251">⚓ Hong Kong</text></g>
-              <g class="infra island-label"><text x="652" y="257">Taiwan</text></g>
+              <g class="infra airport"><circle cx="592" cy="135" r="5"/><text x="548" y="114">✈ Beijing</text></g>
+              <g class="infra port"><circle cx="640" cy="180" r="5"/><text x="650" y="169">⚓ Shanghai</text></g>
+              <g class="infra railhub"><circle cx="555" cy="195" r="5"/><text x="492" y="205">🚆 Chongqing</text></g>
+              <g class="infra port"><circle cx="603" cy="222" r="5"/><text x="533" y="258">⚓ Guangzhou</text></g>
+              <g class="infra port"><circle cx="619" cy="235" r="5"/><text x="631" y="274">⚓ Hong Kong</text></g>
+              <g class="infra island-label"><text x="667" y="245">Taiwan</text></g>
 
               <g class="map-label"><text x="78" y="318">FRANCE</text><text x="78" y="338" class="map-sub">Paris · Marseille · Germany border corridor</text></g>
               <g class="map-label map-label-cn"><text x="520" y="304">CHINA</text><text x="490" y="324" class="map-sub">Beijing · Shanghai · Chongqing · Guangzhou · HK</text></g>
@@ -163,10 +163,10 @@
               <g class="moving fiber-pulse"><circle r="6"/><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#fiberPorts"/></animateMotion></g>
               <g class="infra airport"><circle cx="122" cy="178" r="5"/><text x="82" y="166">✈ Paris CDG</text></g>
               <g class="infra port major"><circle cx="137" cy="240" r="6"/><text x="80" y="260">⚓ Marseille Port</text></g>
-              <g class="infra airport"><circle cx="592" cy="135" r="5"/><text x="601" y="128">✈ Beijing Airport</text></g>
-              <g class="infra port major"><circle cx="640" cy="180" r="6"/><text x="648" y="174">⚓ Shanghai Port</text></g>
-              <g class="infra port"><circle cx="603" cy="222" r="5"/><text x="546" y="246">⚓ Guangzhou Port</text></g>
-              <g class="infra port major"><circle cx="619" cy="235" r="6"/><text x="628" y="252">⚓ Hong Kong Port</text></g>
+              <g class="infra airport"><circle cx="592" cy="135" r="5"/><text x="534" y="112">✈ Beijing Airport</text></g>
+              <g class="infra port major"><circle cx="640" cy="180" r="6"/><text x="649" y="166">⚓ Shanghai Port</text></g>
+              <g class="infra port"><circle cx="603" cy="222" r="5"/><text x="518" y="261">⚓ Guangzhou Port</text></g>
+              <g class="infra port major"><circle cx="619" cy="235" r="6"/><text x="631" y="278">⚓ Hong Kong Port</text></g>
               <g class="infra island-label"><text x="652" y="257">Taiwan</text></g>
               <g class="map-label"><text x="70" y="320">MARSEILLE GATEWAY</text><text x="70" y="340" class="map-sub">Mediterranean → East / South China ports</text></g>
               <g class="map-label map-label-cn"><text x="500" y="302">PORT NETWORK</text><text x="485" y="322" class="map-sub">Shanghai · Guangzhou · Hong Kong</text></g>
@@ -189,14 +189,14 @@
               <g class="moving train" aria-hidden="true"><rect x="-14" y="-7" width="28" height="14" rx="3"/><rect x="-4" y="-12" width="11" height="6" rx="2"/><animateMotion dur="8s" repeatCount="indefinite" rotate="auto"><mpath href="#railSilk"/></animateMotion></g>
               <g class="moving plane" aria-hidden="true"><circle r="15" class="vehicle-halo"/><path d="M-14 1L-3-2 4-14 8-13 5-2 15 1 15 4 5 4 1 13-3 13-3 4-14 4z"/><animateMotion dur="5.2s" repeatCount="indefinite" rotate="auto"><mpath href="#airSilk"/></animateMotion></g>
               <g class="moving fiber-pulse"><circle r="6"/><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#fiberSilk"/></animateMotion></g>
-              <g class="infra railhub major"><circle cx="555" cy="195" r="6"/><text x="505" y="181">🚆 Chongqing</text></g>
+              <g class="infra railhub major"><circle cx="555" cy="195" r="6"/><text x="493" y="209">🚆 Chongqing</text></g>
               <g class="infra railhub major"><circle cx="190" cy="165" r="6"/><text x="142" y="145">🚆 Germany / Duisburg</text></g>
               <g class="infra airport"><circle cx="122" cy="178" r="5"/><text x="79" y="196">✈ Paris CDG</text></g>
               <g class="infra port"><circle cx="137" cy="240" r="5"/><text x="82" y="260">⚓ Marseille</text></g>
-              <g class="infra airport"><circle cx="592" cy="135" r="5"/><text x="601" y="128">✈ Beijing</text></g>
-              <g class="infra port"><circle cx="640" cy="180" r="5"/><text x="648" y="175">⚓ Shanghai</text></g>
-              <g class="infra port"><circle cx="603" cy="222" r="5"/><text x="549" y="245">⚓ Guangzhou</text></g>
-              <g class="infra port"><circle cx="619" cy="235" r="5"/><text x="628" y="252">⚓ Hong Kong</text></g>
+              <g class="infra airport"><circle cx="592" cy="135" r="5"/><text x="551" y="113">✈ Beijing</text></g>
+              <g class="infra port"><circle cx="640" cy="180" r="5"/><text x="649" y="167">⚓ Shanghai</text></g>
+              <g class="infra port"><circle cx="603" cy="222" r="5"/><text x="529" y="260">⚓ Guangzhou</text></g>
+              <g class="infra port"><circle cx="619" cy="235" r="5"/><text x="631" y="278">⚓ Hong Kong</text></g>
               <g class="infra island-label"><text x="652" y="257">Taiwan</text></g>
               <g class="silk-label"><text x="282" y="112">CHONGQING → GERMANY · RAIL SILK ROAD</text></g>
               <g class="map-label"><text x="72" y="320">WESTERN EUROPE</text><text x="72" y="340" class="map-sub">Germany rail terminal close to France corridor</text></g>
