@@ -58,7 +58,7 @@
   <aside class="theme-dev-panel" aria-label="Theme development controls">
     <div class="theme-dev-inner">
       <div class="theme-dev-heading">
-        <div><strong>Theme Lab</strong><small>5 layouts · auto 3s</small></div>
+        <div><strong>Theme Lab</strong><small>5 layouts · manual</small></div>
         <span class="dev-live-dot" aria-hidden="true"></span>
       </div>
       <div class="theme-dev-controls" role="group" aria-label="Choisir un thème">
@@ -69,11 +69,48 @@
         <button type="button" data-theme-choice="panda"><span>05</span><strong>Panda</strong><small>map top</small></button>
       </div>
       <div class="theme-dev-footer">
-        <button type="button" class="dev-toggle" id="theme-rotation-toggle" aria-pressed="true">Auto themes: ON</button>
+        <button type="button" class="dev-toggle compare" id="layout-compare-open">Compare 5 layouts</button>
+        <button type="button" class="dev-toggle" id="theme-rotation-toggle" aria-pressed="false">Auto themes: OFF</button>
         <button type="button" class="dev-toggle ghost" id="motion-toggle" aria-pressed="true">Motion: ON</button>
       </div>
     </div>
   </aside>
+
+  <section class="layout-compare-overlay" id="layout-compare-overlay" hidden aria-label="Compare the five homepage layouts">
+    <div class="layout-compare-shell">
+      <div class="layout-compare-header">
+        <div>
+          <span class="mini-kicker">Homepage comparison</span>
+          <h2>Compare the 5 layouts</h2>
+          <p>Same content, same map, five different first-page compositions.</p>
+        </div>
+        <button type="button" class="layout-compare-close" id="layout-compare-close" aria-label="Close comparison">×</button>
+      </div>
+
+      <div class="layout-compare-grid">
+        <article class="layout-preview-card">
+          <div class="layout-preview-title"><span>01</span><div><strong>Noir</strong><small>Balanced split</small></div><button type="button" data-compare-theme="noir">Use</button></div>
+          <div class="layout-preview-frame"><iframe title="Noir homepage preview" src="?preview=noir#/home"></iframe></div>
+        </article>
+        <article class="layout-preview-card">
+          <div class="layout-preview-title"><span>02</span><div><strong>Slate</strong><small>Map left</small></div><button type="button" data-compare-theme="slate">Use</button></div>
+          <div class="layout-preview-frame"><iframe title="Slate homepage preview" src="?preview=slate#/home"></iframe></div>
+        </article>
+        <article class="layout-preview-card">
+          <div class="layout-preview-title"><span>03</span><div><strong>Atelier</strong><small>Editorial stack</small></div><button type="button" data-compare-theme="atelier">Use</button></div>
+          <div class="layout-preview-frame"><iframe title="Atelier homepage preview" src="?preview=atelier#/home"></iframe></div>
+        </article>
+        <article class="layout-preview-card">
+          <div class="layout-preview-title"><span>04</span><div><strong>Jade</strong><small>Vertical services</small></div><button type="button" data-compare-theme="jade">Use</button></div>
+          <div class="layout-preview-frame"><iframe title="Jade homepage preview" src="?preview=jade#/home"></iframe></div>
+        </article>
+        <article class="layout-preview-card">
+          <div class="layout-preview-title"><span>05</span><div><strong>Panda</strong><small>Map top</small></div><button type="button" data-compare-theme="panda">Use</button></div>
+          <div class="layout-preview-frame"><iframe title="Panda homepage preview" src="?preview=panda#/home"></iframe></div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <main id="main">
     <section class="page active" id="page-home" aria-labelledby="home-title">
