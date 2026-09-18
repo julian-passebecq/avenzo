@@ -78,16 +78,34 @@
   <main id="main">
     <section class="page active" id="page-home" aria-labelledby="home-title">
       <div class="shell hero-grid compact-hero">
-        <div class="hero-copy">
+        <div class="hero-copy hero-services-panel">
+          <h1 id="home-title" class="sr-only">Avenzo Studio — France × Chine</h1>
           <div class="eyebrow"><span class="dot dot-fr"></span> France <span class="eyebrow-line"></span> Chine <span class="dot dot-cn"></span><span class="eyebrow-claim">L’accès à l’international, sans détour</span></div>
-          <h1 id="home-title">Votre passerelle vers le marché chinois.</h1>
-          <p class="hero-lead">Marketing, e-commerce, développement commercial et salons professionnels — un seul studio pour avancer de l’idée à l’exécution.</p>
-          <div class="hero-actions">
-            <button class="button button-primary" type="button" data-nav="services">Explorer les 4 expertises</button>
-            <button class="button button-secondary" type="button" data-nav="contact">Présenter votre projet</button>
+          <div class="hero-service-heading">
+            <p class="kicker">4 expertises</p>
+            <strong>Choisissez un service</strong>
           </div>
-          <div class="language-row" aria-label="Langues de travail">
-            <span>FR</span><span>中文</span><span>EN</span>
+          <div class="hero-service-icons" role="tablist" aria-label="Catégories de service">
+            <button class="hero-service-icon active" type="button" data-service="strategy" role="tab" aria-selected="true">
+              <span class="service-icon-glyph">◎</span>
+              <span><strong>Marketing & stratégie</strong><small>positionnement · go-to-market</small></span>
+            </button>
+            <button class="hero-service-icon" type="button" data-service="digital" role="tab" aria-selected="false">
+              <span class="service-icon-glyph">⌘</span>
+              <span><strong>Digital & e-commerce</strong><small>site · SEO · campagnes</small></span>
+            </button>
+            <button class="hero-service-icon" type="button" data-service="growth" role="tab" aria-selected="false">
+              <span class="service-icon-glyph">↗</span>
+              <span><strong>Business development</strong><small>prospection · CRM · pipeline</small></span>
+            </button>
+            <button class="hero-service-icon" type="button" data-service="trade" role="tab" aria-selected="false">
+              <span class="service-icon-glyph">展</span>
+              <span><strong>Trade shows & Chine</strong><small>stands · partenaires · salons</small></span>
+            </button>
+          </div>
+          <div class="hero-mini-actions">
+            <button class="text-link" type="button" data-nav="services">Tous les services <span>→</span></button>
+            <button class="text-link" type="button" data-nav="contact">Présenter un projet <span>→</span></button>
           </div>
         </div>
 
@@ -221,39 +239,8 @@
         </div>        </div>
       </div>
 
-      <section class="home-services shell" aria-labelledby="home-services-title">
-        <div class="section-intro compact">
-          <span class="section-index">01</span>
-          <div>
-            <p class="kicker">4 expertises visibles immédiatement</p>
-            <h2 id="home-services-title">Une ligne de services. Un carousel vivant de compétences.</h2>
-          </div>
-        </div>
-
+      <section class="home-services shell" aria-label="Compétences du service sélectionné">
         <div class="service-carousel-hub">
-          <div class="service-icon-row" role="tablist" aria-label="Catégories de service">
-            <button class="service-icon-card active" type="button" data-service="strategy" role="tab" aria-selected="true">
-              <span class="service-thumb service-thumb-strategy"></span>
-              <span class="service-icon-glyph">◎</span>
-              <span class="service-card-text"><strong>Marketing & stratégie</strong><small>positionnement · go-to-market</small></span>
-            </button>
-            <button class="service-icon-card" type="button" data-service="digital" role="tab" aria-selected="false">
-              <span class="service-thumb service-thumb-digital"></span>
-              <span class="service-icon-glyph">⌘</span>
-              <span class="service-card-text"><strong>Digital & e-commerce</strong><small>site · SEO · campagnes</small></span>
-            </button>
-            <button class="service-icon-card" type="button" data-service="growth" role="tab" aria-selected="false">
-              <span class="service-thumb service-thumb-growth"></span>
-              <span class="service-icon-glyph">↗</span>
-              <span class="service-card-text"><strong>Business development</strong><small>prospection · CRM · pipeline</small></span>
-            </button>
-            <button class="service-icon-card" type="button" data-service="trade" role="tab" aria-selected="false">
-              <span class="service-thumb service-thumb-trade"></span>
-              <span class="service-icon-glyph">展</span>
-              <span class="service-card-text"><strong>Trade shows & Chine</strong><small>stands · partenaires · salons</small></span>
-            </button>
-          </div>
-
           <div class="capability-stage" id="home-capability-panel" aria-live="polite">
             <div class="capability-stage-head">
               <div>
