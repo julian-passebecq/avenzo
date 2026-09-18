@@ -656,3 +656,221 @@ html[data-theme="panda"] .service-icon-card{box-shadow:0 12px 38px rgba(16,18,22
   .hero-service-icon{min-height:82px}
   .hero-service-heading>strong{font-size:17px}
 }
+
+
+/* Five homepage layout variants: each theme now changes composition as well as palette. */
+@media (min-width:1051px){
+  /* Shared: make the transport map slightly smaller and calmer. */
+  #page-home .route-card{
+    padding:10px 11px 9px;
+  }
+  #page-home .route-map-deck{
+    min-height:0;
+  }
+  #page-home .route-map{
+    max-height:258px;
+    margin:0 auto;
+  }
+  #page-home .route-legend{
+    padding-top:7px;
+  }
+  #page-home .route-controls{
+    margin-top:7px;
+  }
+  #page-home .home-services{
+    padding-top:4px!important;
+  }
+
+  /* 01 — Noir: balanced split, compact and symmetrical. */
+  html[data-theme="noir"] #page-home .hero-grid{
+    grid-template-columns:minmax(350px,.9fr) minmax(450px,1fr);
+    grid-template-areas:"services map";
+    gap:24px;
+    align-items:center;
+    padding-top:24px;
+  }
+  html[data-theme="noir"] #page-home .hero-services-panel{
+    grid-area:services;
+    max-width:470px;
+    justify-self:start;
+  }
+  html[data-theme="noir"] #page-home .route-card{
+    grid-area:map;
+    width:min(100%,520px);
+    justify-self:end;
+  }
+
+  /* 02 — Slate: map-first composition, services on the right. */
+  html[data-theme="slate"] #page-home .hero-grid{
+    grid-template-columns:minmax(440px,1.05fr) minmax(330px,.78fr);
+    grid-template-areas:"map services";
+    gap:28px;
+    align-items:center;
+    padding-top:26px;
+  }
+  html[data-theme="slate"] #page-home .route-card{
+    grid-area:map;
+    width:min(100%,505px);
+    justify-self:start;
+  }
+  html[data-theme="slate"] #page-home .hero-services-panel{
+    grid-area:services;
+    max-width:390px;
+    justify-self:end;
+  }
+  html[data-theme="slate"] #page-home .hero-service-icons{
+    grid-template-columns:1fr;
+    gap:7px;
+  }
+  html[data-theme="slate"] #page-home .hero-service-icon{
+    min-height:58px;
+    grid-template-columns:34px 1fr;
+    padding:9px 10px;
+  }
+  html[data-theme="slate"] #page-home .hero-service-heading{
+    display:block;
+  }
+  html[data-theme="slate"] #page-home .hero-service-heading>strong{
+    display:block;
+    margin-top:5px;
+  }
+
+  /* 03 — Atelier: editorial stack with four services as a top ribbon. */
+  html[data-theme="atelier"] #page-home .hero-grid{
+    grid-template-columns:1fr;
+    grid-template-areas:"services" "map";
+    gap:14px;
+    padding-top:22px;
+  }
+  html[data-theme="atelier"] #page-home .hero-services-panel{
+    grid-area:services;
+    width:100%;
+    max-width:none;
+  }
+  html[data-theme="atelier"] #page-home .hero-services-panel .eyebrow{
+    justify-content:center;
+    width:100%;
+  }
+  html[data-theme="atelier"] #page-home .hero-service-heading{
+    justify-content:center;
+    gap:24px;
+  }
+  html[data-theme="atelier"] #page-home .hero-service-icons{
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+  }
+  html[data-theme="atelier"] #page-home .hero-service-icon{
+    min-height:72px;
+    grid-template-columns:34px 1fr;
+    padding:10px;
+  }
+  html[data-theme="atelier"] #page-home .hero-mini-actions{
+    justify-content:center;
+    margin-top:9px;
+  }
+  html[data-theme="atelier"] #page-home .route-card{
+    grid-area:map;
+    width:min(100%,630px);
+    justify-self:center;
+  }
+  html[data-theme="atelier"] #page-home .route-map{
+    max-height:238px;
+  }
+
+  /* 04 — Jade: narrow vertical service navigator beside a compact map. */
+  html[data-theme="jade"] #page-home .hero-grid{
+    grid-template-columns:minmax(290px,.62fr) minmax(460px,1fr);
+    grid-template-areas:"services map";
+    gap:26px;
+    align-items:center;
+    padding-top:24px;
+  }
+  html[data-theme="jade"] #page-home .hero-services-panel{
+    grid-area:services;
+    max-width:350px;
+    justify-self:start;
+  }
+  html[data-theme="jade"] #page-home .hero-service-icons{
+    grid-template-columns:1fr;
+    gap:6px;
+  }
+  html[data-theme="jade"] #page-home .hero-service-icon{
+    min-height:55px;
+    grid-template-columns:34px 1fr;
+    padding:8px 10px;
+    border-radius:13px;
+  }
+  html[data-theme="jade"] #page-home .hero-service-heading{
+    display:block;
+    margin-bottom:9px;
+  }
+  html[data-theme="jade"] #page-home .hero-service-heading>strong{
+    display:block;
+    margin-top:4px;
+    font-size:18px;
+  }
+  html[data-theme="jade"] #page-home .route-card{
+    grid-area:map;
+    width:min(100%,515px);
+    justify-self:center;
+  }
+  html[data-theme="jade"] #page-home .route-map{
+    max-height:250px;
+  }
+
+  /* 05 — Panda: transport map first, then a wide four-service selector. */
+  html[data-theme="panda"] #page-home .hero-grid{
+    grid-template-columns:1fr;
+    grid-template-areas:"map" "services";
+    gap:12px;
+    padding-top:20px;
+  }
+  html[data-theme="panda"] #page-home .route-card{
+    grid-area:map;
+    width:min(100%,615px);
+    justify-self:center;
+  }
+  html[data-theme="panda"] #page-home .route-map{
+    max-height:232px;
+  }
+  html[data-theme="panda"] #page-home .hero-services-panel{
+    grid-area:services;
+    width:min(100%,920px);
+    max-width:none;
+    justify-self:center;
+  }
+  html[data-theme="panda"] #page-home .hero-services-panel .eyebrow{
+    justify-content:center;
+    width:100%;
+    margin-bottom:6px;
+  }
+  html[data-theme="panda"] #page-home .hero-service-heading{
+    justify-content:center;
+    gap:22px;
+    margin-bottom:10px;
+  }
+  html[data-theme="panda"] #page-home .hero-service-icons{
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+  }
+  html[data-theme="panda"] #page-home .hero-service-icon{
+    min-height:68px;
+    grid-template-columns:32px 1fr;
+    padding:9px;
+  }
+  html[data-theme="panda"] #page-home .hero-mini-actions{
+    justify-content:center;
+    margin-top:8px;
+  }
+}
+
+@media (max-width:1050px){
+  /* Keep comparison meaningful without making tablet/mobile unstable. */
+  #page-home .route-card{
+    width:min(100%,650px);
+    margin-inline:auto;
+  }
+  #page-home .route-map{
+    max-height:300px;
+  }
+}
