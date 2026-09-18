@@ -166,7 +166,11 @@ function resetAutoplay() {
 function setTheme(theme) {
   const safeTheme = ['noir', 'slate', 'atelier'].includes(theme) ? theme : 'noir';
   document.documentElement.setAttribute('data-theme', safeTheme);
-  document.querySelectorAll('[data-theme-choice]').forEach(btn => btn.classList.toggle('active', btn.dataset.themeChoice === safeTheme));
+  document.querySelectorAll('[data-theme-choice]').forEach(btn => {
+    const active = btn.dataset.themeChoice === safeTheme;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
   localStorage.setItem('avenzo-theme', safeTheme);
 }
 
@@ -203,6 +207,21 @@ document.getElementById('home-service-link').addEventListener('click', () => set
 for (const btn of document.querySelectorAll('[data-theme-choice]')) {
   btn.addEventListener('click', () => setTheme(btn.dataset.themeChoice));
 }
+
+const carouselHub = document.querySelector('.service-carousel-hub');
+if (carouselHub) {
+  carouselHub.addEventListener('mouseenter', stopServiceAutoplay);
+  carouselHub.addEventListener('mouseleave', resetAutoplay);
+  carouselHub.addEventListener('focusin', stopServiceAutoplay);
+  carouselHub.addEventListener('focusout', event => {
+    if (!carouselHub.contains(event.relatedTarget)) resetAutoplay();
+  });
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) stopServiceAutoplay();
+  else resetAutoplay();
+});
 
 window.addEventListener('popstate', () => {
   const route = routeFromHash();
