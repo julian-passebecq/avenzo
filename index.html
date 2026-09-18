@@ -33,15 +33,33 @@
       </nav>
 
       <div class="header-actions">
-        <div class="theme-switcher" role="group" aria-label="Choisir un thème">
-          <button type="button" data-theme-choice="noir" class="active">Noir</button>
-          <button type="button" data-theme-choice="slate">Slate</button>
-          <button type="button" data-theme-choice="atelier">Atelier</button>
+        <div class="language-switcher" role="group" aria-label="Changer la langue">
+          <button type="button" data-lang="fr" class="active" aria-label="Français" title="Français"><span aria-hidden="true">🇫🇷</span></button>
+          <button type="button" data-lang="en" aria-label="English" title="English"><span aria-hidden="true">🇬🇧</span></button>
+          <button type="button" data-lang="zh" aria-label="中文" title="中文"><span aria-hidden="true">🇨🇳</span></button>
         </div>
         <button class="header-cta" type="button" data-nav="contact">Parler d’un projet</button>
       </div>
     </div>
+    <div class="world-time-ribbon" aria-label="Heures internationales">
+      <div class="shell world-time-inner">
+        <span class="world-time-label">France ↔ Chine</span>
+        <div class="world-clock"><span class="clock-flag" aria-hidden="true">🇫🇷</span><small>Paris</small><strong data-clock="Europe/Paris">--:--</strong></div>
+        <i></i>
+        <div class="world-clock"><span class="clock-flag" aria-hidden="true">🇨🇳</span><small>Beijing</small><strong data-clock="Asia/Shanghai">--:--</strong></div>
+        <i></i>
+        <div class="world-clock"><span class="clock-flag" aria-hidden="true">🇭🇰</span><small>Hong Kong</small><strong data-clock="Asia/Hong_Kong">--:--</strong></div>
+        <i></i>
+        <div class="world-clock"><span class="clock-flag" aria-hidden="true">🇨🇳</span><small>Chongqing</small><strong data-clock="Asia/Shanghai">--:--</strong></div>
+      </div>
+    </div>
   </header>
+
+  <aside class="theme-rail" aria-label="Thème visuel">
+    <button type="button" data-theme-choice="noir" class="active" aria-label="Thème noir" title="Noir"><span>●</span></button>
+    <button type="button" data-theme-choice="slate" aria-label="Thème clair" title="Slate"><span>◐</span></button>
+    <button type="button" data-theme-choice="atelier" aria-label="Thème atelier" title="Atelier"><span>☯</span></button>
+  </aside>
 
   <main id="main">
     <section class="page active" id="page-home" aria-labelledby="home-title">
@@ -178,9 +196,15 @@
                 <h3 id="home-service-title">Clarifier la marque, le marché et le plan d’action.</h3>
                 <p id="home-service-summary">Positionnement, analyse de marché, messages et plan d’action alignés sur un objectif commercial clair.</p>
               </div>
-              <div class="capability-stage-actions">
-                <button type="button" class="icon-button" data-rail="prev" aria-label="Service précédent">←</button>
-                <button type="button" class="icon-button" data-rail="next" aria-label="Service suivant">→</button>
+              <div class="capability-stage-tools">
+                <div class="selection-indicator" aria-label="Service sélectionné">
+                  <span class="selection-icon" id="selection-icon" aria-hidden="true">◎</span>
+                  <span><small id="selection-caption">Sélection</small><strong id="selection-label">Stratégie</strong></span>
+                </div>
+                <div class="capability-stage-actions">
+                  <button type="button" class="icon-button" data-rail="prev" aria-label="Service précédent">←</button>
+                  <button type="button" class="icon-button" data-rail="next" aria-label="Service suivant">→</button>
+                </div>
               </div>
             </div>
             <div class="capability-marquee" id="home-capability-marquee"></div>
