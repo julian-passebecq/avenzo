@@ -646,6 +646,30 @@ for (const btn of document.querySelectorAll('[data-lang]')) {
   btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
 }
 
+const themeDevPanel = document.querySelector('.theme-dev-panel');
+if (themeDevPanel) {
+  themeDevPanel.addEventListener('mouseenter', stopThemeRotation);
+  themeDevPanel.addEventListener('mouseleave', () => {
+    if (themeRotationEnabled && !motionDisabled) startThemeRotation();
+  });
+  themeDevPanel.addEventListener('focusin', stopThemeRotation);
+  themeDevPanel.addEventListener('focusout', event => {
+    if (!themeDevPanel.contains(event.relatedTarget) && themeRotationEnabled && !motionDisabled) startThemeRotation();
+  });
+}
+
+const routeCard = document.querySelector('.route-card');
+if (routeCard) {
+  routeCard.addEventListener('mouseenter', stopMapRotation);
+  routeCard.addEventListener('mouseleave', () => {
+    if (!motionDisabled) startMapRotation();
+  });
+  routeCard.addEventListener('focusin', stopMapRotation);
+  routeCard.addEventListener('focusout', event => {
+    if (!routeCard.contains(event.relatedTarget) && !motionDisabled) startMapRotation();
+  });
+}
+
 const carouselHub = document.querySelector('.service-carousel-hub');
 if (carouselHub) {
   carouselHub.addEventListener('mouseenter', stopServiceAutoplay);
