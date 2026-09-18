@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08090c" />
+  <meta name="description" content="Avenzo Studio accompagne les entreprises européennes en marketing, e-commerce, développement commercial et projets de salons professionnels en Chine." />
+  <meta property="og:title" content="Avenzo Studio — France × Chine" />
+  <meta property="og:description" content="Marketing, digital, business development et trade shows entre l'Europe et la Chine." />
+  <meta property="og:type" content="website" />
+  <title>Avenzo Studio — France × Chine</title>
+  <link rel="icon" href="assets/avenzo-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <button class="brand" type="button" data-nav="home" aria-label="Avenzo Studio — accueil">
+        <img src="assets/avenzo-mark.svg" alt="" width="44" height="32" />
+        <span class="brand-copy">
+          <strong>Avenzo Studio</strong>
+          <small>France × Chine</small>
+        </span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <button type="button" data-nav="home">Accueil</button>
+        <button type="button" data-nav="services">Services</button>
+        <button type="button" data-nav="studio">Le studio</button>
+        <button type="button" data-nav="contact">Contact</button>
+      </nav>
+
+      <button class="header-cta" type="button" data-nav="contact">Parler d’un projet</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page active" id="page-home" aria-labelledby="home-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot dot-fr"></span> France <span class="eyebrow-line"></span> Chine <span class="dot dot-cn"></span></div>
+          <h1 id="home-title">Votre passerelle<br />vers le marché chinois.</h1>
+          <p class="hero-lead">Marketing, e-commerce, développement commercial et salons professionnels — un seul studio pour avancer de l’idée à l’exécution.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" type="button" data-nav="services">Explorer les 4 expertises</button>
+            <button class="button button-secondary" type="button" data-nav="contact">Présenter votre projet</button>
+          </div>
+          <div class="language-row" aria-label="Langues de travail">
+            <span>FR</span><span>中文</span><span>EN</span>
+          </div>
+        </div>
+
+        <div class="route-card" aria-label="Flux Europe Chine par avion et bateau">
+          <div class="route-topline">
+            <span>EUROPE</span>
+            <span class="route-status"><i></i> Flux actifs</span>
+            <span>中国</span>
+          </div>
+          <svg class="route-map" viewBox="0 0 720 410" role="img" aria-label="Carte stylisée Europe Chine avec avion et bateau animés">
+            <defs>
+              <linearGradient id="frGlow" x1="0" x2="1">
+                <stop offset="0" stop-color="#345f9a" stop-opacity=".18"/>
+                <stop offset="1" stop-color="#345f9a" stop-opacity=".68"/>
+              </linearGradient>
+              <linearGradient id="cnGlow" x1="0" x2="1">
+                <stop offset="0" stop-color="#b63a36" stop-opacity=".68"/>
+                <stop offset="1" stop-color="#b63a36" stop-opacity=".18"/>
+              </linearGradient>
+              <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+                <feGaussianBlur stdDeviation="8"/>
+              </filter>
+              <path id="airPath" d="M142 242 C245 72 470 52 590 178" />
+              <path id="seaPath" d="M142 242 C262 352 478 342 590 178" />
+            </defs>
+
+            <g class="grid-lines" opacity=".28">
+              <path d="M0 92H720M0 198H720M0 304H720"/>
+              <path d="M112 0V410M252 0V410M392 0V410M532 0V410M672 0V410"/>
+            </g>
+
+            <ellipse cx="145" cy="238" rx="92" ry="72" fill="url(#frGlow)" filter="url(#softGlow)" opacity=".7"/>
+            <ellipse cx="585" cy="177" rx="94" ry="76" fill="url(#cnGlow)" filter="url(#softGlow)" opacity=".72"/>
+
+            <g class="land land-eu" aria-hidden="true">
+              <path d="M76 218l31-46 45-18 31 13 21 32-8 36-24 16-14 47-36 4-13-28-39-20z"/>
+              <path d="M91 174l5-32 18-17 17 17-6 28z"/>
+              <path d="M163 161l13-29 14 9 2 31z"/>
+            </g>
+            <g class="land land-cn" aria-hidden="true">
+              <path d="M519 140l52-24 57 18 32 35-19 29-15 39-52 18-42-18-31-36 8-31z"/>
+              <path d="M631 232l26 8-12 25-20-9z"/>
+            </g>
+
+            <use href="#airPath" class="route-line route-air"/>
+            <use href="#seaPath" class="route-line route-sea"/>
+
+            <g class="moving plane" aria-hidden="true">
+              <circle r="16" class="vehicle-halo"/>
+              <path d="M-14 1L-3-2 4-14 8-13 5-2 15 1 15 4 5 4 1 13-3 13-3 4-14 4z"/>
+              <animateMotion dur="4.8s" repeatCount="indefinite" rotate="auto"><mpath href="#airPath"/></animateMotion>
+            </g>
+            <g class="moving boat" aria-hidden="true">
+              <circle r="15" class="vehicle-halo"/>
+              <path d="M-13 1H13l-4 8H-8zM-5-9h7v10h-7zM3-6h6v7H3z"/>
+              <animateMotion dur="12.5s" repeatCount="indefinite" rotate="auto"><mpath href="#seaPath"/></animateMotion>
+            </g>
+
+            <g class="city-pin pin-eu"><circle cx="142" cy="242" r="5"/><circle cx="142" cy="242" r="12" class="pin-ring"/></g>
+            <g class="city-pin pin-cn"><circle cx="590" cy="178" r="5"/><circle cx="590" cy="178" r="12" class="pin-ring"/></g>
+
+            <g class="map-label"><text x="78" y="342">EUROPE</text><text x="78" y="362" class="map-sub">France · UE</text></g>
+            <g class="map-label map-label-cn"><text x="571" y="306">CHINE</text><text x="536" y="326" class="map-sub">中国市场</text></g>
+          </svg>
+          <div class="route-legend">
+            <span><i class="legend-air"></i> Aérien · rapide</span>
+            <span><i class="legend-sea"></i> Maritime · coordination</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="home-services shell" aria-labelledby="home-services-title">
+        <div class="section-intro compact">
+          <span class="section-index">01</span>
+          <div><p class="kicker">Quatre expertises</p><h2 id="home-services-title">Cliquez. Voyez immédiatement ce que nous pouvons faire.</h2></div>
+        </div>
+
+        <div class="service-visual-grid" role="list">
+          <button class="service-visual active" type="button" data-service="strategy" role="listitem">
+            <span class="service-art service-art-strategy" aria-hidden="true"><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span><span class="target-core"></span></span>
+            <span class="service-number">01</span>
+            <span class="service-title">Marketing<br />& stratégie</span>
+            <span class="service-arrow">↗</span>
+          </button>
+          <button class="service-visual" type="button" data-service="digital" role="listitem">
+            <span class="service-art service-art-digital" aria-hidden="true"><span class="screen-frame"></span><span class="search-line"></span><span class="pixel-grid"></span></span>
+            <span class="service-number">02</span>
+            <span class="service-title">Digital<br />& e-commerce</span>
+            <span class="service-arrow">↗</span>
+          </button>
+          <button class="service-visual" type="button" data-service="growth" role="listitem">
+            <span class="service-art service-art-growth" aria-hidden="true"><span class="growth-line g1"></span><span class="growth-line g2"></span><span class="growth-line g3"></span><span class="growth-point"></span></span>
+            <span class="service-number">03</span>
+            <span class="service-title">Business<br />development</span>
+            <span class="service-arrow">↗</span>
+          </button>
+          <button class="service-visual" type="button" data-service="trade" role="listitem">
+            <span class="service-art service-art-trade" aria-hidden="true"><span class="stand-wall wall-a"></span><span class="stand-wall wall-b"></span><span class="stand-floor"></span><span class="stand-sign">展</span></span>
+            <span class="service-number">04</span>
+            <span class="service-title">Trade shows<br />& Chine</span>
+            <span class="service-arrow">↗</span>
+          </button>
+        </div>
+
+        <div class="capability-panel" id="home-capability-panel" aria-live="polite">
+          <div class="capability-heading">
+            <div>
+              <span class="mini-kicker" id="home-service-kicker">01 · Stratégie</span>
+              <h3 id="home-service-title">Clarifier la marque, le marché et le plan d’action.</h3>
+            </div>
+            <div class="rail-controls">
+              <button type="button" class="icon-button" data-rail="prev" aria-label="Compétences précédentes">←</button>
+              <button type="button" class="icon-button" data-rail="next" aria-label="Compétences suivantes">→</button>
+            </div>
+          </div>
+          <div class="capability-rail" id="home-capability-rail" tabindex="0"></div>
+          <button class="text-link" id="home-service-link" type="button">Voir le service en détail <span>→</span></button>
+        </div>
+      </section>
+
+      <section class="value-band">
+        <div class="shell value-band-grid">
+          <div><span>01</span><strong>Un interlocuteur</strong><small>du cadrage à l’exécution</small></div>
+          <div><span>02</span><strong>France × Chine</strong><small>culture, langage, coordination</small></div>
+          <div><span>03</span><strong>Digital + terrain</strong><small>web, acquisition, salons</small></div>
+          <div><span>04</span><strong>Modulaire</strong><small>mission ciblée ou accompagnement</small></div>
+        </div>
+      </section>
+
+      <section class="shell mission-preview">
+        <div class="section-intro">
+          <span class="section-index">02</span>
+          <div><p class="kicker">Exemples de missions</p><h2>Des besoins concrets, pas des forfaits abstraits.</h2></div>
+        </div>
+        <div class="mission-grid">
+          <article class="mission-card">
+            <span class="mission-tag">E-commerce</span>
+            <h3>Lancer une offre européenne en Chine</h3>
+            <p>Positionnement, parcours digital, canaux, contenus et plan d’acquisition.</p>
+            <span class="mission-route">EU → CN</span>
+          </article>
+          <article class="mission-card">
+            <span class="mission-tag">Salon</span>
+            <h3>Préparer un stand sans équipe locale</h3>
+            <p>Coordination constructeur, planning, supports, prestataires et présence terrain.</p>
+            <span class="mission-route">FR → 展</span>
+          </article>
+          <article class="mission-card">
+            <span class="mission-tag">Growth</span>
+            <h3>Créer un pipeline B2B exploitable</h3>
+            <p>Ciblage, prospection, CRM, qualification et suivi commercial.</p>
+            <span class="mission-route">Lead → CRM</span>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="page-services" aria-labelledby="services-title">
+      <div class="shell page-hero page-hero-split">
+        <div>
+          <p class="kicker">Services</p>
+          <h1 id="services-title">Quatre expertises.<br />Un même pilotage.</h1>
+        </div>
+        <p class="page-lead">Choisissez un bloc. Le contenu, les livrables et les compétences s’adaptent sans vous perdre dans une arborescence de pages.</p>
+      </div>
+
+      <div class="shell services-workbench">
+        <aside class="service-selector" aria-label="Choix du service">
+          <button class="active" type="button" data-service-tab="strategy"><span>01</span><strong>Marketing & stratégie</strong></button>
+          <button type="button" data-service-tab="digital"><span>02</span><strong>Digital & e-commerce</strong></button>
+          <button type="button" data-service-tab="growth"><span>03</span><strong>Business development</strong></button>
+          <button type="button" data-service-tab="trade"><span>04</span><strong>Trade shows & Chine</strong></button>
+        </aside>
+
+        <section class="service-detail" id="service-detail" aria-live="polite">
+          <div class="detail-hero">
+            <div>
+              <span class="mini-kicker" id="detail-kicker">01 · Marketing & stratégie</span>
+              <h2 id="detail-title">Construire le bon angle avant d’accélérer.</h2>
+              <p id="detail-summary">Positionnement, analyse de marché, messages et plan d’action alignés sur un objectif commercial clair.</p>
+            </div>
+            <div class="detail-badge" id="detail-badge">MARKET</div>
+          </div>
+
+          <div class="detail-columns">
+            <div class="detail-box">
+              <span class="detail-label">Nous pouvons prendre en charge</span>
+              <ul id="detail-scope"></ul>
+            </div>
+            <div class="detail-box">
+              <span class="detail-label">Livrables typiques</span>
+              <ul id="detail-deliverables"></ul>
+            </div>
+          </div>
+
+          <div class="detail-capabilities">
+            <div class="detail-capabilities-head"><span class="detail-label">Compétences</span><span id="detail-count"></span></div>
+            <div class="capability-wrap" id="detail-capability-wrap"></div>
+          </div>
+
+          <div class="process-line" aria-label="Méthode en quatre étapes">
+            <div><span>01</span><strong>Cadrer</strong></div><i></i>
+            <div><span>02</span><strong>Concevoir</strong></div><i></i>
+            <div><span>03</span><strong>Exécuter</strong></div><i></i>
+            <div><span>04</span><strong>Mesurer</strong></div>
+          </div>
+
+          <button class="button button-primary" type="button" data-nav="contact">Discuter de ce service</button>
+        </section>
+      </div>
+    </section>
+
+    <section class="page" id="page-studio" aria-labelledby="studio-title">
+      <div class="shell page-hero page-hero-split">
+        <div>
+          <p class="kicker">Le studio</p>
+          <h1 id="studio-title">Deux marchés.<br />Une seule équipe de coordination.</h1>
+        </div>
+        <p class="page-lead">Avenzo Studio est pensé pour les entreprises qui veulent agir entre la France, l’Europe et la Chine sans multiplier les interlocuteurs.</p>
+      </div>
+
+      <div class="shell bridge-layout">
+        <div class="bridge-visual" aria-hidden="true">
+          <div class="bridge-side bridge-fr"><span>FR</span><small>France · Europe</small></div>
+          <div class="bridge-span"><i></i><i></i><i></i><b>AVENZO</b><i></i><i></i><i></i></div>
+          <div class="bridge-side bridge-cn"><span>中</span><small>中国 · China</small></div>
+        </div>
+        <div class="bridge-copy">
+          <div class="principle"><span>01</span><div><strong>Traduire l’objectif</strong><p>Pas seulement la langue : l’intention commerciale, le canal et le niveau d’exécution attendu.</p></div></div>
+          <div class="principle"><span>02</span><div><strong>Réduire les frictions</strong><p>Un point de contact pour coordonner partenaires, contenu, digital et opérations.</p></div></div>
+          <div class="principle"><span>03</span><div><strong>Rester pragmatique</strong><p>Des livrables concrets, des étapes courtes et une visibilité claire sur l’avancement.</p></div></div>
+        </div>
+      </div>
+
+      <section class="studio-strip">
+        <div class="shell studio-strip-grid">
+          <div><span>法</span><strong>Français</strong></div>
+          <div><span>中</span><strong>Mandarin</strong></div>
+          <div><span>EN</span><strong>English</strong></div>
+          <div class="studio-strip-wide"><small>Positionnement</small><strong>Marketing + Digital + Business + Trade Shows</strong></div>
+        </div>
+      </section>
+
+      <section class="shell workflow-section">
+        <div class="section-intro">
+          <span class="section-index">03</span>
+          <div><p class="kicker">Comment on travaille</p><h2>Simple à suivre, même quand le projet traverse plusieurs pays.</h2></div>
+        </div>
+        <div class="workflow-grid">
+          <article><span>1</span><h3>Brief court</h3><p>Objectif, marché, échéance, budget indicatif.</p></article>
+          <article><span>2</span><h3>Plan clair</h3><p>Périmètre, responsables, livrables, calendrier.</p></article>
+          <article><span>3</span><h3>Exécution</h3><p>Coordination des actions et des partenaires utiles.</p></article>
+          <article><span>4</span><h3>Suivi</h3><p>Décisions, résultats et prochaine action visible.</p></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="page-contact" aria-labelledby="contact-title">
+      <div class="shell contact-layout">
+        <div class="contact-copy">
+          <p class="kicker">Contact</p>
+          <h1 id="contact-title">Expliquez le projet.<br />On structure la suite.</h1>
+          <p class="page-lead">Quelques lignes suffisent : marché visé, besoin, échéance et niveau d’accompagnement attendu.</p>
+          <div class="contact-direct">
+            <span>Email</span>
+            <a href="mailto:contact@avenzostudio.com">contact@avenzostudio.com</a>
+            <button type="button" id="copy-email">Copier l’adresse</button>
+          </div>
+          <div class="contact-meta">
+            <div><span>Zone</span><strong>France · Europe · Chine</strong></div>
+            <div><span>Langues</span><strong>FR · 中文 · EN</strong></div>
+            <div><span>Réponse</span><strong>Sous 48h ouvrées</strong></div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <fieldset>
+            <legend>Votre besoin</legend>
+            <div class="need-grid">
+              <label><input type="checkbox" name="need" value="Marketing & stratégie"/><span>Marketing</span></label>
+              <label><input type="checkbox" name="need" value="Digital & e-commerce"/><span>E-commerce</span></label>
+              <label><input type="checkbox" name="need" value="Business development"/><span>Business</span></label>
+              <label><input type="checkbox" name="need" value="Trade shows & Chine"/><span>Salon / Chine</span></label>
+            </div>
+          </fieldset>
+          <label class="field"><span>Nom</span><input id="contact-name" type="text" required autocomplete="name" /></label>
+          <label class="field"><span>Entreprise</span><input id="contact-company" type="text" autocomplete="organization" /></label>
+          <label class="field"><span>Email</span><input id="contact-email" type="email" required autocomplete="email" /></label>
+          <label class="field"><span>Projet</span><textarea id="contact-message" required rows="6" placeholder="Marché, objectif, échéance…"></textarea></label>
+          <button class="button button-primary button-full" type="submit">Préparer l’email <span>↗</span></button>
+          <p class="form-note">Aucun formulaire n’est stocké sur le site : votre messagerie s’ouvre avec le message prérempli.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand"><img src="assets/avenzo-mark.svg" alt="" width="40" height="29" /><span><strong>Avenzo Studio</strong><small>Ensemble, on avance.</small></span></div>
+      <div class="footer-route"><span class="dot dot-fr"></span><i></i><span>FR / EU</span><i></i><span>中国</span><i></i><span class="dot dot-cn"></span></div>
+      <div class="footer-copy">© 2026 Avenzo Studio</div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
