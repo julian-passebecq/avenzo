@@ -405,3 +405,130 @@ html[data-theme="panda"] .service-icon-card{box-shadow:0 12px 38px rgba(16,18,22
   .route-map-deck{min-height:230px}.route-controls{flex-direction:column;align-items:stretch}.route-map-switch{display:grid;grid-template-columns:repeat(3,1fr);border-radius:14px}.route-map-switch button{text-align:center}
   .infra text,.silk-label text{font-size:8px}
 }
+
+
+/* Screenshot QA polish pass */
+.language-switcher .flag{
+  display:block;
+  width:20px;
+  height:14px;
+  border-radius:2px;
+  box-shadow:0 0 0 1px rgba(0,0,0,.12);
+  position:relative;
+  overflow:hidden;
+}
+.language-switcher .flag-fr{
+  background:linear-gradient(90deg,#0055a4 0 33.33%,#fff 33.33% 66.66%,#ef4135 66.66% 100%);
+}
+.language-switcher .flag-cn{
+  background:#de2910;
+}
+.language-switcher .flag-cn:before{
+  content:"★";
+  position:absolute;
+  left:2px;
+  top:-2px;
+  color:#ffde00;
+  font-size:9px;
+  line-height:1;
+}
+.language-switcher .flag-gb{
+  background:
+    linear-gradient(33deg, transparent 42%, #fff 42% 47%, #c8102e 47% 53%, #fff 53% 58%, transparent 58%),
+    linear-gradient(-33deg, transparent 42%, #fff 42% 47%, #c8102e 47% 53%, #fff 53% 58%, transparent 58%),
+    linear-gradient(90deg, transparent 40%, #fff 40% 60%, transparent 60%),
+    linear-gradient(0deg, transparent 34%, #fff 34% 66%, transparent 66%),
+    linear-gradient(90deg, transparent 46%, #c8102e 46% 54%, transparent 54%),
+    linear-gradient(0deg, transparent 42%, #c8102e 42% 58%, transparent 58%),
+    #012169;
+}
+.language-switcher button{
+  min-width:34px;
+}
+
+.theme-dev-controls button{transition:.16s ease}
+.theme-dev-controls button:hover{
+  transform:translateX(-2px);
+  border-color:var(--line2);
+}
+.theme-dev-controls button:nth-child(1)>span{background:#17191d;color:#f2eee7}
+.theme-dev-controls button:nth-child(2)>span{background:#ece8e0;color:#17191d}
+.theme-dev-controls button:nth-child(3)>span{background:#5d4b35;color:#f3e4cd}
+.theme-dev-controls button:nth-child(4)>span{background:#0d5f4d;color:#b7f7e5}
+.theme-dev-controls button:nth-child(5)>span{background:linear-gradient(135deg,#17191d 0 48%,#f4efe7 48% 100%);color:#c79e68}
+.theme-dev-controls button.active{
+  transform:translateX(-3px);
+}
+.theme-dev-footer .dev-toggle[aria-pressed="true"]{
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--gold) 40%,transparent);
+}
+.theme-dev-footer .dev-toggle[aria-pressed="false"]{
+  opacity:.72;
+}
+.theme-dev-panel:hover .dev-live-dot{
+  background:var(--gold);
+  box-shadow:0 0 10px var(--gold);
+}
+
+.route-card:focus-within{
+  border-color:color-mix(in srgb,var(--gold) 28%,var(--line));
+}
+.route-map-switch button.active{
+  background:var(--text);
+  color:var(--bg);
+  font-weight:800;
+  box-shadow:0 2px 10px rgba(0,0,0,.12);
+}
+.route-map-switch button:focus-visible{
+  outline:2px solid var(--gold);
+  outline-offset:2px;
+}
+.infra text,
+.silk-label text{
+  paint-order:stroke fill;
+  stroke:var(--panel);
+  stroke-width:4px;
+  stroke-linejoin:round;
+  font-size:10px;
+  font-weight:750;
+}
+.infra.island-label text{
+  stroke-width:3px;
+}
+.map-label text{
+  paint-order:stroke fill;
+  stroke:var(--panel);
+  stroke-width:3px;
+}
+.country-shape{
+  vector-effect:non-scaling-stroke;
+}
+.france-shape{
+  filter:drop-shadow(0 0 7px color-mix(in srgb,var(--blue) 24%,transparent));
+}
+.china-shape{
+  filter:drop-shadow(0 0 7px color-mix(in srgb,var(--red) 22%,transparent));
+}
+.hk-shape,.taiwan-shape{
+  filter:drop-shadow(0 0 5px color-mix(in srgb,var(--gold) 22%,transparent));
+}
+
+.capability-marquee{
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 3.5%,#000 96.5%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 0,#000 3.5%,#000 96.5%,transparent 100%);
+}
+.marquee-track{
+  padding-left:28px;
+  padding-right:28px;
+}
+.marquee-chip{
+  box-shadow:0 1px 0 color-mix(in srgb,var(--text) 4%,transparent);
+}
+.selection-indicator{
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--gold) 12%,transparent);
+}
+
+@media(max-width:780px){
+  .infra text,.silk-label text{font-size:8.5px;stroke-width:3px}
+  .language-switcher .flag{width:18px;height:12px}
+}
