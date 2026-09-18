@@ -874,3 +874,184 @@ html[data-theme="panda"] .service-icon-card{box-shadow:0 12px 38px rgba(16,18,22
     max-height:300px;
   }
 }
+
+
+/* Five-layout comparison mode */
+.layout-compare-overlay[hidden]{display:none!important}
+.layout-compare-overlay{
+  position:fixed;
+  inset:0;
+  z-index:120;
+  overflow:auto;
+  padding:24px;
+  background:rgba(6,8,11,.84);
+  backdrop-filter:blur(18px);
+}
+.layout-compare-shell{
+  width:min(1540px,100%);
+  margin:0 auto;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:var(--bg);
+  box-shadow:0 28px 90px rgba(0,0,0,.42);
+  padding:20px;
+}
+.layout-compare-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:24px;
+  padding:4px 4px 18px;
+}
+.layout-compare-header h2{
+  margin:5px 0 5px;
+  font-size:30px;
+}
+.layout-compare-header p{
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+}
+.layout-compare-close{
+  width:42px;
+  height:42px;
+  border:1px solid var(--line2);
+  border-radius:50%;
+  background:var(--panel);
+  color:var(--text);
+  font-size:24px;
+  line-height:1;
+}
+.layout-compare-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.layout-preview-card{
+  min-width:0;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:var(--panel);
+  padding:10px;
+  overflow:hidden;
+}
+.layout-preview-card:last-child{
+  grid-column:1/-1;
+  width:calc(50% - 7px);
+  justify-self:center;
+}
+.layout-preview-title{
+  display:grid;
+  grid-template-columns:30px 1fr auto;
+  gap:10px;
+  align-items:center;
+  padding:2px 2px 9px;
+}
+.layout-preview-title>span{
+  width:30px;
+  height:30px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:var(--soft);
+  color:var(--gold);
+  font-size:9px;
+  font-weight:800;
+}
+.layout-preview-title>div{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.layout-preview-title strong{font-size:12px}
+.layout-preview-title small{
+  color:var(--muted);
+  font-size:8px;
+  text-transform:uppercase;
+  letter-spacing:.09em;
+}
+.layout-preview-title button{
+  border:1px solid var(--line2);
+  border-radius:999px;
+  background:transparent;
+  color:var(--text);
+  padding:7px 11px;
+  font-size:9px;
+  font-weight:700;
+}
+.layout-preview-title button:hover{
+  background:var(--text);
+  color:var(--bg);
+}
+.layout-preview-frame{
+  position:relative;
+  height:370px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#0b0d10;
+}
+.layout-preview-frame iframe{
+  position:absolute;
+  left:0;
+  top:0;
+  width:1280px;
+  height:740px;
+  border:0;
+  transform:scale(.5);
+  transform-origin:top left;
+  pointer-events:none;
+}
+html.layout-compare-open,
+html.layout-compare-open body{
+  overflow:hidden;
+}
+
+html.layout-preview-mode body{
+  padding-right:0!important;
+}
+html.layout-preview-mode .theme-dev-panel,
+html.layout-preview-mode .layout-compare-overlay,
+html.layout-preview-mode .site-footer,
+html.layout-preview-mode #page-home .home-services,
+html.layout-preview-mode #page-home .asset-preview{
+  display:none!important;
+}
+html.layout-preview-mode .site-header{
+  position:relative;
+}
+html.layout-preview-mode #page-home .hero-grid{
+  min-height:0;
+  padding-bottom:12px;
+}
+html.layout-preview-mode main{
+  padding-bottom:0;
+}
+
+/* Comparison is manual by default; auto-theme can still be enabled explicitly. */
+#theme-rotation-toggle[aria-pressed="false"]{
+  background:transparent;
+  color:var(--text);
+}
+#layout-compare-open{
+  background:var(--gold);
+  color:var(--bg);
+  border-color:var(--gold);
+}
+
+@media(max-width:1100px){
+  .layout-compare-grid{grid-template-columns:1fr}
+  .layout-preview-card:last-child{
+    grid-column:auto;
+    width:100%;
+  }
+  .layout-preview-frame{height:340px}
+  .layout-preview-frame iframe{transform:scale(.46)}
+}
+@media(max-width:720px){
+  .layout-compare-overlay{padding:10px}
+  .layout-compare-shell{padding:12px;border-radius:18px}
+  .layout-compare-header h2{font-size:23px}
+  .layout-preview-frame{height:250px}
+  .layout-preview-frame iframe{transform:scale(.34)}
+}
