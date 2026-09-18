@@ -237,6 +237,10 @@ const staticTranslations = {
 
 
 Object.assign(staticTranslations.en, {
+  '4 expertises':'4 areas',
+  'Choisissez un service':'Choose a service',
+  'Tous les services':'All services',
+  'Présenter un projet':'Present a project',
   'Marketing & stratégie':'Marketing & strategy',
   'positionnement · go-to-market':'positioning · go-to-market',
   'Digital & e-commerce':'Digital & e-commerce',
@@ -265,6 +269,10 @@ Object.assign(staticTranslations.en, {
 });
 
 Object.assign(staticTranslations.zh, {
+  '4 expertises':'4 大服务',
+  'Choisissez un service':'选择一个服务',
+  'Tous les services':'全部服务',
+  'Présenter un projet':'介绍项目',
   'Marketing & stratégie':'营销与战略',
   'positionnement · go-to-market':'定位 · 市场进入',
   'Digital & e-commerce':'数字营销与电商',
