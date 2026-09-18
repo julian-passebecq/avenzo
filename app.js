@@ -235,6 +235,67 @@ const staticTranslations = {
   }
 };
 
+
+Object.assign(staticTranslations.en, {
+  'Marketing & stratégie':'Marketing & strategy',
+  'positionnement · go-to-market':'positioning · go-to-market',
+  'Digital & e-commerce':'Digital & e-commerce',
+  'site · SEO · campagnes':'website · SEO · campaigns',
+  'Business development':'Business development',
+  'prospection · CRM · pipeline':'prospecting · CRM · pipeline',
+  'Trade shows & Chine':'Trade shows & China',
+  'stands · partenaires · salons':'booths · partners · trade shows',
+  'Quatre expertises.':'Four areas.',
+  'Un même pilotage.':'One coordination.',
+  'France · Europe':'France · Europe',
+  'Chine · International':'China · International',
+  'Comprendre l’entreprise, ses clients, sa marque et ses objectifs avant de choisir les canaux.':'Understand the company, its clients, brand and goals before choosing channels.',
+  'Coordonner partenaires, sourcing, salons professionnels et développement de marché.':'Coordinate partners, sourcing, trade shows and market development.',
+  'Marketing thinking':'Marketing thinking',
+  'Digital expertise':'Digital expertise',
+  'Esprit commercial':'Commercial mindset',
+  'Vision internationale':'International vision',
+  'Flexible collaboration':'Flexible collaboration',
+  'Web, e-commerce, SEO, advertising, CRM et contenu.':'Web, e-commerce, SEO, advertising, CRM and content.',
+  'Nous accompagnons les entreprises dans leur développement digital et commercial. De la stratégie marketing à la création digitale, de l’acquisition au développement commercial, jusqu’aux projets de salons professionnels internationaux, nous réunissons les expertises nécessaires pour transformer vos ambitions en projets concrets. Marché visé, échéance, objectif — quelques lignes suffisent.':'We support companies in digital and commercial development. From marketing strategy and digital creation to acquisition, business development and international trade shows, we bring together the expertise needed to turn ambitions into concrete projects. Target market, timing and objective — a few lines are enough.',
+  'EUROPE':'EUROPE',
+  'CHINE':'CHINA',
+  'France · UE':'France · EU',
+  'Data / ping':'Data / ping'
+});
+
+Object.assign(staticTranslations.zh, {
+  'Marketing & stratégie':'营销与战略',
+  'positionnement · go-to-market':'定位 · 市场进入',
+  'Digital & e-commerce':'数字营销与电商',
+  'site · SEO · campagnes':'网站 · SEO · 广告',
+  'Business development':'商务拓展',
+  'prospection · CRM · pipeline':'客户开发 · CRM · 销售管道',
+  'Trade shows & Chine':'展会与中国市场',
+  'stands · partenaires · salons':'展台 · 合作伙伴 · 展会',
+  'Quatre expertises.':'四大专业方向。',
+  'Un même pilotage.':'统一协同。',
+  'France · Europe':'法国 · 欧洲',
+  'Chine · International':'中国 · 国际市场',
+  'Comprendre l’entreprise, ses clients, sa marque et ses objectifs avant de choisir les canaux.':'先理解企业、客户、品牌与目标，再选择合适的渠道。',
+  'Coordonner partenaires, sourcing, salons professionnels et développement de marché.':'协调合作伙伴、采购、专业展会与市场拓展。',
+  'Marketing thinking':'营销思维',
+  'Digital expertise':'数字化能力',
+  'Esprit commercial':'商业思维',
+  'Vision internationale':'国际视野',
+  'Flexible collaboration':'灵活合作',
+  'Web, e-commerce, SEO, advertising, CRM et contenu.':'网站、电商、SEO、广告、CRM 与内容。',
+  'Nous accompagnons les entreprises dans leur développement digital et commercial. De la stratégie marketing à la création digitale, de l’acquisition au développement commercial, jusqu’aux projets de salons professionnels internationaux, nous réunissons les expertises nécessaires pour transformer vos ambitions en projets concrets. Marché visé, échéance, objectif — quelques lignes suffisent.':'我们支持企业的数字化与商业发展。从营销战略、数字化建设和获客，到商务拓展与国际专业展会，我们整合所需能力，把目标转化为具体项目。目标市场、时间与目标——几句话即可开始。',
+  'EUROPE':'欧洲',
+  'CHINE':'中国',
+  'France · UE':'法国 · 欧盟',
+  'Data / ping':'数据 / 网络',
+  'Paris':'巴黎',
+  'Beijing':'北京',
+  'Hong Kong':'香港',
+  'Chongqing':'重庆'
+});
+
 const baseTextNodes = [];
 let currentLang = 'fr';
 
