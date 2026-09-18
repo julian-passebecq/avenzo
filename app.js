@@ -368,8 +368,16 @@ function setLanguage(lang) {
 
 const serviceOrder = ['strategy', 'digital', 'growth', 'trade'];
 const pages = ['home', 'services', 'solutions', 'contact'];
+const themes = ['noir', 'slate', 'atelier', 'jade', 'panda'];
+const mapOrder = ['classic', 'ports', 'silk'];
 let activeService = 'strategy';
+let activeTheme = 'noir';
+let activeMap = 'classic';
 let autoplayTimer = null;
+let themeTimer = null;
+let mapTimer = null;
+let motionDisabled = false;
+let themeRotationEnabled = true;
 
 function routeFromHash() {
   const raw = window.location.hash.replace(/^#\/?/, '');
@@ -399,7 +407,7 @@ function setPage(page, { push = true, service = null } = {}) {
     if (window.location.hash !== nextHash) history.pushState({}, '', nextHash);
   }
 
-  if (safePage === 'home') startServiceAutoplay();
+  if (safePage === 'home' && !motionDisabled) startServiceAutoplay();
   else stopServiceAutoplay();
 
   window.scrollTo({ top: 0, behavior: 'auto' });
@@ -441,7 +449,7 @@ function updateHomeService(key) {
   const track = marquee.querySelector('.marquee-track');
   track.style.animation = 'none';
   void track.offsetWidth;
-  track.style.animation = '';
+  track.style.animation = motionDisabled ? 'none' : '';
 }
 
 function updateServiceDetail(key) {
@@ -473,6 +481,7 @@ function nextService(step = 1) {
 
 function startServiceAutoplay() {
   stopServiceAutoplay();
+  if (motionDisabled) return;
   autoplayTimer = window.setInterval(() => nextService(1), 5200);
 }
 
@@ -484,11 +493,12 @@ function stopServiceAutoplay() {
 }
 
 function resetAutoplay() {
-  if (document.getElementById('page-home').classList.contains('active')) startServiceAutoplay();
+  if (document.getElementById('page-home').classList.contains('active') && !motionDisabled) startServiceAutoplay();
 }
 
 function setTheme(theme) {
-  const safeTheme = ['noir', 'slate', 'atelier'].includes(theme) ? theme : 'noir';
+  const safeTheme = themes.includes(theme) ? theme : 'noir';
+  activeTheme = safeTheme;
   document.documentElement.setAttribute('data-theme', safeTheme);
   document.querySelectorAll('[data-theme-choice]').forEach(btn => {
     const active = btn.dataset.themeChoice === safeTheme;
@@ -496,6 +506,86 @@ function setTheme(theme) {
     btn.setAttribute('aria-pressed', active ? 'true' : 'false');
   });
   localStorage.setItem('avenzo-theme', safeTheme);
+}
+
+function nextTheme(step = 1) {
+  const index = themes.indexOf(activeTheme);
+  setTheme(themes[(index + step + themes.length) % themes.length]);
+}
+
+function stopThemeRotation() {
+  if (themeTimer) {
+    window.clearInterval(themeTimer);
+    themeTimer = null;
+  }
+}
+
+function startThemeRotation() {
+  stopThemeRotation();
+  if (!themeRotationEnabled || motionDisabled) return;
+  themeTimer = window.setInterval(() => nextTheme(1), 3000);
+}
+
+function setThemeRotation(enabled) {
+  themeRotationEnabled = Boolean(enabled);
+  const button = document.getElementById('theme-rotation-toggle');
+  if (button) {
+    button.setAttribute('aria-pressed', themeRotationEnabled ? 'true' : 'false');
+    button.textContent = `Auto themes: ${themeRotationEnabled ? 'ON' : 'OFF'}`;
+  }
+  if (themeRotationEnabled && !motionDisabled) startThemeRotation();
+  else stopThemeRotation();
+}
+
+function setMap(mapKey) {
+  const safeMap = mapOrder.includes(mapKey) ? mapKey : 'classic';
+  activeMap = safeMap;
+  document.querySelectorAll('[data-map-panel]').forEach(panel => {
+    panel.classList.toggle('active', panel.dataset.mapPanel === safeMap);
+  });
+  document.querySelectorAll('[data-map-choice]').forEach(button => {
+    const active = button.dataset.mapChoice === safeMap;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+}
+
+function nextMap(step = 1) {
+  const index = mapOrder.indexOf(activeMap);
+  setMap(mapOrder[(index + step + mapOrder.length) % mapOrder.length]);
+}
+
+function stopMapRotation() {
+  if (mapTimer) {
+    window.clearInterval(mapTimer);
+    mapTimer = null;
+  }
+}
+
+function startMapRotation() {
+  stopMapRotation();
+  if (motionDisabled) return;
+  mapTimer = window.setInterval(() => nextMap(1), 7000);
+}
+
+function setMotionDisabled(disabled) {
+  motionDisabled = Boolean(disabled);
+  document.documentElement.classList.toggle('motion-paused', motionDisabled);
+  const button = document.getElementById('motion-toggle');
+  if (button) {
+    button.setAttribute('aria-pressed', motionDisabled ? 'false' : 'true');
+    button.textContent = `Motion: ${motionDisabled ? 'OFF' : 'ON'}`;
+  }
+  if (motionDisabled) {
+    stopServiceAutoplay();
+    stopThemeRotation();
+    stopMapRotation();
+  } else {
+    resetAutoplay();
+    if (themeRotationEnabled) startThemeRotation();
+    startMapRotation();
+    updateHomeService(activeService);
+  }
 }
 
 for (const btn of document.querySelectorAll('[data-nav]')) {
@@ -529,7 +619,27 @@ for (const btn of document.querySelectorAll('[data-rail]')) {
 document.getElementById('home-service-link').addEventListener('click', () => setPage('services', { service: activeService }));
 
 for (const btn of document.querySelectorAll('[data-theme-choice]')) {
-  btn.addEventListener('click', () => setTheme(btn.dataset.themeChoice));
+  btn.addEventListener('click', () => {
+    setTheme(btn.dataset.themeChoice);
+    if (themeRotationEnabled && !motionDisabled) startThemeRotation();
+  });
+}
+
+for (const btn of document.querySelectorAll('[data-map-choice]')) {
+  btn.addEventListener('click', () => {
+    setMap(btn.dataset.mapChoice);
+    if (!motionDisabled) startMapRotation();
+  });
+}
+
+const themeRotationToggle = document.getElementById('theme-rotation-toggle');
+if (themeRotationToggle) {
+  themeRotationToggle.addEventListener('click', () => setThemeRotation(!themeRotationEnabled));
+}
+
+const motionToggle = document.getElementById('motion-toggle');
+if (motionToggle) {
+  motionToggle.addEventListener('click', () => setMotionDisabled(!motionDisabled));
 }
 
 for (const btn of document.querySelectorAll('[data-lang]')) {
@@ -547,8 +657,15 @@ if (carouselHub) {
 }
 
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden) stopServiceAutoplay();
-  else resetAutoplay();
+  if (document.hidden) {
+    stopServiceAutoplay();
+    stopThemeRotation();
+    stopMapRotation();
+  } else if (!motionDisabled) {
+    resetAutoplay();
+    if (themeRotationEnabled) startThemeRotation();
+    startMapRotation();
+  }
 });
 
 window.addEventListener('popstate', () => {
@@ -595,7 +712,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
 captureBaseTextNodes();
 
 const savedTheme = localStorage.getItem('avenzo-theme');
-setTheme(savedTheme || 'noir');
+setTheme(themes.includes(savedTheme) ? savedTheme : 'noir');
+setMap('classic');
+setThemeRotation(true);
+setMotionDisabled(false);
 
 const initial = routeFromHash();
 activeService = initial.service || 'strategy';
@@ -606,3 +726,5 @@ setPage(initial.page, { push: false, service: activeService });
 
 updateWorldClocks();
 window.setInterval(updateWorldClocks, 15000);
+startThemeRotation();
+startMapRotation();
