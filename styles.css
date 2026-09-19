@@ -1685,3 +1685,84 @@ textarea:focus-visible{
   font-size:7px;
   line-height:1;
 }
+
+
+/* Single-map refinement: smaller, cleaner, legend on top */
+#page-home .route-card.route-card-compact{
+  width:min(100%,470px)!important;
+  padding:10px 11px 9px!important;
+}
+#page-home .route-card-compact .route-topline{
+  margin-bottom:5px;
+}
+#page-home .route-card-compact .route-legend-top{
+  display:flex;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  gap:7px 16px;
+  margin:0 0 4px;
+  color:var(--muted);
+  font-size:7px!important;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+#page-home .route-card-compact .route-legend-top span{
+  display:inline-flex;
+  align-items:center;
+  gap:0;
+  white-space:nowrap;
+}
+#page-home .route-card-compact .route-map-deck{
+  min-height:0!important;
+}
+#page-home .route-card-compact .route-map{
+  max-height:220px!important;
+  margin:0 auto!important;
+}
+#page-home .route-card-compact .legend-air,
+#page-home .route-card-compact .legend-fiber,
+#page-home .route-card-compact .legend-sea,
+#page-home .route-card-compact .legend-rail{
+  width:20px;
+  margin-right:5px;
+}
+#page-home .route-card-compact .infra text,
+#page-home .route-card-compact .silk-label text{
+  font-size:9px;
+  stroke-width:3px;
+}
+#page-home .route-card-compact .map-label text{
+  font-size:12px;
+}
+#page-home .route-card-compact .map-label .map-sub{
+  font-size:9px;
+}
+#page-home .route-card-compact .country-shape{
+  stroke-width:1.45;
+}
+#page-home .route-card-compact .route-line{
+  stroke-width:2.15;
+}
+#page-home .route-card-compact .route-rail-strong{
+  stroke-width:2.45;
+}
+
+@media(max-width:1050px){
+  #page-home .route-card.route-card-compact{
+    width:min(100%,560px)!important;
+  }
+  #page-home .route-card-compact .route-map{
+    max-height:260px!important;
+  }
+}
+@media(max-width:720px){
+  #page-home .route-card.route-card-compact{
+    width:100%!important;
+  }
+  #page-home .route-card-compact .route-legend-top{
+    gap:6px 11px;
+  }
+  #page-home .route-card-compact .route-map{
+    max-height:235px!important;
+  }
+}
