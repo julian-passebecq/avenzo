@@ -377,7 +377,7 @@ function setLanguage(lang) {
 const serviceOrder = ['strategy', 'digital', 'growth', 'trade'];
 const pages = ['home', 'services', 'solutions', 'contact'];
 const themes = ['noir', 'slate', 'atelier', 'jade', 'panda'];
-const mapOrder = ['classic', 'ports', 'silk'];
+const mapOrder = ['classic'];
 let activeService = 'strategy';
 let activeTheme = 'noir';
 let activeMap = 'classic';
@@ -572,7 +572,7 @@ function stopMapRotation() {
 
 function startMapRotation() {
   stopMapRotation();
-  if (motionDisabled) return;
+  if (motionDisabled || mapOrder.length < 2) return;
   mapTimer = window.setInterval(() => nextMap(1), 7000);
 }
 
