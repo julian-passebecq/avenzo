@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#06111b" />
+  <title>Avenzo Studio — Europe × Asie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../assets/avenzo-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Avenzo Studio">
+      <img src="../../assets/avenzo-mark.svg" alt="" />
+      <span><strong>Avenzo</strong><em>STUDIO · 法 · 中</em><small>BUSINESS BEYOND BORDERS</small></span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="active" href="#home">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <span class="langs">FR <i></i> EN <i></i> 中文</span>
+      <a class="cta" href="#contact">Parler de votre projet <span>→</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">ENSEMBLE, ON AVANCE</p>
+        <h1>L'accès à<br>l'international,<br><span>sans détour.</span></h1>
+        <p class="lead">Nous accompagnons les entreprises dans leur stratégie digitale, leur développement commercial et leurs projets de croissance, de la présence en ligne à l'acquisition, jusqu'aux salons professionnels internationaux.</p>
+        <div class="hero-actions">
+          <a class="cta large" href="#contact">Parler de votre projet <span>→</span></a>
+          <a class="secondary" href="#services"><span class="play">▶</span> Découvrir Avenzo</a>
+        </div>
+      </div>
+
+      <div class="hero-map" aria-label="Carte Europe-Asie">
+        <div class="map-topline"><span>EUROPE</span><span>ASIE</span></div>
+        <svg viewBox="0 0 780 470" role="img" aria-label="Connexions Europe Chine">
+          <defs>
+            <filter id="glow"><feGaussianBlur stdDeviation="6"/></filter>
+            <radialGradient id="earth" cx="50%" cy="35%" r="70%">
+              <stop offset="0%" stop-color="#0b2439"/>
+              <stop offset="70%" stop-color="#071725"/>
+              <stop offset="100%" stop-color="#04101a"/>
+            </radialGradient>
+            <path id="air" d="M170 190 C330 85 515 88 640 185"/>
+            <path id="rail" d="M180 220 C330 170 470 175 618 210"/>
+            <path id="sea" d="M168 245 C330 355 525 330 645 257"/>
+            <path id="data" d="M180 260 C350 250 525 265 646 282"/>
+          </defs>
+          <ellipse cx="405" cy="260" rx="355" ry="225" fill="url(#earth)" stroke="#18324a" />
+          <g opacity=".38" fill="none" stroke="#35516a" stroke-width="1.1">
+            <path d="M50 280 C145 210 210 180 290 160 C360 145 430 125 520 135 C610 145 690 182 750 230"/>
+            <path d="M78 305 C180 250 260 235 350 225 C430 215 520 205 690 245"/>
+            <path d="M115 330 C245 315 355 315 485 325 C560 332 635 338 710 320"/>
+          </g>
+          <g class="country france">
+            <path d="M143 155l31-12 30 13 20 28-7 28 15 22-15 30-28 8-27-12-20-25-11-28 8-28z"/>
+          </g>
+          <g class="country china">
+            <path d="M558 155l29-20 35 8 29-13 39 14 23 27-10 30 15 24-20 28-34 15-31-7-31 14-32-16-27-25-11-31 10-28z"/>
+          </g>
+          <g class="taiwan"><path d="M710 235c8 9 8 24 2 37-6 10-11 4-10-10 0-12 2-22 8-27z"/></g>
+          <g class="hk"><circle cx="675" cy="264" r="5"/></g>
+
+          <use href="#air" class="flow flow-air"/>
+          <use href="#rail" class="flow flow-rail"/>
+          <use href="#sea" class="flow flow-sea"/>
+          <use href="#data" class="flow flow-data"/>
+
+          <g class="pin"><circle cx="178" cy="191" r="6"/><text x="145" y="176">France</text></g>
+          <g class="pin"><circle cx="640" cy="185" r="6"/><text x="650" y="181">Chine</text></g>
+          <g class="pin small"><circle cx="675" cy="264" r="4"/><text x="684" y="269">Hong Kong</text></g>
+          <g class="pin small"><circle cx="710" cy="252" r="4"/><text x="719" y="256">Taïwan</text></g>
+
+          <g class="route-label air-label"><text x="520" y="112">AVIATION</text><text x="520" y="128">Connexions directes</text></g>
+          <g class="route-label rail-label"><text x="410" y="188">RAIL</text><text x="410" y="204">Route de la soie</text></g>
+          <g class="route-label sea-label"><text x="372" y="334">MARITIME</text><text x="372" y="350">Flux commerciaux</text></g>
+          <g class="route-label data-label"><text x="545" y="319">DONNÉES</text><text x="545" y="335">Marchés plus proches</text></g>
+        </svg>
+        <div class="map-caption">Des opportunités<br>sans frontières</div>
+      </div>
+
+      <div class="city-strip" aria-hidden="true">
+        <div class="city city-paris"></div>
+        <div class="city city-asia"></div>
+      </div>
+    </section>
+
+    <section class="bridge-strip" aria-label="Positionnement">
+      <div><span>FRANCE ↔ CHINE</span><strong>Stratégie & marché</strong></div>
+      <div><span>MARKETING</span><strong>Visibilité & acquisition</strong></div>
+      <div><span>BUSINESS</span><strong>Prospection & croissance</strong></div>
+      <div><span>TRADE SHOWS</span><strong>Réseaux & opportunités</strong></div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-head">
+        <div><p class="eyebrow">NOS EXPERTISES</p><h2>Un accompagnement complet pour votre croissance</h2></div>
+        <p>Stratégie, exécution et réseau sur le terrain : des solutions concrètes pour transformer vos ambitions en opportunités internationales.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service active"><span class="icon">◎</span><div><h3>Marketing & stratégie</h3><p>Positionnement, contenu et acquisition.</p></div></article>
+        <article class="service"><span class="icon">↗</span><div><h3>Business development</h3><p>Prospection, CRM et développement.</p></div></article>
+        <article class="service"><span class="icon">⌂</span><div><h3>Implantation & partenariat</h3><p>France, Chine et international.</p></div></article>
+        <article class="service"><span class="icon">展</span><div><h3>Trade shows & Chine</h3><p>Stands, salons et réseaux.</p></div></article>
+      </div>
+    </section>
+
+    <section class="sectors" id="solutions">
+      <div class="section-head simple">
+        <div><p class="eyebrow">NOS SECTEURS</p><h2>Des marchés stratégiques, des opportunités concrètes</h2></div>
+      </div>
+      <div class="sector-grid">
+        <article style="--image:url('../../assets/strategy-globe.webp')"><span>Technologies & Digital</span><small>Innovation sans frontières</small></article>
+        <article style="--image:url('../../assets/digital-matrix.webp')"><span>Digital & E-commerce</span><small>Visibilité, contenu, acquisition</small></article>
+        <article style="--image:url('../../assets/growth-city.webp')"><span>B2B & Infrastructures</span><small>Développement commercial</small></article>
+        <article style="--image:url('../../assets/trade-city.webp')"><span>International & Trade</span><small>Réseaux et opportunités</small></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow">FRANCE × CHINE</p>
+        <h2>Transformons votre ambition en projet concret.</h2>
+      </div>
+      <a class="cta large" href="mailto:contact@avenzostudio.com">Écrire à Avenzo <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="../../assets/avenzo-mark.svg" alt=""><span>Avenzo Studio</span></div>
+    <span>France × Chine · Marketing · Digital · Business Development · Trade Shows</span>
+    <span>© <span id="year"></span> Avenzo Studio</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
