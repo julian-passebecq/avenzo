@@ -1055,3 +1055,355 @@ html.layout-preview-mode main{
   .layout-preview-frame{height:250px}
   .layout-preview-frame iframe{transform:scale(.34)}
 }
+
+
+/* Adrien refinement pass: editorial typography, fewer boxes, more bandeaux */
+:root{
+  --font-title:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-ui:"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body,
+button,
+input,
+textarea{
+  font-family:var(--font-ui);
+  font-weight:400;
+}
+
+h1,h2,h3,
+.page-hero h1,
+.contact-copy h1,
+.hero-service-heading>strong,
+.section-intro h2,
+.detail-hero h2,
+.solution-card h3,
+.workflow-grid h3,
+.values-grid h3,
+.principle strong,
+.asset-card strong{
+  font-family:var(--font-title);
+  font-weight:600;
+  letter-spacing:-.025em;
+}
+
+.brand-copy strong{
+  font-family:var(--font-title);
+  font-weight:600;
+}
+
+.main-nav button,
+.header-cta,
+.language-switcher button,
+.text-link,
+.button,
+.theme-dev-controls button,
+.dev-toggle,
+.route-map-switch button{
+  font-family:var(--font-ui);
+  font-weight:400;
+}
+
+.button-primary,
+.header-cta{
+  font-weight:500;
+}
+
+/* Header: lighter and less pill-heavy. */
+.main-nav{
+  border-color:transparent;
+  background:transparent;
+  padding:4px;
+  gap:4px;
+}
+.main-nav button{
+  padding:11px 15px;
+}
+.main-nav button[aria-current="page"]{
+  background:var(--soft);
+  box-shadow:inset 0 0 0 1px var(--line);
+}
+.language-switcher{
+  background:transparent;
+}
+.site-header{
+  border-bottom-color:color-mix(in srgb,var(--line) 72%,transparent);
+}
+
+/* Hero service group becomes one continuous service bandeau rather than four detached boxes. */
+.hero-service-icons{
+  gap:0!important;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  border-radius:0;
+}
+.hero-service-icon{
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:none!important;
+  min-height:82px;
+  padding:13px 14px;
+  position:relative;
+}
+.hero-service-icon:nth-child(odd){
+  border-right:1px solid var(--line)!important;
+}
+.hero-service-icon:nth-child(-n+2){
+  border-bottom:1px solid var(--line)!important;
+}
+.hero-service-icon:after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:-1px;
+  height:2px;
+  background:transparent;
+  transition:background .18s ease,transform .18s ease;
+}
+.hero-service-icon:hover{
+  background:color-mix(in srgb,var(--soft) 65%,transparent)!important;
+}
+.hero-service-icon.active{
+  background:linear-gradient(90deg,color-mix(in srgb,var(--gold) 7%,transparent),transparent)!important;
+}
+.hero-service-icon.active:after{
+  background:var(--gold);
+}
+.hero-service-icon.active strong{
+  color:var(--text)!important;
+}
+.hero-service-icon .service-icon-glyph{
+  border-color:color-mix(in srgb,var(--line2) 80%,transparent);
+  background:transparent;
+}
+.hero-service-icon.active .service-icon-glyph{
+  border-color:var(--gold);
+  background:color-mix(in srgb,var(--gold) 14%,transparent);
+  color:var(--gold);
+  box-shadow:0 0 18px color-mix(in srgb,var(--gold) 14%,transparent);
+}
+.hero-mini-actions{
+  margin-top:11px;
+}
+
+/* Competencies become a real horizontal bandeau. */
+#page-home .home-services{
+  width:100%;
+  max-width:none;
+  margin:12px 0 0;
+  padding:0!important;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:color-mix(in srgb,var(--panel) 52%,transparent);
+}
+#page-home .home-services .service-carousel-hub{
+  width:min(1200px,calc(100% - 40px));
+  margin:0 auto;
+}
+#page-home .capability-stage{
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  padding:20px 2px 17px;
+}
+#page-home .capability-stage-head{
+  padding-inline:2px;
+}
+#page-home .capability-stage-footer{
+  padding-inline:2px;
+}
+#page-home .capability-marquee{
+  margin:15px 0 14px;
+}
+#page-home .marquee-chip{
+  background:transparent;
+  border-color:color-mix(in srgb,var(--line2) 76%,transparent);
+  box-shadow:none;
+}
+
+/* Keep the map as the one intentional contained object in the hero. */
+#page-home .route-card{
+  border-radius:18px;
+  border-color:color-mix(in srgb,var(--line2) 80%,transparent);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--panel) 88%,transparent),color-mix(in srgb,var(--bg) 88%,transparent));
+  box-shadow:0 16px 48px rgba(0,0,0,.20);
+}
+
+/* Sector imagery: editorial tiles, not four heavy cards. */
+#page-home .asset-grid{
+  gap:18px;
+}
+#page-home .asset-card{
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible;
+}
+#page-home .asset-card img{
+  border-radius:13px;
+  border:1px solid color-mix(in srgb,var(--line) 78%,transparent);
+}
+#page-home .asset-card div{
+  padding:10px 2px 0;
+}
+#page-home .asset-card strong{
+  font-size:18px;
+  line-height:1.05;
+}
+#page-home .asset-card small{
+  margin-top:2px;
+}
+
+/* Services page: selector becomes a clean vertical navigation rail. */
+.service-selector{
+  gap:0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.service-selector button{
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  border-bottom:1px solid var(--line)!important;
+  padding:15px 8px;
+}
+.service-selector button:last-child{
+  border-bottom:0!important;
+}
+.service-selector button.active{
+  background:linear-gradient(90deg,color-mix(in srgb,var(--gold) 8%,transparent),transparent)!important;
+  box-shadow:inset 2px 0 0 var(--gold);
+}
+.service-detail{
+  border-radius:20px;
+}
+
+/* Remove excess boxing on secondary information blocks. */
+.detail-box,
+.detail-capabilities,
+.solution-card,
+.workflow-grid article,
+.values-grid article,
+.principle{
+  box-shadow:none!important;
+}
+.detail-box,
+.detail-capabilities{
+  background:transparent!important;
+  border-radius:0!important;
+  border-left:0!important;
+  border-right:0!important;
+  border-color:var(--line)!important;
+}
+.solution-grid{
+  gap:0!important;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.solution-card{
+  border-radius:0!important;
+  border:0!important;
+  background:transparent!important;
+  padding:24px 22px!important;
+}
+.solution-card+ .solution-card{
+  border-left:1px solid var(--line)!important;
+}
+.workflow-grid{
+  gap:0!important;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.workflow-grid article{
+  border-radius:0!important;
+  border:0!important;
+  background:transparent!important;
+}
+.workflow-grid article+article{
+  border-left:1px solid var(--line)!important;
+}
+.values-grid{
+  gap:0!important;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.values-grid article{
+  border-radius:0!important;
+  border:0!important;
+  background:transparent!important;
+}
+.values-grid article+article{
+  border-left:1px solid var(--line)!important;
+}
+.principle{
+  border-radius:0!important;
+  border-left:0!important;
+  border-right:0!important;
+  background:transparent!important;
+  padding-left:0!important;
+  padding-right:0!important;
+}
+
+/* Preserve rectangles where they are functionally useful: forms and map. */
+.contact-form,
+.contact-direct{
+  border-radius:18px;
+}
+
+/* Type scale refinement */
+.section-intro h2{
+  font-size:clamp(2rem,4vw,3.15rem);
+}
+.page-hero h1,
+.contact-copy h1{
+  font-weight:600;
+}
+.kicker,
+.mini-kicker,
+.eyebrow,
+.detail-label{
+  font-family:var(--font-ui);
+  font-weight:400;
+}
+
+/* Theme Lab stays a development control, but reduce its visual weight. */
+.theme-dev-inner{
+  box-shadow:0 14px 42px rgba(0,0,0,.18);
+}
+.theme-dev-controls button{
+  border-radius:10px;
+}
+.theme-dev-controls button.active{
+  box-shadow:inset 2px 0 0 var(--gold);
+}
+
+@media(max-width:1050px){
+  .solution-card+ .solution-card,
+  .workflow-grid article+article,
+  .values-grid article+article{
+    border-left:0!important;
+    border-top:1px solid var(--line)!important;
+  }
+}
+
+@media(max-width:760px){
+  .hero-service-icons{
+    grid-template-columns:1fr!important;
+  }
+  .hero-service-icon:nth-child(odd),
+  .hero-service-icon:nth-child(-n+2){
+    border-right:0!important;
+    border-bottom:1px solid var(--line)!important;
+  }
+  .hero-service-icon:last-child{
+    border-bottom:0!important;
+  }
+  #page-home .home-services .service-carousel-hub{
+    width:calc(100% - 24px);
+  }
+}
