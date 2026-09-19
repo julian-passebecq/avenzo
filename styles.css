@@ -1407,3 +1407,259 @@ h1,h2,h3,
     width:calc(100% - 24px);
   }
 }
+
+
+/* Adrien taste-alignment pass: calmer public view, development tools tucked away */
+body{
+  padding-right:0!important;
+}
+.theme-lab-toggle{
+  position:fixed;
+  right:0;
+  top:50%;
+  z-index:52;
+  transform:translateY(-50%);
+  border:1px solid var(--line2);
+  border-right:0;
+  border-radius:12px 0 0 12px;
+  background:color-mix(in srgb,var(--panel) 92%,transparent);
+  color:var(--muted);
+  padding:10px 8px;
+  font-family:var(--font-ui);
+  font-size:9px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  backdrop-filter:blur(12px);
+  box-shadow:0 8px 26px rgba(0,0,0,.12);
+}
+.theme-lab-toggle:hover,
+.theme-lab-toggle[aria-expanded="true"]{
+  color:var(--text);
+  border-color:var(--gold);
+}
+.theme-dev-panel[hidden]{display:none!important}
+.theme-dev-panel{
+  right:18px;
+  width:205px;
+  z-index:51;
+}
+.theme-lab-open .theme-lab-toggle{
+  right:226px;
+}
+
+/* The clock strip reads like an information bandeau, not another component. */
+.world-time-ribbon{
+  background:transparent!important;
+  border-top:1px solid color-mix(in srgb,var(--line) 55%,transparent);
+}
+.world-time-inner{
+  min-height:26px;
+  opacity:.82;
+}
+.world-time-label{
+  font-size:7px;
+  letter-spacing:.18em;
+}
+.world-clock small{
+  font-size:7px;
+}
+.world-clock strong{
+  font-size:9px;
+  font-weight:500;
+}
+.world-time-inner>i{
+  height:8px;
+  opacity:.65;
+}
+
+/* Give the first viewport more air and let typography lead. */
+#page-home .hero-grid{
+  padding-top:30px;
+  padding-bottom:18px;
+}
+#page-home .hero-services-panel{
+  padding-right:10px;
+}
+#page-home .hero-service-heading{
+  margin-bottom:18px;
+}
+#page-home .hero-service-heading>strong{
+  font-size:26px;
+  line-height:1;
+}
+#page-home .eyebrow{
+  margin-bottom:14px;
+}
+#page-home .eyebrow-claim{
+  color:var(--muted);
+}
+
+/* Slightly reduce map dominance while preserving interaction. */
+#page-home .route-card{
+  width:min(100%,500px)!important;
+  padding:9px 10px 8px!important;
+}
+#page-home .route-map{
+  max-height:238px!important;
+}
+#page-home .route-topline,
+#page-home .route-legend{
+  font-size:7px!important;
+}
+#page-home .route-map-switch button{
+  padding:5px 8px;
+  font-size:7px;
+}
+#page-home .route-hint{
+  font-size:7px;
+}
+
+/* Service bandeau: stronger editorial rhythm, less app-like. */
+.hero-service-icons{
+  background:transparent;
+}
+.hero-service-icon{
+  min-height:78px;
+}
+.hero-service-icon strong{
+  font-family:var(--font-title);
+  font-size:17px;
+  font-weight:600;
+  line-height:1.04;
+}
+.hero-service-icon small{
+  font-size:8px;
+  margin-top:2px;
+}
+.hero-service-icon .service-icon-glyph{
+  width:34px;
+  height:34px;
+  flex-basis:34px;
+  border-radius:50%;
+}
+.hero-service-icon.active:after{
+  height:1px;
+}
+.hero-mini-actions{
+  padding-left:2px;
+}
+
+/* Competency strip gets less panel chrome and more typography. */
+#page-home .capability-stage-head h3{
+  font-family:var(--font-title);
+  font-size:28px;
+  font-weight:600;
+  line-height:1.05;
+}
+#page-home .capability-stage-head p{
+  max-width:62ch;
+  font-size:11px;
+}
+.selection-indicator{
+  border-radius:0!important;
+  border:0!important;
+  border-left:1px solid var(--line)!important;
+  background:transparent!important;
+  padding-left:12px;
+  box-shadow:none!important;
+}
+.selection-icon{
+  width:28px;
+  height:28px;
+  flex-basis:28px;
+  background:transparent;
+  color:var(--gold);
+  border:1px solid var(--gold);
+}
+
+/* Sector section: more like a magazine spread. */
+#page-home .asset-preview{
+  padding-top:42px;
+}
+#page-home .asset-grid{
+  gap:14px;
+}
+#page-home .asset-card img{
+  border-radius:8px!important;
+}
+#page-home .asset-card strong{
+  font-size:19px;
+}
+#page-home .asset-card small{
+  color:var(--subtle);
+}
+
+/* Softer global corner language: cards exist only where functionally justified. */
+.route-card,
+.service-detail,
+.contact-form,
+.contact-direct{
+  border-radius:14px!important;
+}
+.icon-button{
+  border-radius:50%;
+}
+.capability-pill,
+.marquee-chip{
+  border-radius:999px;
+}
+
+/* Section spacing closer to editorial reference. */
+.section-intro{
+  margin-bottom:30px;
+}
+.workflow-section,
+.values-section,
+.method-section{
+  padding-top:44px;
+}
+.page-hero{
+  padding-top:66px;
+  padding-bottom:34px;
+}
+
+/* Focus states remain visible despite reduced chrome. */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible{
+  outline:2px solid var(--gold);
+  outline-offset:3px;
+}
+
+@media(max-width:1050px){
+  .theme-lab-toggle{
+    position:fixed;
+    top:auto;
+    bottom:18px;
+    right:0;
+    transform:none;
+  }
+  .theme-dev-panel{
+    position:fixed;
+    right:14px;
+    left:auto;
+    bottom:60px;
+    top:auto;
+    transform:none;
+    width:min(320px,calc(100% - 28px));
+  }
+  .theme-lab-open .theme-lab-toggle{
+    right:0;
+  }
+  #page-home .route-card{
+    width:min(100%,620px)!important;
+  }
+}
+
+@media(max-width:760px){
+  #page-home .hero-grid{
+    padding-top:22px;
+  }
+  #page-home .hero-service-heading>strong{
+    font-size:23px;
+  }
+  #page-home .capability-stage-head h3{
+    font-size:24px;
+  }
+}
