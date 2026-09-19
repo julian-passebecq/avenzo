@@ -151,134 +151,103 @@
           </div>
         </div>
 
-        <div class="route-card" aria-label="Flux France Chine par avion, bateau, rail et data">
+        <div class="route-card route-card-compact" aria-label="Flux France Chine par avion, bateau, rail et data">
           <div class="route-topline">
             <span>FRANCE / EUROPE</span>
             <span class="route-status"><i></i> Flux actifs</span>
             <span>中国 · 香港 · 台湾</span>
           </div>
 
-          <div class="route-map-deck" id="route-map-deck">
-            <svg class="route-map active" data-map-panel="classic" viewBox="0 0 720 390" role="img" aria-label="Carte France Chine avec Paris, Marseille, Beijing, Shanghai, Guangzhou, Hong Kong, Chongqing et Taiwan">
+          <div class="route-legend route-legend-top" aria-label="Légende des flux">
+            <span><i class="legend-air"></i> Aérien</span>
+            <span><i class="legend-fiber"></i> Data</span>
+            <span><i class="legend-sea"></i> Maritime</span>
+            <span><i class="legend-rail"></i> Rail</span>
+          </div>
+
+          <div class="route-map-deck single-map" id="route-map-deck">
+            <svg class="route-map active" data-map-panel="classic" viewBox="0 0 720 330" role="img" aria-label="Carte France Chine avec Paris, Marseille, Beijing, Shanghai, Chongqing, Guangzhou, Hong Kong et Taiwan">
               <defs>
                 <filter id="glowClassic" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
-                <path id="airClassic" d="M122 178 C270 62 450 64 592 135"/>
-                <path id="fiberClassic" d="M122 178 C275 150 455 145 640 180"/>
-                <path id="seaClassic" d="M137 240 C300 346 505 330 618 235"/>
-                <path id="railClassic" d="M555 195 C455 152 335 140 190 165"/>
+                <path id="airClassic" d="M128 150 C270 64 452 65 566 128"/>
+                <path id="fiberClassic" d="M128 150 C274 142 462 148 625 168"/>
+                <path id="seaClassic" d="M158 232 C290 302 480 296 615 230"/>
+                <path id="railClassic" d="M570 191 C475 154 360 137 260 150"/>
               </defs>
-              <g class="grid-lines" opacity=".18"><path d="M0 90H720M0 190H720M0 290H720"/><path d="M110 0V390M250 0V390M390 0V390M530 0V390M670 0V390"/></g>
-              <ellipse cx="126" cy="205" rx="94" ry="86" class="map-glow map-glow-fr" filter="url(#glowClassic)"/>
-              <ellipse cx="588" cy="185" rx="105" ry="95" class="map-glow map-glow-cn" filter="url(#glowClassic)"/>
+
+              <g class="grid-lines" opacity=".16">
+                <path d="M0 74H720M0 158H720M0 242H720"/>
+                <path d="M110 0V330M250 0V330M390 0V330M530 0V330M670 0V330"/>
+              </g>
+
+              <ellipse cx="142" cy="190" rx="84" ry="70" class="map-glow map-glow-fr" filter="url(#glowClassic)"/>
+              <ellipse cx="587" cy="180" rx="100" ry="78" class="map-glow map-glow-cn" filter="url(#glowClassic)"/>
+
               <g class="country-shape france-shape" aria-label="France">
-                <path d="M114 128 L150 139 L173 161 L169 188 L185 211 L167 236 L152 266 L122 273 L98 250 L74 232 L79 201 L66 177 L90 154 Z"/>
-                <ellipse cx="174" cy="267" rx="5" ry="9"/>
+                <path d="M105 117 L133 122 L156 137 L171 160 L167 181 L181 198 L170 222 L154 245 L131 251 L112 239 L96 223 L78 211 L82 188 L73 170 L88 149 Z"/>
+                <path d="M171 244 C178 247 180 255 177 263 C173 270 168 267 168 259 C168 252 169 247 171 244Z"/>
               </g>
-              <g class="country-shape china-shape" aria-label="China">
-                <path d="M521 116 L552 102 L582 110 L606 101 L628 116 L650 120 L662 143 L651 165 L661 185 L646 204 L641 226 L618 239 L600 228 L576 238 L554 222 L532 214 L521 191 L502 176 L510 152 L498 137 Z"/>
+
+              <g class="country-shape china-shape" aria-label="Chine">
+                <path d="M512 112 L542 97 L573 104 L601 96 L628 108 L650 114 L668 135 L660 156 L670 176 L656 196 L649 217 L626 230 L606 221 L580 232 L558 217 L535 210 L522 190 L504 176 L511 155 L498 137 Z"/>
               </g>
-              <g class="country-shape hk-shape" aria-label="Hong Kong"><path d="M613 232 l8 -5 8 4 -2 7 -8 4 -7 -4z"/></g>
-              <g class="country-shape taiwan-shape" aria-label="Taiwan"><path d="M665 197 C674 205 676 220 670 235 C664 244 659 238 660 225 C660 213 661 203 665 197Z"/></g>
+
+              <g class="country-shape hk-shape" aria-label="Hong Kong">
+                <path d="M617 226 l7 -4 7 4 -2 7 -7 4 -6 -4z"/>
+              </g>
+              <g class="country-shape taiwan-shape" aria-label="Taiwan">
+                <path d="M674 190 C682 198 683 211 678 224 C673 233 668 229 668 218 C668 207 670 196 674 190Z"/>
+              </g>
 
               <use href="#airClassic" class="route-line route-air"/>
               <use href="#fiberClassic" class="route-line route-fiber"/>
               <use href="#seaClassic" class="route-line route-sea"/>
-              <use href="#railClassic" class="route-line route-rail"/>
+              <use href="#railClassic" class="route-line route-rail route-rail-strong"/>
 
-              <g class="moving plane" aria-hidden="true"><circle r="15" class="vehicle-halo"/><path d="M-14 1L-3-2 4-14 8-13 5-2 15 1 15 4 5 4 1 13-3 13-3 4-14 4z"/><animateMotion dur="4.8s" repeatCount="indefinite" rotate="auto"><mpath href="#airClassic"/></animateMotion></g>
-              <g class="moving fiber-pulse" aria-hidden="true"><circle r="6"/><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#fiberClassic"/></animateMotion></g>
-              <g class="moving boat" aria-hidden="true"><circle r="15" class="vehicle-halo"/><path d="M-13 1H13l-4 8H-8zM-5-9h7v10h-7zM3-6h6v7H3z"/><animateMotion dur="12s" repeatCount="indefinite" rotate="auto"><mpath href="#seaClassic"/></animateMotion></g>
-              <g class="moving train" aria-hidden="true"><rect x="-13" y="-6" width="26" height="12" rx="3"/><rect x="-4" y="-10" width="10" height="5" rx="2"/><animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#railClassic"/></animateMotion></g>
+              <g class="moving plane" aria-hidden="true">
+                <circle r="14" class="vehicle-halo"/>
+                <path d="M-14 1L-3-2 4-14 8-13 5-2 15 1 15 4 5 4 1 13-3 13-3 4-14 4z"/>
+                <animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#airClassic"/></animateMotion>
+              </g>
+              <g class="moving fiber-pulse" aria-hidden="true">
+                <circle r="5"/>
+                <animateMotion dur="3.1s" repeatCount="indefinite"><mpath href="#fiberClassic"/></animateMotion>
+              </g>
+              <g class="moving boat" aria-hidden="true">
+                <circle r="13" class="vehicle-halo"/>
+                <path d="M-13 1H13l-4 8H-8zM-5-9h7v10h-7zM3-6h6v7H3z"/>
+                <animateMotion dur="12.5s" repeatCount="indefinite" rotate="auto"><mpath href="#seaClassic"/></animateMotion>
+              </g>
+              <g class="moving train" aria-hidden="true">
+                <rect x="-13" y="-6" width="26" height="12" rx="3"/>
+                <rect x="-4" y="-10" width="10" height="5" rx="2"/>
+                <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#railClassic"/></animateMotion>
+              </g>
 
-              <g class="infra airport"><circle cx="122" cy="178" r="5"/><text x="82" y="166">✈ Paris CDG</text></g>
-              <g class="infra port"><circle cx="137" cy="240" r="5"/><text x="86" y="258">⚓ Marseille</text></g>
-              <g class="infra railhub"><circle cx="190" cy="165" r="5"/><text x="154" y="148">Germany / Duisburg</text></g>
-              <g class="infra airport"><circle cx="592" cy="135" r="5"/><text x="548" y="114">✈ Beijing</text></g>
-              <g class="infra port"><circle cx="640" cy="180" r="5"/><text x="650" y="169">⚓ Shanghai</text></g>
-              <g class="infra railhub"><circle cx="555" cy="195" r="5"/><text x="492" y="205">🚆 Chongqing</text></g>
-              <g class="infra port"><circle cx="603" cy="222" r="5"/><text x="533" y="258">⚓ Guangzhou</text></g>
-              <g class="infra port"><circle cx="619" cy="235" r="5"/><text x="631" y="274">⚓ Hong Kong</text></g>
+              <g class="infra airport"><circle cx="128" cy="150" r="4.5"/><text x="86" y="138">✈ Paris CDG</text></g>
+              <g class="infra port"><circle cx="158" cy="232" r="4.5"/><text x="169" y="247">⚓ Marseille</text></g>
+              <g class="infra railhub"><circle cx="260" cy="150" r="4.5"/><text x="222" y="137">Duisburg</text></g>
+
+              <g class="infra airport"><circle cx="566" cy="128" r="4.5"/><text x="534" y="111">✈ Beijing</text></g>
+              <g class="infra port"><circle cx="625" cy="168" r="4.5"/><text x="634" y="160">⚓ Shanghai</text></g>
+              <g class="infra railhub"><circle cx="570" cy="191" r="4.5"/><text x="518" y="201">🚆 Chongqing</text></g>
+              <g class="infra port"><circle cx="603" cy="216" r="4.5"/><text x="548" y="247">⚓ Guangzhou</text></g>
+              <g class="infra port"><circle cx="622" cy="230" r="4.5"/><text x="631" y="248">⚓ Hong Kong</text></g>
               <g class="infra island-label"><text x="667" y="245">Taiwan</text></g>
 
-              <g class="map-label"><text x="78" y="318">FRANCE</text><text x="78" y="338" class="map-sub">Paris · Marseille · Germany border corridor</text></g>
-              <g class="map-label map-label-cn"><text x="520" y="304">CHINA</text><text x="490" y="324" class="map-sub">Beijing · Shanghai · Chongqing · Guangzhou · HK</text></g>
-            </svg>
+              <g class="silk-label"><text x="325" y="121">Chongqing → Germany · Rail Silk Road</text></g>
 
-            <svg class="route-map" data-map-panel="ports" viewBox="0 0 720 390" role="img" aria-label="Carte des corridors portuaires Marseille Shanghai Guangzhou Hong Kong">
-              <defs>
-                <path id="seaPortsShanghai" d="M137 240 C295 340 500 318 640 180"/>
-                <path id="seaPortsHK" d="M137 240 C310 355 510 338 619 235"/>
-                <path id="fiberPorts" d="M122 178 C285 160 472 160 640 180"/>
-              </defs>
-              <g class="grid-lines" opacity=".16"><path d="M0 90H720M0 190H720M0 290H720"/><path d="M110 0V390M250 0V390M390 0V390M530 0V390M670 0V390"/></g>
-              <g class="country-shape france-shape"><path d="M114 128 L150 139 L173 161 L169 188 L185 211 L167 236 L152 266 L122 273 L98 250 L74 232 L79 201 L66 177 L90 154 Z"/><ellipse cx="174" cy="267" rx="5" ry="9"/></g>
-              <g class="country-shape china-shape"><path d="M521 116 L552 102 L582 110 L606 101 L628 116 L650 120 L662 143 L651 165 L661 185 L646 204 L641 226 L618 239 L600 228 L576 238 L554 222 L532 214 L521 191 L502 176 L510 152 L498 137 Z"/></g>
-              <g class="country-shape hk-shape"><path d="M613 232 l8 -5 8 4 -2 7 -8 4 -7 -4z"/></g>
-              <g class="country-shape taiwan-shape"><path d="M665 197 C674 205 676 220 670 235 C664 244 659 238 660 225 C660 213 661 203 665 197Z"/></g>
-              <use href="#seaPortsShanghai" class="route-line route-sea"/>
-              <use href="#seaPortsHK" class="route-line route-sea route-sea-alt"/>
-              <use href="#fiberPorts" class="route-line route-fiber"/>
-              <g class="moving boat" aria-hidden="true"><circle r="15" class="vehicle-halo"/><path d="M-13 1H13l-4 8H-8zM-5-9h7v10h-7zM3-6h6v7H3z"/><animateMotion dur="11s" repeatCount="indefinite" rotate="auto"><mpath href="#seaPortsShanghai"/></animateMotion></g>
-              <g class="moving boat boat-secondary" aria-hidden="true"><circle r="13" class="vehicle-halo"/><path d="M-13 1H13l-4 8H-8zM-5-9h7v10h-7zM3-6h6v7H3z"/><animateMotion begin="2s" dur="13s" repeatCount="indefinite" rotate="auto"><mpath href="#seaPortsHK"/></animateMotion></g>
-              <g class="moving fiber-pulse"><circle r="6"/><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#fiberPorts"/></animateMotion></g>
-              <g class="infra airport"><circle cx="122" cy="178" r="5"/><text x="82" y="166">✈ Paris CDG</text></g>
-              <g class="infra port major"><circle cx="137" cy="240" r="6"/><text x="80" y="260">⚓ Marseille Port</text></g>
-              <g class="infra airport"><circle cx="592" cy="135" r="5"/><text x="534" y="112">✈ Beijing Airport</text></g>
-              <g class="infra port major"><circle cx="640" cy="180" r="6"/><text x="649" y="166">⚓ Shanghai Port</text></g>
-              <g class="infra port"><circle cx="603" cy="222" r="5"/><text x="518" y="261">⚓ Guangzhou Port</text></g>
-              <g class="infra port major"><circle cx="619" cy="235" r="6"/><text x="631" y="278">⚓ Hong Kong Port</text></g>
-              <g class="infra island-label"><text x="652" y="257">Taiwan</text></g>
-              <g class="map-label"><text x="70" y="320">MARSEILLE GATEWAY</text><text x="70" y="340" class="map-sub">Mediterranean → East / South China ports</text></g>
-              <g class="map-label map-label-cn"><text x="500" y="302">PORT NETWORK</text><text x="485" y="322" class="map-sub">Shanghai · Guangzhou · Hong Kong</text></g>
-            </svg>
-
-            <svg class="route-map" data-map-panel="silk" viewBox="0 0 720 390" role="img" aria-label="Carte ferroviaire Chongqing Allemagne frontière française">
-              <defs>
-                <path id="railSilk" d="M555 195 C470 150 375 122 300 133 S225 150 190 165"/>
-                <path id="airSilk" d="M122 178 C275 72 455 72 592 135"/>
-                <path id="fiberSilk" d="M122 178 C300 170 470 166 640 180"/>
-              </defs>
-              <g class="grid-lines" opacity=".16"><path d="M0 90H720M0 190H720M0 290H720"/><path d="M110 0V390M250 0V390M390 0V390M530 0V390M670 0V390"/></g>
-              <g class="country-shape france-shape"><path d="M114 128 L150 139 L173 161 L169 188 L185 211 L167 236 L152 266 L122 273 L98 250 L74 232 L79 201 L66 177 L90 154 Z"/><ellipse cx="174" cy="267" rx="5" ry="9"/></g>
-              <g class="country-shape china-shape"><path d="M521 116 L552 102 L582 110 L606 101 L628 116 L650 120 L662 143 L651 165 L661 185 L646 204 L641 226 L618 239 L600 228 L576 238 L554 222 L532 214 L521 191 L502 176 L510 152 L498 137 Z"/></g>
-              <g class="country-shape hk-shape"><path d="M613 232 l8 -5 8 4 -2 7 -8 4 -7 -4z"/></g>
-              <g class="country-shape taiwan-shape"><path d="M665 197 C674 205 676 220 670 235 C664 244 659 238 660 225 C660 213 661 203 665 197Z"/></g>
-              <use href="#railSilk" class="route-line route-rail route-rail-strong"/>
-              <use href="#airSilk" class="route-line route-air"/>
-              <use href="#fiberSilk" class="route-line route-fiber"/>
-              <g class="moving train" aria-hidden="true"><rect x="-14" y="-7" width="28" height="14" rx="3"/><rect x="-4" y="-12" width="11" height="6" rx="2"/><animateMotion dur="8s" repeatCount="indefinite" rotate="auto"><mpath href="#railSilk"/></animateMotion></g>
-              <g class="moving plane" aria-hidden="true"><circle r="15" class="vehicle-halo"/><path d="M-14 1L-3-2 4-14 8-13 5-2 15 1 15 4 5 4 1 13-3 13-3 4-14 4z"/><animateMotion dur="5.2s" repeatCount="indefinite" rotate="auto"><mpath href="#airSilk"/></animateMotion></g>
-              <g class="moving fiber-pulse"><circle r="6"/><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#fiberSilk"/></animateMotion></g>
-              <g class="infra railhub major"><circle cx="555" cy="195" r="6"/><text x="493" y="209">🚆 Chongqing</text></g>
-              <g class="infra railhub major"><circle cx="190" cy="165" r="6"/><text x="142" y="145">🚆 Germany / Duisburg</text></g>
-              <g class="infra airport"><circle cx="122" cy="178" r="5"/><text x="79" y="196">✈ Paris CDG</text></g>
-              <g class="infra port"><circle cx="137" cy="240" r="5"/><text x="82" y="260">⚓ Marseille</text></g>
-              <g class="infra airport"><circle cx="592" cy="135" r="5"/><text x="551" y="113">✈ Beijing</text></g>
-              <g class="infra port"><circle cx="640" cy="180" r="5"/><text x="649" y="167">⚓ Shanghai</text></g>
-              <g class="infra port"><circle cx="603" cy="222" r="5"/><text x="529" y="260">⚓ Guangzhou</text></g>
-              <g class="infra port"><circle cx="619" cy="235" r="5"/><text x="631" y="278">⚓ Hong Kong</text></g>
-              <g class="infra island-label"><text x="652" y="257">Taiwan</text></g>
-              <g class="silk-label"><text x="282" y="112">CHONGQING → GERMANY · RAIL SILK ROAD</text></g>
-              <g class="map-label"><text x="72" y="320">WESTERN EUROPE</text><text x="72" y="340" class="map-sub">Germany rail terminal close to France corridor</text></g>
-              <g class="map-label map-label-cn"><text x="500" y="304">CHONGQING</text><text x="502" y="324" class="map-sub">Rail + air + data connections</text></g>
+              <g class="map-label">
+                <text x="82" y="292">FRANCE</text>
+                <text x="82" y="309" class="map-sub">Paris · Marseille</text>
+              </g>
+              <g class="map-label map-label-cn">
+                <text x="524" y="291">CHINE</text>
+                <text x="516" y="308" class="map-sub">Beijing · Shanghai · Chongqing · GZ · HK</text>
+              </g>
             </svg>
           </div>
-
-          <div class="route-legend">
-            <span><i class="legend-air"></i> Aérien</span>
-            <span><i class="legend-fiber"></i> Data / ping</span>
-            <span><i class="legend-sea"></i> Maritime</span>
-            <span><i class="legend-rail"></i> Rail / Silk Road</span>
-          </div>
-          <div class="route-controls">
-            <div class="route-map-switch" role="tablist" aria-label="Choisir une mini carte">
-              <button type="button" class="active" data-map-choice="classic">01 Network</button>
-              <button type="button" data-map-choice="ports">02 Ports</button>
-              <button type="button" data-map-choice="silk">03 Silk Road</button>
-            </div>
-            <div class="route-hint">Auto-map · 7s</div>
-          </div>
-        </div>        </div>
+        </div>
       </div>
 
       <section class="home-services shell" aria-label="Compétences du service sélectionné">
