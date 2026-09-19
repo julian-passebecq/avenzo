@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#06111b" />
-  <title>Avenzo Studio — Europe × Asie</title>
+  <meta name="theme-color" content="#07111b" />
+  <meta name="description" content="Avenzo Studio accompagne les entreprises dans leur stratégie, leur présence digitale, leur développement commercial et leurs projets de croissance." />
+  <title>Avenzo Studio — Des ambitions sans frontières</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,135 +13,181 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Avenzo Studio">
       <img src="../../assets/avenzo-mark.svg" alt="" />
-      <span><strong>Avenzo</strong><em>STUDIO · 法 · 中</em><small>BUSINESS BEYOND BORDERS</small></span>
+      <span>
+        <strong>Avenzo</strong>
+        <em>Studio</em>
+        <small>STRATÉGIE · CROISSANCE · INTERNATIONAL</small>
+      </span>
     </a>
+
     <nav class="nav" aria-label="Navigation principale">
       <a class="active" href="#home">Accueil</a>
       <a href="#services">Services</a>
-      <a href="#solutions">Solutions</a>
+      <a href="#approach">Approche</a>
       <a href="#contact">Contact</a>
     </nav>
+
     <div class="header-actions">
-      <span class="langs">FR <i></i> EN <i></i> 中文</span>
-      <a class="cta" href="#contact">Parler de votre projet <span>→</span></a>
+      <span class="langs">FR <i></i> EN</span>
+      <a class="cta small" href="#contact">Parler de votre projet <span>→</span></a>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="home">
       <div class="hero-copy">
         <p class="eyebrow">ENSEMBLE, ON AVANCE</p>
-        <h1>L'accès à<br>l'international,<br><span>sans détour.</span></h1>
-        <p class="lead">Nous accompagnons les entreprises dans leur stratégie digitale, leur développement commercial et leurs projets de croissance, de la présence en ligne à l'acquisition, jusqu'aux salons professionnels internationaux.</p>
+        <h1>Des ambitions<br><span>sans frontières.</span></h1>
+        <p class="lead">Avenzo Studio accompagne les entreprises dans leur stratégie, leur présence digitale, leur développement commercial et leurs projets de croissance — en France et à l’international.</p>
         <div class="hero-actions">
-          <a class="cta large" href="#contact">Parler de votre projet <span>→</span></a>
-          <a class="secondary" href="#services"><span class="play">▶</span> Découvrir Avenzo</a>
+          <a class="cta" href="#contact">Parler de votre projet <span>→</span></a>
+          <a class="secondary" href="#services">Découvrir nos services <span>↓</span></a>
         </div>
       </div>
 
-      <div class="hero-map" aria-label="Carte Europe-Asie">
-        <div class="map-topline"><span>EUROPE</span><span>ASIE</span></div>
-        <svg viewBox="0 0 780 470" role="img" aria-label="Connexions Europe Chine">
+      <div class="global-visual" aria-label="Réseau international Avenzo">
+        <div class="visual-kicker">DES OPPORTUNITÉS SANS FRONTIÈRES</div>
+        <svg viewBox="0 0 760 520" role="img" aria-label="Globe avec connexions internationales">
           <defs>
-            <filter id="glow"><feGaussianBlur stdDeviation="6"/></filter>
-            <radialGradient id="earth" cx="50%" cy="35%" r="70%">
-              <stop offset="0%" stop-color="#0b2439"/>
-              <stop offset="70%" stop-color="#071725"/>
-              <stop offset="100%" stop-color="#04101a"/>
+            <radialGradient id="planet" cx="44%" cy="38%" r="68%">
+              <stop offset="0%" stop-color="#15334c"/>
+              <stop offset="62%" stop-color="#0a1b29"/>
+              <stop offset="100%" stop-color="#05111b"/>
             </radialGradient>
-            <path id="air" d="M170 190 C330 85 515 88 640 185"/>
-            <path id="rail" d="M180 220 C330 170 470 175 618 210"/>
-            <path id="sea" d="M168 245 C330 355 525 330 645 257"/>
-            <path id="data" d="M180 260 C350 250 525 265 646 282"/>
+            <filter id="nodeGlow" x="-200%" y="-200%" width="400%" height="400%">
+              <feGaussianBlur stdDeviation="7"/>
+            </filter>
+            <path id="arc-na" d="M360 218 C265 128 165 130 105 214"/>
+            <path id="arc-me" d="M360 218 C410 192 470 208 506 270"/>
+            <path id="arc-asia" d="M360 218 C480 125 598 142 650 220"/>
+            <path id="arc-apac" d="M360 218 C505 250 590 330 622 382"/>
+            <path id="arc-africa" d="M360 218 C355 280 344 332 330 375"/>
           </defs>
-          <ellipse cx="405" cy="260" rx="355" ry="225" fill="url(#earth)" stroke="#18324a" />
-          <g opacity=".38" fill="none" stroke="#35516a" stroke-width="1.1">
-            <path d="M50 280 C145 210 210 180 290 160 C360 145 430 125 520 135 C610 145 690 182 750 230"/>
-            <path d="M78 305 C180 250 260 235 350 225 C430 215 520 205 690 245"/>
-            <path d="M115 330 C245 315 355 315 485 325 C560 332 635 338 710 320"/>
-          </g>
-          <g class="country france">
-            <path d="M143 155l31-12 30 13 20 28-7 28 15 22-15 30-28 8-27-12-20-25-11-28 8-28z"/>
-          </g>
-          <g class="country china">
-            <path d="M558 155l29-20 35 8 29-13 39 14 23 27-10 30 15 24-20 28-34 15-31-7-31 14-32-16-27-25-11-31 10-28z"/>
-          </g>
-          <g class="taiwan"><path d="M710 235c8 9 8 24 2 37-6 10-11 4-10-10 0-12 2-22 8-27z"/></g>
-          <g class="hk"><circle cx="675" cy="264" r="5"/></g>
 
-          <use href="#air" class="flow flow-air"/>
-          <use href="#rail" class="flow flow-rail"/>
-          <use href="#sea" class="flow flow-sea"/>
-          <use href="#data" class="flow flow-data"/>
+          <ellipse cx="392" cy="268" rx="330" ry="228" fill="url(#planet)" stroke="#173249" stroke-width="1.2"/>
+          <ellipse cx="392" cy="268" rx="314" ry="211" fill="none" stroke="#27445a" stroke-width=".8" opacity=".55"/>
 
-          <g class="pin"><circle cx="178" cy="191" r="6"/><text x="145" y="176">France</text></g>
-          <g class="pin"><circle cx="640" cy="185" r="6"/><text x="650" y="181">Chine</text></g>
-          <g class="pin small"><circle cx="675" cy="264" r="4"/><text x="684" y="269">Hong Kong</text></g>
-          <g class="pin small"><circle cx="710" cy="252" r="4"/><text x="719" y="256">Taïwan</text></g>
+          <g class="continent-lines" opacity=".34" fill="none" stroke="#38556b" stroke-width="1">
+            <path d="M96 215c57-40 107-70 168-86 62-15 123-14 188 0 76 17 149 49 221 96"/>
+            <path d="M80 270c90-35 171-49 256-48 98 0 192 19 304 65"/>
+            <path d="M106 332c109-22 223-15 330 7 76 16 139 31 184 42"/>
+            <path d="M392 56c-38 67-56 139-53 215 3 89 29 155 63 215"/>
+            <path d="M505 76c-69 53-110 119-124 190-16 80-1 153 35 219"/>
+          </g>
 
-          <g class="route-label air-label"><text x="520" y="112">AVIATION</text><text x="520" y="128">Connexions directes</text></g>
-          <g class="route-label rail-label"><text x="410" y="188">RAIL</text><text x="410" y="204">Route de la soie</text></g>
-          <g class="route-label sea-label"><text x="372" y="334">MARITIME</text><text x="372" y="350">Flux commerciaux</text></g>
-          <g class="route-label data-label"><text x="545" y="319">DONNÉES</text><text x="545" y="335">Marchés plus proches</text></g>
+          <g class="world-shape" opacity=".62">
+            <path d="M122 174l35-34 61-18 50 21 17 45-22 40-43 9-33 36-49-15-26-41z"/>
+            <path d="M282 124l42-23 42 10 38 42-9 47-40 20-19 60-39-24-24-60z"/>
+            <path d="M401 132l62-22 83 18 42 40-6 47-55 31-31 55-58-7-34-46 9-53z"/>
+            <path d="M516 295l65-14 51 21 16 40-40 28-47-8-25-24z"/>
+            <path d="M278 284l49-8 35 38-11 71-38 46-31-39-18-65z"/>
+          </g>
+
+          <use href="#arc-na" class="network-arc"/>
+          <use href="#arc-me" class="network-arc"/>
+          <use href="#arc-asia" class="network-arc"/>
+          <use href="#arc-apac" class="network-arc"/>
+          <use href="#arc-africa" class="network-arc"/>
+
+          <g class="node node-europe"><circle cx="360" cy="218" r="11" class="node-glow"/><circle cx="360" cy="218" r="5"/><text x="323" y="197">Europe</text><small x="323" y="210">Paris</small></g>
+          <g class="node"><circle cx="105" cy="214" r="4.5"/><text x="72" y="199">Amériques</text></g>
+          <g class="node"><circle cx="506" cy="270" r="4.5"/><text x="516" y="274">Moyen-Orient</text></g>
+          <g class="node"><circle cx="650" cy="220" r="4.5"/><text x="660" y="224">Asie</text></g>
+          <g class="node"><circle cx="622" cy="382" r="4.5"/><text x="632" y="386">Asie-Pacifique</text></g>
+          <g class="node"><circle cx="330" cy="375" r="4.5"/><text x="340" y="379">Afrique</text></g>
         </svg>
-        <div class="map-caption">Des opportunités<br>sans frontières</div>
-      </div>
-
-      <div class="city-strip" aria-hidden="true">
-        <div class="city city-paris"></div>
-        <div class="city city-asia"></div>
+        <p class="visual-note">Une vision globale.<br>Des solutions concrètes.</p>
       </div>
     </section>
 
-    <section class="bridge-strip" aria-label="Positionnement">
-      <div><span>FRANCE ↔ CHINE</span><strong>Stratégie & marché</strong></div>
-      <div><span>MARKETING</span><strong>Visibilité & acquisition</strong></div>
-      <div><span>BUSINESS</span><strong>Prospection & croissance</strong></div>
-      <div><span>TRADE SHOWS</span><strong>Réseaux & opportunités</strong></div>
-    </section>
-
-    <section class="services" id="services">
+    <section class="services" id="services" aria-labelledby="services-title">
       <div class="section-head">
-        <div><p class="eyebrow">NOS EXPERTISES</p><h2>Un accompagnement complet pour votre croissance</h2></div>
-        <p>Stratégie, exécution et réseau sur le terrain : des solutions concrètes pour transformer vos ambitions en opportunités internationales.</p>
+        <div>
+          <p class="eyebrow">NOS EXPERTISES</p>
+          <h2 id="services-title">Quatre leviers pour faire avancer votre projet.</h2>
+        </div>
+        <p>Choisissez un service pour afficher immédiatement l’accompagnement correspondant.</p>
       </div>
-      <div class="service-grid">
-        <article class="service active"><span class="icon">◎</span><div><h3>Marketing & stratégie</h3><p>Positionnement, contenu et acquisition.</p></div></article>
-        <article class="service"><span class="icon">↗</span><div><h3>Business development</h3><p>Prospection, CRM et développement.</p></div></article>
-        <article class="service"><span class="icon">⌂</span><div><h3>Implantation & partenariat</h3><p>France, Chine et international.</p></div></article>
-        <article class="service"><span class="icon">展</span><div><h3>Trade shows & Chine</h3><p>Stands, salons et réseaux.</p></div></article>
+
+      <div class="service-grid" role="tablist" aria-label="Services Avenzo">
+        <button class="service-card active" type="button" data-service="strategy" role="tab" aria-selected="true">
+          <span class="service-icon">◎</span>
+          <span><strong>Stratégie & positionnement</strong><small>Comprendre, prioriser, décider.</small></span>
+          <em>→</em>
+        </button>
+        <button class="service-card" type="button" data-service="digital" role="tab" aria-selected="false">
+          <span class="service-icon">⌘</span>
+          <span><strong>Présence digitale</strong><small>Créer, rendre visible, convertir.</small></span>
+          <em>→</em>
+        </button>
+        <button class="service-card" type="button" data-service="growth" role="tab" aria-selected="false">
+          <span class="service-icon">↗</span>
+          <span><strong>Croissance commerciale</strong><small>Prospecter, structurer, développer.</small></span>
+          <em>→</em>
+        </button>
+        <button class="service-card" type="button" data-service="events" role="tab" aria-selected="false">
+          <span class="service-icon">展</span>
+          <span><strong>Salons & partenariats</strong><small>Créer des connexions utiles.</small></span>
+          <em>→</em>
+        </button>
       </div>
     </section>
 
-    <section class="sectors" id="solutions">
-      <div class="section-head simple">
-        <div><p class="eyebrow">NOS SECTEURS</p><h2>Des marchés stratégiques, des opportunités concrètes</h2></div>
+    <section class="service-detail" id="service-detail" aria-live="polite">
+      <div class="detail-heading">
+        <p class="eyebrow" id="detail-kicker">STRATÉGIE & POSITIONNEMENT</p>
+        <h2 id="detail-title">Donner une direction claire avant d’accélérer.</h2>
       </div>
-      <div class="sector-grid">
-        <article style="--image:url('../../assets/strategy-globe.webp')"><span>Technologies & Digital</span><small>Innovation sans frontières</small></article>
-        <article style="--image:url('../../assets/digital-matrix.webp')"><span>Digital & E-commerce</span><small>Visibilité, contenu, acquisition</small></article>
-        <article style="--image:url('../../assets/growth-city.webp')"><span>B2B & Infrastructures</span><small>Développement commercial</small></article>
-        <article style="--image:url('../../assets/trade-city.webp')"><span>International & Trade</span><small>Réseaux et opportunités</small></article>
+      <div class="detail-body">
+        <p id="detail-summary">Nous clarifions votre marché, votre positionnement et vos priorités pour construire une feuille de route cohérente et directement exploitable.</p>
+        <ul id="detail-list">
+          <li>Étude de marché & veille concurrentielle</li>
+          <li>Positionnement & proposition de valeur</li>
+          <li>Go-to-market & priorités d’action</li>
+          <li>Feuille de route opérationnelle</li>
+        </ul>
+      </div>
+      <a class="detail-cta" href="#contact">Discuter de ce service <span>→</span></a>
+    </section>
+
+    <section class="approach" id="approach">
+      <div class="approach-visual">
+        <img src="../../assets/growth-city.webp" alt="Ville internationale de nuit" />
+        <div class="image-caption"><span>GLOBAL BY DESIGN</span><strong>Des marchés différents.<br>Une même exigence.</strong></div>
+      </div>
+      <div class="approach-copy">
+        <p class="eyebrow">NOTRE APPROCHE</p>
+        <h2>Plus qu’un marché,<br><span>un horizon commun.</span></h2>
+        <p>Nous combinons stratégie, exécution et développement pour aider les entreprises à avancer avec une vision claire, quelle que soit leur taille ou leur géographie.</p>
+        <div class="approach-points">
+          <div><span>01</span><strong>Comprendre</strong><small>Le marché, l’objectif et les contraintes.</small></div>
+          <div><span>02</span><strong>Construire</strong><small>La stratégie, les outils et les messages.</small></div>
+          <div><span>03</span><strong>Déployer</strong><small>Les actions, les partenariats et la croissance.</small></div>
+        </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div>
-        <p class="eyebrow">FRANCE × CHINE</p>
-        <h2>Transformons votre ambition en projet concret.</h2>
+        <p class="eyebrow">PARLONS DE VOTRE PROJET</p>
+        <h2>Un besoin précis, une ambition globale ou simplement une idée à cadrer ?</h2>
+        <p>Expliquez-nous votre contexte. Nous revenons vers vous avec une première lecture claire du projet.</p>
       </div>
-      <a class="cta large" href="mailto:contact@avenzostudio.com">Écrire à Avenzo <span>→</span></a>
+      <a class="cta" href="mailto:contact@avenzostudio.com">Écrire à Avenzo <span>→</span></a>
     </section>
   </main>
 
   <footer>
     <div class="footer-brand"><img src="../../assets/avenzo-mark.svg" alt=""><span>Avenzo Studio</span></div>
-    <span>France × Chine · Marketing · Digital · Business Development · Trade Shows</span>
+    <span>Stratégie · Digital · Croissance · International</span>
     <span>© <span id="year"></span> Avenzo Studio</span>
   </footer>
+
   <script src="app.js"></script>
 </body>
 </html>
