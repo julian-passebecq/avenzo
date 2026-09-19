@@ -1663,3 +1663,25 @@ textarea:focus-visible{
     font-size:24px;
   }
 }
+
+
+/* World-time bandeau flags use CSS artwork for consistent rendering. */
+.world-clock .clock-flag{
+  width:13px;
+  height:9px;
+  flex:0 0 13px;
+  border-radius:1px;
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--line2) 75%,transparent);
+}
+.flag-hk{
+  background:#de2910;
+  position:relative;
+}
+.flag-hk:before{
+  content:"✦";
+  position:absolute;
+  inset:-2px auto auto 2px;
+  color:#fff;
+  font-size:7px;
+  line-height:1;
+}
