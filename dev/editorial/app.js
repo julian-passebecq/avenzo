@@ -39,12 +39,12 @@ const services = {
     index: '04',
     kicker: 'Trade Shows',
     name: 'Trade Shows & International Development',
-    title: 'Préparation et accompagnement de projets liés aux salons professionnels, notamment à l’international et en Chine.',
+    title: 'Préparation et accompagnement de projets liés aux salons professionnels, aux partenariats et au développement international.',
     detailTitle: 'Trade Shows & International Development',
     summary: 'Un accompagnement de la stratégie salon jusqu’au sourcing, à la coordination du stand et au suivi commercial.',
-    badge: 'CHINA',
-    capabilities: ['Trade show strategy', 'Event concept', 'Exhibitor strategy', 'Booth project coordination', 'Supplier coordination', 'International sourcing', 'China market support', 'Pre-event communication', 'Lead generation', 'On-site commercial support', 'Post-event lead follow-up'],
-    scope: ['Trade show & exhibitor strategy', 'Booth project & supplier coordination', 'International sourcing & China market support', 'Pre-event communication, on-site support & follow-up'],
+    badge: 'INTERNATIONAL',
+    capabilities: ['Trade show strategy', 'Event concept', 'Exhibitor strategy', 'Booth project coordination', 'Supplier coordination', 'International sourcing', 'International market support', 'Pre-event communication', 'Lead generation', 'On-site commercial support', 'Post-event lead follow-up'],
+    scope: ['Trade show & exhibitor strategy', 'Booth project & supplier coordination', 'International sourcing & International market support', 'Pre-event communication, on-site support & follow-up'],
     deliverables: ['Trade show plan', 'Booth & supplier brief', 'Lead capture plan', 'Post-event follow-up']
   }
 };
@@ -86,11 +86,11 @@ const serviceLocales = {
     trade: {
       kicker: 'Trade Shows',
       name: 'Trade Shows & International Development',
-      title: 'Preparation and support for trade-show projects, especially internationally and in China.',
+      title: 'Preparation and support for trade-show, partnership and international development projects.',
       detailTitle: 'Trade Shows & International Development',
       summary: 'Support from trade-show strategy through sourcing, booth coordination and commercial follow-up.',
-      capabilities: ['Trade show strategy', 'Event concept', 'Exhibitor strategy', 'Booth project coordination', 'Supplier coordination', 'International sourcing', 'China market support', 'Pre-event communication', 'Lead generation', 'On-site commercial support', 'Post-event lead follow-up'],
-      scope: ['Trade show & exhibitor strategy', 'Booth project & supplier coordination', 'International sourcing & China market support', 'Pre-event communication, on-site support & follow-up'],
+      capabilities: ['Trade show strategy', 'Event concept', 'Exhibitor strategy', 'Booth project coordination', 'Supplier coordination', 'International sourcing', 'International market support', 'Pre-event communication', 'Lead generation', 'On-site commercial support', 'Post-event lead follow-up'],
+      scope: ['Trade show & exhibitor strategy', 'Booth project & supplier coordination', 'International sourcing & International market support', 'Pre-event communication, on-site support & follow-up'],
       deliverables: ['Trade show plan', 'Booth & supplier brief', 'Lead capture plan', 'Post-event follow-up']
     }
   },
@@ -128,11 +128,11 @@ const serviceLocales = {
     trade: {
       kicker: '展会',
       name: '展会与国际发展',
-      title: '专业展会项目的准备与落地支持，尤其面向国际市场和中国。',
+      title: '专业展会项目的准备与落地支持，面向国际市场与合作伙伴网络。',
       detailTitle: '展会与国际发展',
       summary: '从展会战略、供应商与展台协调，到现场支持和后续商业跟进。',
-      capabilities: ['展会战略', '活动概念', '参展战略', '展台项目协调', '供应商协调', '国际采购', '中国市场支持', '展前传播', '线索生成', '现场商业支持', '展后线索跟进'],
-      scope: ['展会与参展战略', '展台项目与供应商协调', '国际采购与中国市场支持', '展前传播、现场支持与后续跟进'],
+      capabilities: ['展会战略', '活动概念', '参展战略', '展台项目协调', '供应商协调', '国际采购', '国际市场支持', '展前传播', '线索生成', '现场商业支持', '展后线索跟进'],
+      scope: ['展会与参展战略', '展台项目与供应商协调', '国际采购与国际市场支持', '展前传播、现场支持与后续跟进'],
       deliverables: ['展会计划', '展台与供应商简报', '线索采集计划', '展后跟进']
     }
   }
@@ -141,7 +141,7 @@ const serviceLocales = {
 const staticTranslations = {
   en: {
     'Accueil':'Home', 'Services':'Services', 'Solutions':'Solutions', 'Contact':'Contact',
-    'Parler d’un projet':'Discuss a project', 'France × Chine':'France × China',
+    'Parler d’un projet':'Discuss a project', 'Global growth':'France × China',
     'L’accès à l’international, sans détour':'International access, without detours',
     'Votre passerelle vers le marché chinois.':'Your bridge to the Chinese market.',
     'Marketing, e-commerce, développement commercial et salons professionnels — un seul studio pour avancer de l’idée à l’exécution.':'Marketing, e-commerce, business development and trade shows — one studio from idea to execution.',
@@ -182,13 +182,13 @@ const staticTranslations = {
     'Parlons de votre projet.':'Let’s discuss your project.',
     'De quoi vous avez besoin ?':'What do you need?', 'Nom et prénom':'Full name', 'Entreprise':'Company', 'Votre projet':'Your project',
     'Envoyer le message':'Send message', 'Copier l’adresse':'Copy address', 'Zone':'Region', 'Langues':'Languages', 'Réponse':'Response',
-    'Sous 48h ouvrées':'Within 48 business hours', 'France · Europe · Chine':'France · Europe · China',
-    'Ensemble, on avance · France × Chine':'Together, we move forward · France × China',
-    'France ↔ Chine':'France ↔ China'
+    'Sous 48h ouvrées':'Within 48 business hours', 'France · Europe · International':'France · Europe · China',
+    'Ensemble, on avance · Global growth':'Together, we move forward · France × China',
+    'Global studio':'France ↔ China'
   },
   zh: {
     'Accueil':'首页', 'Services':'服务', 'Solutions':'解决方案', 'Contact':'联系',
-    'Parler d’un projet':'沟通项目', 'France × Chine':'法国 × 中国',
+    'Parler d’un projet':'沟通项目', 'Global growth':'法国 × 中国',
     'L’accès à l’international, sans détour':'连接国际市场，更直接',
     'Votre passerelle vers le marché chinois.':'连接中国市场的桥梁。',
     'Marketing, e-commerce, développement commercial et salons professionnels — un seul studio pour avancer de l’idée à l’exécution.':'营销、电商、商务拓展与专业展会——从想法到执行，由一个团队协同推进。',
@@ -229,9 +229,9 @@ const staticTranslations = {
     'Parlons de votre projet.':'聊聊您的项目。',
     'De quoi vous avez besoin ?':'您需要什么？', 'Nom et prénom':'姓名', 'Entreprise':'公司', 'Votre projet':'您的项目',
     'Envoyer le message':'发送信息', 'Copier l’adresse':'复制邮箱', 'Zone':'区域', 'Langues':'语言', 'Réponse':'回复',
-    'Sous 48h ouvrées':'48 个工作小时内', 'France · Europe · Chine':'法国 · 欧洲 · 中国',
-    'Ensemble, on avance · France × Chine':'携手向前 · 法国 × 中国',
-    'France ↔ Chine':'法国 ↔ 中国'
+    'Sous 48h ouvrées':'48 个工作小时内', 'France · Europe · International':'法国 · 欧洲 · 中国',
+    'Ensemble, on avance · Global growth':'携手向前 · 法国 × 中国',
+    'Global studio':'法国 ↔ 中国'
   }
 };
 
@@ -247,12 +247,12 @@ Object.assign(staticTranslations.en, {
   'site · SEO · campagnes':'website · SEO · campaigns',
   'Business development':'Business development',
   'prospection · CRM · pipeline':'prospecting · CRM · pipeline',
-  'Trade shows & Chine':'Trade shows & China',
+  'Trade shows & partnerships':'Trade shows & China',
   'stands · partenaires · salons':'booths · partners · trade shows',
   'Quatre expertises.':'Four areas.',
   'Un même pilotage.':'One coordination.',
   'France · Europe':'France · Europe',
-  'Chine · International':'China · International',
+  'International':'China · International',
   'Comprendre l’entreprise, ses clients, sa marque et ses objectifs avant de choisir les canaux.':'Understand the company, its clients, brand and goals before choosing channels.',
   'Coordonner partenaires, sourcing, salons professionnels et développement de marché.':'Coordinate partners, sourcing, trade shows and market development.',
   'Marketing thinking':'Marketing thinking',
@@ -263,7 +263,7 @@ Object.assign(staticTranslations.en, {
   'Web, e-commerce, SEO, advertising, CRM et contenu.':'Web, e-commerce, SEO, advertising, CRM and content.',
   'Nous accompagnons les entreprises dans leur développement digital et commercial. De la stratégie marketing à la création digitale, de l’acquisition au développement commercial, jusqu’aux projets de salons professionnels internationaux, nous réunissons les expertises nécessaires pour transformer vos ambitions en projets concrets. Marché visé, échéance, objectif — quelques lignes suffisent.':'We support companies in digital and commercial development. From marketing strategy and digital creation to acquisition, business development and international trade shows, we bring together the expertise needed to turn ambitions into concrete projects. Target market, timing and objective — a few lines are enough.',
   'EUROPE':'EUROPE',
-  'CHINE':'CHINA',
+  'CHINE':'INTERNATIONAL',
   'France · UE':'France · EU',
   'Data / ping':'Data / ping'
 });
@@ -279,12 +279,12 @@ Object.assign(staticTranslations.zh, {
   'site · SEO · campagnes':'网站 · SEO · 广告',
   'Business development':'商务拓展',
   'prospection · CRM · pipeline':'客户开发 · CRM · 销售管道',
-  'Trade shows & Chine':'展会与中国市场',
+  'Trade shows & partnerships':'展会与中国市场',
   'stands · partenaires · salons':'展台 · 合作伙伴 · 展会',
   'Quatre expertises.':'四大专业方向。',
   'Un même pilotage.':'统一协同。',
   'France · Europe':'法国 · 欧洲',
-  'Chine · International':'中国 · 国际市场',
+  'International':'中国 · 国际市场',
   'Comprendre l’entreprise, ses clients, sa marque et ses objectifs avant de choisir les canaux.':'先理解企业、客户、品牌与目标，再选择合适的渠道。',
   'Coordonner partenaires, sourcing, salons professionnels et développement de marché.':'协调合作伙伴、采购、专业展会与市场拓展。',
   'Marketing thinking':'营销思维',
