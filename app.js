@@ -377,7 +377,7 @@ function setLanguage(lang) {
 const serviceOrder = ['strategy', 'digital', 'growth', 'trade'];
 const pages = ['home', 'services', 'solutions', 'contact'];
 const themes = ['noir', 'slate', 'atelier', 'jade', 'panda'];
-const mapOrder = ['classic'];
+const mapOrder = ['classic', 'ports', 'silk'];
 let activeService = 'strategy';
 let activeTheme = 'noir';
 let activeMap = 'classic';
@@ -572,7 +572,7 @@ function stopMapRotation() {
 
 function startMapRotation() {
   stopMapRotation();
-  if (motionDisabled || mapOrder.length < 2) return;
+  if (motionDisabled) return;
   mapTimer = window.setInterval(() => nextMap(1), 7000);
 }
 
@@ -697,33 +697,6 @@ if (motionToggle) {
 for (const btn of document.querySelectorAll('[data-lang]')) {
   btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
 }
-
-const themeLabToggle = document.getElementById('theme-lab-toggle');
-const themeDevPanelElement = document.getElementById('theme-dev-panel');
-
-function setThemeLabOpen(open) {
-  if (!themeDevPanelElement || !themeLabToggle) return;
-  const isOpen = Boolean(open);
-  themeDevPanelElement.hidden = !isOpen;
-  themeLabToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  themeLabToggle.textContent = isOpen ? '×' : 'Lab';
-  document.documentElement.classList.toggle('theme-lab-open', isOpen);
-}
-
-if (themeLabToggle) {
-  themeLabToggle.addEventListener('click', () => {
-    const isOpen = themeLabToggle.getAttribute('aria-expanded') === 'true';
-    setThemeLabOpen(!isOpen);
-  });
-}
-
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && themeLabToggle?.getAttribute('aria-expanded') === 'true') {
-    setThemeLabOpen(false);
-  }
-});
-
-setThemeLabOpen(false);
 
 const themeDevPanel = document.querySelector('.theme-dev-panel');
 if (themeDevPanel) {
