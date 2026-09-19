@@ -1766,3 +1766,33 @@ textarea:focus-visible{
     max-height:235px!important;
   }
 }
+
+
+/* Global editorial network visual */
+.global-route-card .route-map{
+  color:var(--line2);
+}
+.global-route-card .global-land path{
+  fill:color-mix(in srgb,var(--text) 10%,transparent);
+  stroke:color-mix(in srgb,var(--text) 18%,transparent);
+  stroke-width:1;
+}
+.global-route-card .global-node circle{
+  fill:var(--gold);
+}
+.global-route-card .global-node.main circle:first-child{
+  fill:var(--text);
+}
+.global-route-card .global-node text{
+  fill:var(--text);
+  font:600 10px var(--font-ui);
+}
+.global-route-card .global-node small{
+  fill:var(--muted);
+  font:400 8px var(--font-ui);
+}
+.global-route-card .pin-ring{
+  fill:none!important;
+  stroke:var(--gold);
+  opacity:.55;
+}
