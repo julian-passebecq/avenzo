@@ -1,39 +1,47 @@
 # Avenzo Studio
 
-Static multi-page/interactive website for **Avenzo Studio**.
+Static website for **Avenzo Studio**.
 
-## Public structure
+## Current public direction
 
-- **Production:** `/`
-- **DEV selector:** `/dev`
-- **DEV 01 — Editorial / Interactive:** `/dev/editorial`
-- **DEV 02 — Global / Cinematic:** `/dev/cinematic`
+The production site follows Adrien's latest validated structure:
 
-The current brand direction is broader than France ↔ China: strategy, digital, business development, trade shows/partnerships, and international growth. China remains a specialist capability rather than the entire brand proposition.
+- **4 real pages:** Accueil, Services, Solutions, Contact
+- **No public Portfolio** until client references are available
+- **Global agency positioning:** strategy, digital, business development, trade shows and international development
+- China remains a specialist capability, not the whole brand identity
+- **Cormorant Garamond** for titles
+- **Inter** for body text and navigation
+- More whitespace, fewer rectangular UI cards
+- Supplied imagery is used as **banner imagery**
+- Core interaction preserved from the preferred Tuesday version:
+  - click a service on the home page
+  - open the Services page directly at the corresponding detailed section
 
-## Core pages/content
+## Production routes
 
-- Accueil
-- Services
-- Solutions
-- Contact
+- `/` — Accueil
+- `/services` — Services
+- `/solutions` — Solutions
+- `/contact` — Contact
 
-Portfolio remains hidden until there are client references to show.
+## Development concepts
 
-## Design rules currently agreed
+- `/dev` — concept selector
+- `/dev/editorial` — interactive/editorial experiment
+- `/dev/cinematic` — dark/global cinematic experiment
 
-- Titles: **Cormorant Garamond**, semibold/bold
-- Text/navigation: **Inter**, regular
-- Prefer whitespace and editorial bands over excessive rectangular cards
-- Preserve the useful interaction: click a service → go to / update the relevant detailed section
+These DEV concepts are retained for comparison and should not be promoted into production without explicit approval.
 
 ## Hosting
 
-**Primary migration target: Vercel.**
+Primary host: **Vercel**
 
-The repository now contains `vercel.json` for clean routes, security headers, DEV route rewrites, and asset caching. Netlify configuration is temporarily retained only as a migration fallback.
+Current Vercel production URL:
 
-See `VERCEL_MIGRATION.md` for deployment details.
+`https://avenzo-kappa.vercel.app/`
+
+Netlify configuration remains in the repository only as a temporary fallback.
 
 ## Local preview
 
@@ -42,5 +50,3 @@ python3 -m http.server 4173
 ```
 
 Then open `http://localhost:4173`.
-
-See `CONTENT_AUDIT.md` for the source-content coverage audit.
