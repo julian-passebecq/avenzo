@@ -54,7 +54,7 @@ if (contactForm) {
       project
     ].join('\n'));
 
-    window.location.href = `mailto:contact@avenzostudio.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contact@avenzostudios.com?subject=${subject}&body=${body}`;
   });
 }
 
