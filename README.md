@@ -50,3 +50,13 @@ python3 -m http.server 4173
 ```
 
 Then open `http://localhost:4173`.
+
+
+## Latest homepage direction
+
+- Main hero title: **Avenzo Studio**
+- Secondary tagline: **L’accès à l’international, sans détour.**
+- Small France ↔ China bridge visual under the title
+- Four expertise choices use imagery instead of abstract icons
+- First expertise visual features Shanghai / Shanghai Tower
+- Homepage service images deep-link to the matching Services section
