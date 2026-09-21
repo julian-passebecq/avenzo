@@ -1,31 +1,39 @@
 # Avenzo Studio
 
-Responsive static website for **Avenzo Studio**, focused on France / Europe ↔ China marketing, digital, business development and international trade-show services.
+Static multi-page/interactive website for **Avenzo Studio**.
 
-## Pages
+## Public structure
+
+- **Production:** `/`
+- **DEV selector:** `/dev`
+- **DEV 01 — Editorial / Interactive:** `/dev/editorial`
+- **DEV 02 — Global / Cinematic:** `/dev/cinematic`
+
+The current brand direction is broader than France ↔ China: strategy, digital, business development, trade shows/partnerships, and international growth. China remains a specialist capability rather than the entire brand proposition.
+
+## Core pages/content
 
 - Accueil
 - Services
 - Solutions
 - Contact
 
-## V3 features
+Portfolio remains hidden until there are client references to show.
 
-- Compact France ↔ China hero
-- Animated air, maritime and fiber/data routes
-- Four interactive service categories
-- Auto-rotating competency marquee
-- Full service inventories from the supplied Avenzo source documents
-- Solutions page with Digital Presence, Growth, Development and Custom packages
-- Five-step method and five positioning principles
-- Target-sector section
-- Three themes: Noir, Slate and Atelier
-- Four supplied visual assets integrated into the interface
-- Complete contact need selector
-- Responsive layout and reduced-motion support
-- Netlify-ready static deployment
+## Design rules currently agreed
 
-See `CONTENT_AUDIT.md` for the source-content coverage audit.
+- Titles: **Cormorant Garamond**, semibold/bold
+- Text/navigation: **Inter**, regular
+- Prefer whitespace and editorial bands over excessive rectangular cards
+- Preserve the useful interaction: click a service → go to / update the relevant detailed section
+
+## Hosting
+
+**Primary migration target: Vercel.**
+
+The repository now contains `vercel.json` for clean routes, security headers, DEV route rewrites, and asset caching. Netlify configuration is temporarily retained only as a migration fallback.
+
+See `VERCEL_MIGRATION.md` for deployment details.
 
 ## Local preview
 
@@ -34,3 +42,5 @@ python3 -m http.server 4173
 ```
 
 Then open `http://localhost:4173`.
+
+See `CONTENT_AUDIT.md` for the source-content coverage audit.
