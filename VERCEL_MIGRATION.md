@@ -1,55 +1,49 @@
-# Avenzo Studio — Vercel migration
+# Avenzo Studio — Vercel
 
-## Goal
+## Production
 
-Vercel becomes the primary host while Netlify remains an emergency fallback until the Vercel deployment is validated.
+- Project: `avenzo`
+- Production URL: `https://avenzo-kappa.vercel.app/`
+- Production branch: `main`
+- Framework: static HTML / CSS / JavaScript
+- Build command: none
+- Environment variables: none required
 
-## Repository layout
-
-- `/` — stable public site
-- `/dev/` — development concept selector
-- `/dev/editorial/` — interactive/editorial concept
-- `/dev/cinematic/` — spacious global/cinematic concept
-- `/assets/` — shared static assets
-
-## Vercel settings
-
-This repository is a plain static HTML/CSS/JavaScript site. No framework, install command, or build command is required.
-
-Recommended project settings:
-
-- Framework Preset: **Other**
-- Root Directory: **repository root**
-- Build Command: **None**
-- Output Directory: **repository root / default static output**
-- Production Branch: **main**
-
-`vercel.json` provides clean URLs, explicit DEV rewrites, security headers, and long-lived caching for `/assets/*`.
-
-## Expected routes
+## Public routes
 
 - `/`
+- `/services`
+- `/solutions`
+- `/contact`
+
+## Comparison routes
+
 - `/dev`
 - `/dev/editorial`
 - `/dev/cinematic`
 
-The trailing-slash variants should redirect to the clean URL because `trailingSlash` is disabled.
+`vercel.json` owns clean routing, security headers and long-lived asset caching.
 
-## Deployment workflow
+## Git workflow
 
-1. Import `julian-passebecq/avenzo` into Vercel.
-2. Keep the project root at the repository root.
-3. Deploy `main` to production.
-4. Verify all four routes above.
-5. Verify CSS, JavaScript, and images load on the DEV routes.
-6. Only after verification, attach the final custom domain (planned: `avenzostudios.com`).
+Vercel Git integration deploys pushes from `main` automatically.
 
-## Rollback / fallback
+The source of truth is:
 
-- Git history remains the source of truth.
-- Netlify configuration is intentionally retained during migration as a fallback.
-- Do not remove `netlify.toml` until the Vercel production deployment has been accepted.
+`julian-passebecq/avenzo`
 
-## No secrets required
+Do not edit production directly in the Vercel dashboard if the same change can be committed to GitHub.
 
-The current site is static and does not require environment variables or serverless functions.
+## Rollback
+
+Use Git history as the canonical rollback mechanism. Netlify configuration remains temporarily as an emergency fallback but is no longer the primary deployment target.
+
+## Current product rules
+
+- Keep the public site simple and spacious.
+- Use four public pages.
+- Keep Portfolio hidden.
+- Keep Cormorant Garamond + Inter.
+- Use supplied images as banners rather than filling the page with image cards.
+- Preserve direct service navigation: homepage service → matching detailed Services section.
+- Keep the agency globally positioned; China is one international capability.
