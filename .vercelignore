@@ -1,0 +1,7 @@
+# Legacy standalone export; not used by the live site.
+avenzo-studio.html
+
+# Local/editor artifacts
+*.zip
+*.xlsx
+.DS_Store
