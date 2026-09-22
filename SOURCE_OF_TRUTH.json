@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-22",
+  "status": "canonical_entrypoint",
+  "directory": "source_of_truth/",
+  "canonical_manifest": "source_of_truth/manifest.json",
+  "rule": "When business intent, content, visual preference, implementation history, or old prototypes conflict, consult the canonical manifest and precedence rules before changing the live site.",
+  "files": [
+    "source_of_truth/manifest.json",
+    "source_of_truth/business_profile.json",
+    "source_of_truth/content.json",
+    "source_of_truth/design_preferences.json",
+    "source_of_truth/business_messages.json",
+    "source_of_truth/assets.json",
+    "source_of_truth/implementation_audit.json",
+    "source_of_truth/reference_versions.json"
+  ]
+}

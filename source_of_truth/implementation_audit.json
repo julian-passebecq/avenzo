@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "audited_at": "2026-09-22",
+  "repository": "julian-passebecq/avenzo",
+  "production_url": "https://avenzo-kappa.vercel.app/",
+  "current_main_commit_at_audit": "417e06d3814f501d3bfe5caeb3bd489c9d62a79a",
+  "compliance": [
+    {
+      "requirement": "Four public pages: Accueil, Services, Solutions, Contact",
+      "status": "pass"
+    },
+    {
+      "requirement": "Portfolio hidden",
+      "status": "pass"
+    },
+    {
+      "requirement": "Cormorant Garamond headings",
+      "status": "pass"
+    },
+    {
+      "requirement": "Inter body/navigation",
+      "status": "pass"
+    },
+    {
+      "requirement": "Hero focus 'Ensemble, on avance.'",
+      "status": "pass"
+    },
+    {
+      "requirement": "No France-China hero map",
+      "status": "pass"
+    },
+    {
+      "requirement": "Navigation grouped near CTA on right",
+      "status": "pass"
+    },
+    {
+      "requirement": "Service click links to detailed section",
+      "status": "pass"
+    },
+    {
+      "requirement": "No decorative Chinese characters in public HTML",
+      "status": "pass"
+    },
+    {
+      "requirement": "Structured footer / SEO metadata / sitemap / robots",
+      "status": "pass"
+    },
+    {
+      "requirement": "Tracking architecture prepared but disabled",
+      "status": "pass"
+    },
+    {
+      "requirement": "No public Portfolio",
+      "status": "pass"
+    }
+  ],
+  "open_gaps": [
+    {
+      "id": "AUDIT-004",
+      "severity": "medium",
+      "issue": "Homepage first expertise card hotlinks an external Unsplash Shanghai image.",
+      "required_fix": "Before final production, localize an approved Shanghai asset or replace it with a repository-owned asset to avoid external dependency."
+    },
+    {
+      "id": "AUDIT-005",
+      "severity": "needs_confirmation",
+      "issue": "Older content document lists contact@avenzostudio.com while later domain decision uses avenzostudios.com and current code uses contact@avenzostudios.com.",
+      "required_fix": "Business owner should confirm the real mailbox before launch."
+    },
+    {
+      "id": "AUDIT-006",
+      "severity": "informational",
+      "issue": "Business-supplied images were explicitly described as banner images, while some are currently used in expertise cards.",
+      "required_fix": "Not necessarily wrong, but banner usage should remain the primary design intent."
+    }
+  ],
+  "legacy_items": [
+    {
+      "path": "avenzo-studio.html",
+      "status": "legacy_standalone_export",
+      "deployment_status": "excluded by .vercelignore",
+      "source_of_truth": false
+    },
+    {
+      "path": "dev/",
+      "status": "prototype_comparison_routes",
+      "seo_status": "blocked by robots.txt",
+      "source_of_truth": false
+    },
+    {
+      "path": "BUSINESS_FEEDBACK_2026-09-22.json",
+      "status": "useful review record",
+      "note": "Superseded as the overall canonical entrypoint by source_of_truth/manifest.json; still valid as a focused record of the 18-page PDF."
+    }
+  ],
+  "resolved_in_source_of_truth_branch": [
+    {
+      "id": "AUDIT-001",
+      "resolution": "Added a higher-specificity rule so '4 expertises' renders at the intended large bold scale."
+    },
+    {
+      "id": "AUDIT-002",
+      "resolution": "Rewrote README.md to point to the canonical source-of-truth and removed the stale hero/map direction."
+    },
+    {
+      "id": "AUDIT-003",
+      "resolution": "Replaced stale CONTENT_AUDIT.md prototype claims with a deprecation/pointer notice."
+    }
+  ],
+  "branch_status": "source-of-truth branch prepared; merge required for production"
+}

@@ -1,59 +1,19 @@
-# Avenzo Studio — source-content audit
+# Avenzo Studio — content audit status
 
-This build intentionally keeps the supplied Avenzo Studio material as the content source of truth while applying the newer interactive design.
+This file used to describe an earlier interactive prototype and is no longer the canonical content/design record.
 
-## Source content retained
+The canonical business source of truth is now:
 
-- Navigation: Accueil / Services / Solutions / Contact
-- Home positioning: international access, marketing, digital, business development, trade shows
-- Four service families:
-  - Marketing & Digital Strategy
-  - Digital & E-commerce
-  - Business Development
-  - Trade Shows & International Development
-- Full detailed competency inventories from the supplied documents
-- Target sectors:
-  - Luxury & Lifestyle
-  - E-commerce & Retail
-  - B2B & Professional Services
-  - Hospitality & Tourism
-  - Food & Beverage
-  - International Business
-- Solutions:
-  - Presence digitale
-  - Croissance
-  - Developpement
-  - Personnalisation
-- Five-step method:
-  - Decouvrir / Analyse
-  - Definir / Strategie
-  - Creer / Construire
-  - Developpement / Activer
-  - Optimiser / Ameliorer
-- Positioning principles:
-  - Marketing thinking
-  - Digital expertise
-  - Esprit commercial
-  - Vision internationale
-  - Flexible collaboration
-- Contact choices: all nine requested service selections
-- Contact email, France base, and FR / Mandarin / EN positioning
+- `SOURCE_OF_TRUTH.json`
+- `source_of_truth/manifest.json`
+- `source_of_truth/content.json`
+- `source_of_truth/design_preferences.json`
+- `source_of_truth/business_messages.json`
+- `source_of_truth/assets.json`
+- `source_of_truth/implementation_audit.json`
 
-## Supplied images
+## Important
 
-All four unique supplied visual assets are preserved in `assets/` as original JPG files. Optimized WEBP derivatives are used by the live UI:
+Historical features such as the compact France-China hero map, plane/ship/fiber animation, theme selector, or dense dashboard-like layouts must **not** be treated as current requirements unless Adrien explicitly re-approves them.
 
-- `strategy-globe.webp`
-- `digital-matrix.webp`
-- `growth-city.webp`
-- `trade-city.webp`
-
-## New interaction layer retained
-
-- Compact France <-> China hero
-- Plane, ship, and fiber/data ping animation
-- Four-category service selector
-- Auto-advancing competency carousel
-- Service-specific competency marquee
-- Three theme choices: Noir / Slate / Atelier
-- Responsive desktop/mobile layout
+The current implementation audit and open gaps live in `source_of_truth/implementation_audit.json`.

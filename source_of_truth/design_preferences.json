@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "typography": {
+    "titles": {
+      "family": "Cormorant Garamond",
+      "weights": [
+        "600 semibold",
+        "700 bold"
+      ],
+      "source": "explicit repeated business instruction"
+    },
+    "body_and_navigation": {
+      "family": "Inter",
+      "weight": "400 regular",
+      "source": "explicit repeated business instruction"
+    }
+  },
+  "current_direction": {
+    "density": "Spacious; use deliberate blank space. Avoid an over-packed first viewport.",
+    "rectangles": "Fewer rectangular boxes. Cards are acceptable where useful, but not as the dominant language everywhere.",
+    "banners": "Use image-led banners. The business explicitly said the supplied pictures are for banners.",
+    "hierarchy": "Strong, obvious H1/H2/H3 visual hierarchy. Important category labels must not look like small eyebrows.",
+    "separators": "Avoid obvious horizontal/vertical separator lines between major sections when whitespace can create structure.",
+    "numbering": "Do not show decorative sequence numbers such as 01/02/03/04.",
+    "chinese_characters": "Replace decorative Chinese characters with French on the public site.",
+    "navigation": "Accueil / Services / Solutions / Contact aligned on the right close to 'Parler de votre projet'.",
+    "home_hero": "Use 'Ensemble, on avance.' as the hero focus. Do not show the large Avenzo Studio title or the France-China map in the hero.",
+    "expertise_section": "'4 expertises' must be a large, bold focal heading.",
+    "services": "Keep the liked two-column service structure; service family name is the primary heading and the explanatory phrase is secondary. Keep detailed capability presentation on the right without lines.",
+    "solutions": "Solution category names are primary headings; remove redundant brown labels, section numbers and separator lines.",
+    "contact": "Keep the overall form structure; rebalance the left information area and remove its separator line.",
+    "footer": "Footer should reflect the website structure and support SEO/internal navigation."
+  },
+  "interaction": {
+    "required": "Simple click-through interaction: clicking an expertise/service takes the visitor directly to the corresponding detailed section.",
+    "historical_wording": "la version simple tu clique il reviens sur la section correspondantes",
+    "avoid": "Interaction for its own sake, autoplay theme labs, or development controls in production."
+  },
+  "historical_preferences": [
+    {
+      "date": "2026-09-19",
+      "preference": "Wanted more banner-based design and fewer rectangular boxes.",
+      "canonical": true
+    },
+    {
+      "date": "2026-09-20/21",
+      "preference": "Preferred the earlier Tuesday/simple interactive version; supplied pictures should be used for banners.",
+      "canonical": true
+    },
+    {
+      "date": "2026-09-19",
+      "preference": "Liked some elements of the dark cinematic concept but said it was too packed/no blank space.",
+      "canonical_use": "inspiration_only"
+    },
+    {
+      "date": "2026-09-21",
+      "preference": "Liked the rebuilt Vercel site's structure a lot, but later said it was still a little too busy.",
+      "canonical_use": "retain_structure_reduce_density"
+    }
+  ],
+  "superseded_or_rejected": [
+    "Hero France-China map after 2026-09-22 PDF review.",
+    "Large repeated Avenzo Studio labels throughout sections.",
+    "Public Portfolio before client work exists.",
+    "Dense dashboard-like layouts.",
+    "Theme-development control panels in production.",
+    "Decorative Chinese characters on public pages.",
+    "Too many boxes, borders and table-like section separators."
+  ]
+}
