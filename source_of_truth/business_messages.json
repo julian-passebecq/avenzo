@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Business-only timeline. Friendly, personal, insulting, sexual, scheduling and unrelated chat was intentionally excluded.",
+  "entries": [
+    {
+      "timestamp": "2026-09-15T00:13",
+      "speaker": "Adrien",
+      "raw": "je vais creer une entreprise agence marketing et service pour les entreprises european qui veulent aller en chine pour les expositions, je peux contacter les constructeurs pour les constructions de stands",
+      "normalized_business_meaning": "Initial brief: marketing/service agency for European companies entering China for exhibitions, including stand-builder coordination.",
+      "status": "historical_foundation; later broadened globally"
+    },
+    {
+      "timestamp": "2026-09-15T17:06",
+      "speaker": "Adrien",
+      "raw": "je voulais faire une agence dr marketing, ecommerce, et tradeshows",
+      "normalized_business_meaning": "Core business pillars: marketing, e-commerce and trade shows.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-15T21:07",
+      "speaker": "Adrien",
+      "raw": "avenzo studio",
+      "normalized_business_meaning": "Brand name selected: Avenzo Studio.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-17T23:01",
+      "speaker": "Adrien",
+      "raw": "J’ai finalisé le texte",
+      "normalized_business_meaning": "Business copy was considered finalized in the supplied Avenzo Studio document.",
+      "status": "source_document_priority"
+    },
+    {
+      "timestamp": "2026-09-18T19:51",
+      "speaker": "Adrien",
+      "raw": "je dis le site, le texte n'a été pas changé bb",
+      "normalized_business_meaning": "The supplied document text must actually be reflected in the website; visual changes must not leave stale copy.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-19T11:44",
+      "speaker": "Adrien",
+      "raw": "le site manque de design en fait, je voulais des bandeaux",
+      "normalized_business_meaning": "Use stronger banner-led visual composition.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-19T11:46",
+      "speaker": "Adrien",
+      "raw": "y'a bcp de boite rectangulaire aussi, c'est bien mais c'est juste un peu trop",
+      "normalized_business_meaning": "Reduce the number of rectangular cards/boxes.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-19T16:21",
+      "speaker": "Adrien",
+      "raw": "et pour la police du site: Titres : Cormorant Garamond / Texte / navigation : Inter / titre: semibold , bold / texte / navigation: Regulier",
+      "normalized_business_meaning": "Typography: Cormorant Garamond for headings in semibold/bold; Inter Regular for text and navigation.",
+      "status": "active_confirmed_again_2026-09-21"
+    },
+    {
+      "timestamp": "2026-09-19T16:39",
+      "speaker": "Adrien",
+      "raw": "la page portfolio, tu peux la cacher pour l'instant / car j'ai pas encore des clients",
+      "normalized_business_meaning": "Do not expose Portfolio until client references exist.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-19T16:46",
+      "speaker": "Adrien",
+      "raw": "avenzostudio.com a été déjà acheté par quelqu'un ... je vais utiliser avenzostudios.com / cest fait",
+      "normalized_business_meaning": "Use plural domain avenzostudios.com instead of unavailable avenzostudio.com.",
+      "status": "active; domain ownership/DNS not independently verified"
+    },
+    {
+      "timestamp": "2026-09-19T17:05",
+      "speaker": "Adrien",
+      "raw": "i redefine the business not just between france and china but an agency to serve all clients",
+      "normalized_business_meaning": "Position the agency globally; France-China is not the whole business identity.",
+      "status": "active_supersedes_initial_geographic_narrowing"
+    },
+    {
+      "timestamp": "2026-09-19T17:05",
+      "speaker": "Adrien",
+      "raw": "the problem with this one is there're no space, blank space, all so packed",
+      "normalized_business_meaning": "Increase whitespace and reduce visual density.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-19T17:06",
+      "speaker": "Adrien",
+      "raw": "i like the interaction part u did with the version yesterday, you click you go to the detailed section / or relevant section",
+      "normalized_business_meaning": "Keep simple service-to-detail section navigation.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-20T23:40",
+      "speaker": "Adrien",
+      "raw": "pour quoi le site n'a pas quatre page",
+      "normalized_business_meaning": "Public site must have four pages.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-20T23:50",
+      "speaker": "Adrien",
+      "raw": "the version with interactives before mis à jour i like a lot, the pictures i send you are for the banners",
+      "normalized_business_meaning": "Preferred the earlier interactive version; supplied pictures are intended for banners.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-21T07:10",
+      "speaker": "Adrien",
+      "raw": "la version de mardi",
+      "normalized_business_meaning": "Reference preference is the earlier Tuesday version.",
+      "status": "historical_reference"
+    },
+    {
+      "timestamp": "2026-09-21T07:11",
+      "speaker": "Adrien",
+      "raw": "la version simple tu clique il reviens sur la section correspondantes",
+      "normalized_business_meaning": "Keep interaction simple: click and land on the relevant section.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-21T15:48",
+      "speaker": "Adrien",
+      "raw": "I like this one",
+      "normalized_business_meaning": "Approved the rebuilt Vercel direction.",
+      "status": "positive_reference"
+    },
+    {
+      "timestamp": "2026-09-21T15:49",
+      "speaker": "Adrien",
+      "raw": "Still some détails we could improve, thank you, i like it à lot the structure",
+      "normalized_business_meaning": "Keep the overall site structure while refining details.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-21T17:53",
+      "speaker": "Adrien",
+      "raw": "un peu trop chargé",
+      "normalized_business_meaning": "The approved structure still needs lower visual density.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-21T17:53",
+      "speaker": "Adrien",
+      "raw": "j'aime bien celui ci / il y a des trucs à changer mais j'aime bien celui ci",
+      "normalized_business_meaning": "Keep this structural direction rather than restarting from scratch.",
+      "status": "active"
+    },
+    {
+      "timestamp": "2026-09-21T18:20",
+      "speaker": "Adrien",
+      "raw": "merci beaucoup julian, c'est vraiment pas mal",
+      "normalized_business_meaning": "Positive validation of the then-current Vercel structure.",
+      "status": "positive_reference"
+    },
+    {
+      "timestamp": "2026-09-21T23:38",
+      "speaker": "Adrien",
+      "raw": "Titres : Cormorant Garamond / Texte / navigation : Inter / titre: semibold , bold / texte / navigation: Regulier",
+      "normalized_business_meaning": "Typography requirement reconfirmed.",
+      "status": "active_high_confidence"
+    }
+  ],
+  "excluded_examples": [
+    "greetings and 't'as bien dormi?'",
+    "café/social plans",
+    "jokes/insults/relationship banter",
+    "unrelated payment or personal remarks",
+    "messages that only say OK/merci without validating a specific business element"
+  ]
+}
