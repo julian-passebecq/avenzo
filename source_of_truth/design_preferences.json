@@ -29,7 +29,8 @@
     "services": "Keep the liked two-column service structure; service family name is the primary heading and the explanatory phrase is secondary. Keep detailed capability presentation on the right without lines.",
     "solutions": "Solution category names are primary headings; remove redundant brown labels, section numbers and separator lines.",
     "contact": "Keep the overall form structure; rebalance the left information area and remove its separator line.",
-    "footer": "Footer should reflect the website structure and support SEO/internal navigation."
+    "footer": "Footer should reflect the website structure and support SEO/internal navigation.",
+    "image_quality": "Use sharp, high-resolution imagery. Do not visibly pixelate, blur or overcompress banners/cards. Preserve source detail and only optimize within a quality floor."
   },
   "interaction": {
     "required": "Simple click-through interaction: clicking an expertise/service takes the visitor directly to the corresponding detailed section.",
@@ -71,5 +72,18 @@
     "current_implementation": "One semantic H1 per page for SEO; requested section headings use H1-scale visual styling.",
     "uncertainty": "Adrien's PDF repeatedly says specific section labels should be H1/H2, but it is unclear whether this means visual hierarchy or literal HTML tags.",
     "owner_question": "When you say H1 / H2 / H3, do you mean the visual size and importance, or the exact HTML heading tags in the code?"
+  },
+  "image_quality_policy": {
+    "business_feedback": "les photos sont surpixelisé pas claire du tout",
+    "priority": "high",
+    "minimum_source_width_px": 1600,
+    "preferred_banner_source_width_px": 2000,
+    "preferred_format": "WebP or AVIF at visually lossless/high quality, with JPEG fallback if needed",
+    "guidance": [
+      "Do not upscale tiny derivatives to banner size.",
+      "Keep repository derivatives at sufficient dimensions for the largest rendered size.",
+      "Use responsive srcset/sizes when multiple renditions are available.",
+      "Compression savings must not create visible blockiness or softness."
+    ]
   }
 }
