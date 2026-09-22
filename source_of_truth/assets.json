@@ -91,5 +91,42 @@
   "implementation_notes": [
     "The live homepage currently also uses an external Unsplash Shanghai image for the first expertise card. This is not one of the four supplied business assets and should be localized or replaced before final production.",
     "The original supplied images were explicitly described as banner images; expertise-card usage is an implementation choice, not a canonical requirement."
-  ]
+  ],
+  "quality_audit": {
+    "audited_at": "2026-09-22",
+    "owner_feedback": "les photos sont surpixelisé pas claire du tout",
+    "diagnosis": "Confirmed. The original supplied files are high resolution, but the committed WebP derivatives are extremely small and therefore overcompressed for their rendered sizes.",
+    "originals": [
+      {
+        "file": "51581-matrix-356024.jpg (4).jpeg",
+        "dimensions": "2048x1447",
+        "bytes": 1053681,
+        "repo_derivative": "assets/digital-matrix.webp",
+        "repo_bytes": 4156
+      },
+      {
+        "file": "geralt-ball-63527.jpg (4).jpeg",
+        "dimensions": "2048x1447",
+        "bytes": 433939,
+        "repo_derivative": "assets/strategy-globe.webp",
+        "repo_bytes": 6008
+      },
+      {
+        "file": "tobiasbrunner-river-6175173.jpg (3).jpeg",
+        "dimensions": "2048x1365",
+        "bytes": 1310495,
+        "repo_derivative": "assets/growth-city.webp",
+        "repo_bytes": 10160
+      },
+      {
+        "file": "xegxef-city-5772121.jpg (3).jpeg",
+        "dimensions": "2048x1365",
+        "bytes": 1193286,
+        "repo_derivative": "assets/trade-city.webp",
+        "repo_bytes": 4922
+      }
+    ],
+    "conclusion": "The clarity issue is an asset-encoding problem, not a lack of resolution in Adrien's originals.",
+    "required_fix": "Regenerate the four repository derivatives from the original 2048px files at high quality and replace the current tiny WebPs. Keep the layout unchanged."
+  }
 }
