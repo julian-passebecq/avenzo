@@ -162,6 +162,13 @@
       "raw": "Titres : Cormorant Garamond / Texte / navigation : Inter / titre: semibold , bold / texte / navigation: Regulier",
       "normalized_business_meaning": "Typography requirement reconfirmed.",
       "status": "active_high_confidence"
+    },
+    {
+      "timestamp": "2026-09-22",
+      "speaker": "Adrien",
+      "raw": "les photos sont surpixelisé pas claire du tout",
+      "normalized_business_meaning": "The website images are visibly pixelated/overcompressed and not sharp enough. Image clarity must be improved without changing the approved layout.",
+      "status": "active_high_priority_visual_quality"
     }
   ],
   "excluded_examples": [
