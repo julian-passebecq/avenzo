@@ -141,7 +141,7 @@
     ],
     "conclusion": "The clarity issue is an asset-encoding problem, not a lack of resolution in Adrien's originals.",
     "required_fix": "Regenerate the four repository derivatives from the original 2048px files at high quality and replace the current tiny WebPs. Keep the layout unchanged.",
-    "status": "resolved_in_asset_refresh_branch",
+    "status": "resolved_on_main",
     "resolution": "The 4-10 KB WebP derivatives are no longer used by the public pages. High-resolution originals and 1672px generated PNG assets now drive all visible photography/artwork.",
     "obsolete_derivatives_removed": true,
     "obsolete_derivatives": [
@@ -212,6 +212,7 @@
         "dimensions": "1672x941"
       }
     ],
-    "external_hotlinks_remaining": false
+    "external_hotlinks_remaining": false,
+    "status": "merged_to_main"
   }
 }
