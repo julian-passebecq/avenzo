@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /dev/
+Disallow: /dev
 
 Sitemap: https://avenzo-kappa.vercel.app/sitemap.xml
