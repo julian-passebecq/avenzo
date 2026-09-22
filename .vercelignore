@@ -14,3 +14,16 @@ TRACKING.md
 *.zip
 *.xlsx
 .DS_Store
+
+
+# Raw source uploads kept in GitHub; clean production aliases live under /assets.
+/51581-matrix-356024.jpg (6).jpeg
+/geralt-ball-63527.jpg (6).jpeg
+/tobiasbrunner-river-6175173.jpg (5).jpeg
+/xegxef-city-5772121.jpg (5).jpeg
+/ChatGPT Image Sep 22, 2026, 11_46_00 PM (1).png
+/ChatGPT Image Sep 22, 2026, 11_46_00 PM (2).png
+/ChatGPT Image Sep 22, 2026, 11_46_00 PM (3).png
+/ChatGPT Image Sep 22, 2026, 11_46_08 PM (1).png
+/ChatGPT Image Sep 22, 2026, 11_46_08 PM (2).png
+/ChatGPT Image Sep 22, 2026, 11_46_09 PM (3).png
