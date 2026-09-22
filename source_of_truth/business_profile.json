@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "brand": {
+    "canonical_name": "Avenzo Studio",
+    "tagline": "Ensemble, on avance.",
+    "current_positioning": "Marketing, digital, e-commerce, business development, trade shows and international development agency.",
+    "positioning_evolution": {
+      "initial": "Agency and services for European companies wanting to develop in China, especially exhibitions/trade shows, including contact with stand builders.",
+      "expanded": "Agency serving clients more broadly, not only France/China or Europe/China.",
+      "canonical": "Global/international agency positioning, with China as a real specialist capability rather than the entire brand identity."
+    }
+  },
+  "target_clients": {
+    "primary": "Companies seeking growth through marketing, digital, e-commerce, commercial development or international projects.",
+    "international": "Companies developing beyond their local market.",
+    "china_specialization": "European/international companies needing China-market support, trade-show preparation, supplier/stand coordination, sourcing or market-development support."
+  },
+  "core_offers": [
+    "Marketing & Digital Strategy",
+    "Digital & E-commerce",
+    "Business Development",
+    "Trade Shows & International Development"
+  ],
+  "geography": {
+    "base": "France",
+    "canonical_scope": [
+      "France",
+      "Europe",
+      "International"
+    ],
+    "specialist_market": "China",
+    "rule": "Do not present the company as only a France-China bridge."
+  },
+  "languages": [
+    "Français",
+    "Mandarin",
+    "Anglais"
+  ],
+  "public_site": {
+    "required_pages": [
+      "Accueil",
+      "Services",
+      "Solutions",
+      "Contact"
+    ],
+    "portfolio": {
+      "public": false,
+      "reason": "No client portfolio ready yet.",
+      "reopen_condition": "Only publish after the business explicitly approves client references/case studies."
+    }
+  },
+  "domain": {
+    "preferred": "avenzostudios.com",
+    "status": "reported_as_chosen_by_business_owner; purchase/DNS not independently verified in this source-of-truth pass",
+    "rejected_or_unavailable": "avenzostudio.com",
+    "evidence_note": "Adrien said avenzostudio.com was already owned by someone else and that he would use avenzostudios.com; later message said 'cest fait'."
+  },
+  "contact_email": {
+    "current_implementation": "contact@avenzostudios.com",
+    "source_document_legacy": "contact@avenzostudio.com",
+    "status": "needs_owner_confirmation",
+    "rule": "Do not treat the singular-domain email from the older document as canonical after the domain decision without confirmation."
+  },
+  "sectors": [
+    "Luxury & Lifestyle",
+    "E-commerce & Retail",
+    "B2B & Professional Services",
+    "Hospitality & Tourism",
+    "Food & Beverage",
+    "International Business"
+  ],
+  "non_goals": [
+    "Do not make the brand China-only.",
+    "Do not publish a portfolio before client references exist.",
+    "Do not reintroduce decorative Chinese characters on public pages unless the business explicitly reverses the latest PDF instruction.",
+    "Do not turn the site into a dense dashboard or UI-tool aesthetic."
+  ]
+}
