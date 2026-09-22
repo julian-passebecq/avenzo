@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Historical visual references and what the business actually liked/disliked. This prevents future agents from treating every old mockup as a requirement.",
+  "versions": [
+    {
+      "id": "early-light-claude",
+      "period": "2026-09-15",
+      "description": "Early light Avenzo Studio concept focused on access to China.",
+      "useful_elements": [
+        "simple structure",
+        "clean top navigation",
+        "agency identity"
+      ],
+      "superseded_elements": [
+        "China-only positioning",
+        "L'agence navigation"
+      ],
+      "authority": "historical"
+    },
+    {
+      "id": "early-dark",
+      "period": "2026-09-15/18",
+      "description": "Dark version with 'L’accès à la Chine, sans détour.' and strong black/gold styling.",
+      "useful_elements": [
+        "strong premium contrast",
+        "simple CTA structure"
+      ],
+      "superseded_elements": [
+        "China-only hero",
+        "public Portfolio",
+        "decorative Chinese characters"
+      ],
+      "authority": "historical"
+    },
+    {
+      "id": "interactive-tuesday",
+      "period": "referenced on 2026-09-20/21",
+      "description": "The simple interactive version Adrien repeatedly referred to as the preferred earlier version.",
+      "approved_elements": [
+        "click an expertise/service and go to the relevant detailed section",
+        "simple interaction rather than complex UI",
+        "business-supplied images used as banners"
+      ],
+      "authority": "strong_historical_preference"
+    },
+    {
+      "id": "theme-lab-map-experiments",
+      "period": "2026-09-18/19",
+      "description": "Multiple France-China map, theme-switching and carousel experiments.",
+      "useful_elements": [
+        "exploration of international visual identity"
+      ],
+      "rejected_or_superseded": [
+        "too many controls",
+        "too many rectangles",
+        "dense first viewport",
+        "theme lab/development UI in production",
+        "hero map removed by latest PDF review"
+      ],
+      "authority": "prototype_only"
+    },
+    {
+      "id": "cinematic-global-mock",
+      "period": "2026-09-19",
+      "description": "Dark cinematic France/China/global mockup with city imagery and route map.",
+      "business_feedback": [
+        "liked the visual direction",
+        "redefined business as serving all clients, not only France-China",
+        "said there was not enough blank space and it was too packed",
+        "liked the click-to-detailed-section interaction"
+      ],
+      "authority": "inspiration_only"
+    },
+    {
+      "id": "handwritten-wireframe",
+      "period": "2026-09-19/20",
+      "description": "Paper sketch supplied by Adrien.",
+      "extracted_structure": [
+        "Avenzo Studio brand in header",
+        "Accueil/navigation in header",
+        "large banner area",
+        "'Ensemble, on avance' / international-access messaging in banner",
+        "'global' positioning indication",
+        "introductory company copy below banner",
+        "buttons for discovering services and discussing a project"
+      ],
+      "authority": "business_reference"
+    },
+    {
+      "id": "vercel-rebuild-2026-09-21",
+      "period": "2026-09-21",
+      "url": "https://avenzo-kappa.vercel.app/",
+      "business_feedback": [
+        "I like this one",
+        "I like it a lot the structure",
+        "un peu trop chargé",
+        "there are details to change but I like this one",
+        "c'est vraiment pas mal"
+      ],
+      "canonical_interpretation": "Retain the overall four-page/editorial structure; continue reducing visual density."
+    },
+    {
+      "id": "pdf-review-2026-09-22",
+      "period": "2026-09-22",
+      "source": "Avenzo Studio-julian (1).pdf",
+      "description": "18-page annotated review of the Vercel direction.",
+      "authority": "latest_explicit_visual_source",
+      "rule": "Overrides older visual mockups where they conflict."
+    }
+  ]
+}
