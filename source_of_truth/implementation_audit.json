@@ -55,6 +55,12 @@
   ],
   "open_gaps": [
     {
+      "id": "AUDIT-012",
+      "severity": "high_visual",
+      "issue": "Adrien reports that the photos are pixelated and unclear. Audit confirms the four committed WebP derivatives are only 4-10 KB while the supplied originals are 2048px-wide files of roughly 0.4-1.3 MB.",
+      "required_fix": "Replace digital-matrix.webp, strategy-globe.webp, growth-city.webp and trade-city.webp with high-quality derivatives generated from the original supplied images. Do not change the approved page layout."
+    },
+    {
       "id": "AUDIT-004",
       "severity": "medium",
       "issue": "Homepage first expertise card hotlinks an external Unsplash Shanghai image.",
