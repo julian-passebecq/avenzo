@@ -178,6 +178,9 @@
     "status": "implemented_on_branch",
     "branch": "asset-refresh-2026-09-22",
     "structure_changed": false,
-    "summary": "Asset-only visual refresh: page structure and business copy preserved; high-resolution banners/cards/CTA artwork substituted in place."
+    "summary": "Asset-only visual refresh: page structure and business copy preserved; high-resolution banners/cards/CTA artwork substituted in place.",
+    "obsolete_low_quality_assets_removed": true,
+    "active_visible_assets": 10,
+    "note": "All 4 overcompressed WebPs were deleted after confirming no public HTML/CSS references remained."
   }
 }
