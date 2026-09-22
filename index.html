@@ -4,13 +4,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Avenzo Studio accompagne les entreprises en stratégie, digital, business development et développement international." />
+  <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#f7f2e9" />
+  <link rel="canonical" href="https://avenzo-kappa.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Avenzo Studio — Ensemble, on avance" />
+  <meta property="og:description" content="Stratégie, digital, développement commercial et projets internationaux." />
+  <meta property="og:url" content="https://avenzo-kappa.vercel.app/" />
   <title>Avenzo Studio — Ensemble, on avance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="/assets/avenzo-mark.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Avenzo Studio",
+    "url":"https://avenzo-kappa.vercel.app/",
+    "logo":"https://avenzo-kappa.vercel.app/assets/avenzo-mark.svg",
+    "email":"contact@avenzostudios.com",
+    "description":"Avenzo Studio accompagne les entreprises en stratégie, digital, business development et développement international.",
+    "areaServed":["France","Europe","International"],
+    "knowsLanguage":["fr","zh","en"]
+  }
+  </script>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -31,35 +50,22 @@
   </header>
 
   <main id="main">
-    <section class="hero hero-v7">
-      <img class="hero-image" src="/assets/trade-city.webp" alt="Ville internationale de nuit" />
+    <section class="hero hero-v8">
+      <img class="hero-image" src="/assets/trade-city.webp" alt="" />
       <div class="hero-shade"></div>
       <div class="hero-content shell">
-        <p class="eyebrow eyebrow-light">ENSEMBLE, ON AVANCE</p>
-        <h1>Avenzo Studio</h1>
-        <div class="bridge-mini" aria-label="France et Chine reliées dans un réseau international">
-          <svg viewBox="0 0 330 86" role="img" aria-label="France vers Chine">
-            <path class="mini-country mini-fr" d="M28 31l12-12 18 2 11 11-5 11 6 9-10 12-16-1-8-9-11-6 3-9-4-5z"/>
-            <path class="mini-country mini-cn" d="M253 25l13-9 19 3 13-6 17 7 11 13-6 12 7 10-10 12-18 6-14-5-13 7-14-9-10-11 5-13-5-8z"/>
-            <path class="mini-route" d="M65 46 C122 14 207 14 258 42"/>
-            <circle cx="64" cy="46" r="5" class="mini-dot mini-dot-fr"/>
-            <circle cx="258" cy="42" r="5" class="mini-dot mini-dot-cn"/>
-          </svg>
-          <span>France ↔ Chine · et au-delà</span>
-        </div>
+        <h1>Ensemble, on avance.</h1>
         <p class="hero-tagline">L’accès à l’international, sans détour.</p>
         <p class="hero-lead">Stratégie, digital, développement commercial et projets internationaux.</p>
       </div>
-      <span class="hero-sideword">GLOBAL</span>
     </section>
 
     <section class="expertise-section shell" aria-labelledby="expertise-title">
       <div class="expertise-topline">
         <div>
-          <p class="eyebrow">4 EXPERTISES</p>
-          <h2 id="expertise-title">Choisissez votre point d’entrée.</h2>
+          <h2 id="expertise-title" class="section-title-primary">4 expertises</h2>
         </div>
-        <p>Cliquez sur une expertise pour accéder directement à la section détaillée correspondante.</p>
+        <p>Choisissez une expertise pour accéder directement à la section détaillée correspondante.</p>
       </div>
 
       <div class="expertise-grid">
@@ -84,7 +90,6 @@
 
     <section class="intro-section section-shell">
       <div class="intro-copy">
-        <p class="eyebrow">AVENZO STUDIO</p>
         <h2>Nous accompagnons les entreprises dans leurs projets de croissance.</h2>
         <p>De la stratégie digitale au développement commercial, de la présence en ligne à l’acquisition, jusqu’aux salons professionnels internationaux, nous réunissons les expertises nécessaires pour faire avancer un projet de façon claire et concrète.</p>
       </div>
@@ -99,19 +104,19 @@
         <img src="/assets/digital-matrix.webp" alt="Technologie et digital" />
       </div>
       <div class="image-banner-copy">
-        <p class="eyebrow">SOLUTIONS</p>
-        <h2>Une combinaison adaptée à votre situation.</h2>
+        <h2 class="solutions-focus">Solutions</h2>
+        <h3>Une combinaison adaptée à votre situation.</h3>
         <p>Présence digitale, acquisition, développement de marché ou projet sur mesure : les expertises s’assemblent selon vos objectifs.</p>
         <a class="text-link" href="/solutions">Découvrir les solutions <span>→</span></a>
       </div>
     </section>
 
     <section class="sector-section section-shell">
-      <div class="section-heading compact">
-        <p class="eyebrow">POUR DES ENTREPRISES AMBITIEUSES</p>
-        <h2>Des secteurs variés, une même logique de croissance.</h2>
+      <div class="sector-heading">
+        <h2>Pour des entreprises ambitieuses</h2>
+        <h3>Des secteurs variés, une même logique de croissance.</h3>
       </div>
-      <div class="sector-line">
+      <div class="sector-list" aria-label="Secteurs accompagnés">
         <span>Luxury & Lifestyle</span>
         <span>E-commerce & Retail</span>
         <span>B2B & Professional Services</span>
@@ -127,12 +132,20 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-brand"><img src="/assets/avenzo-mark.svg" alt=""><span><strong>Avenzo Studio</strong><small>Ensemble, on avance.</small></span></div>
-    <div class="footer-links"><a href="/services">Services</a><a href="/solutions">Solutions</a><a href="/contact">Contact</a></div>
-    <p>Marketing · E-commerce · B2B · International · Trade Shows</p>
+  <footer class="site-footer site-footer-structured">
+    <div class="footer-brand">
+      <img src="/assets/avenzo-mark.svg" alt="" />
+      <span><strong>Avenzo Studio</strong><small>Ensemble, on avance.</small></span>
+    </div>
+    <nav class="footer-nav" aria-label="Navigation du pied de page">
+      <div><strong>Navigation</strong><a href="/">Accueil</a><a href="/services">Services</a><a href="/solutions">Solutions</a><a href="/contact">Contact</a></div>
+      <div><strong>Expertises</strong><a href="/services#strategy">Marketing & stratégie</a><a href="/services#digital">Digital & e-commerce</a><a href="/services#growth">Business development</a><a href="/services#trade">Trade shows & international</a></div>
+    </nav>
+    <p class="footer-note">France · Europe · International</p>
   </footer>
 
   <script src="/app.js"></script>
+  <script src="/tracking-config.js"></script>
+  <script src="/tracking.js"></script>
 </body>
 </html>
