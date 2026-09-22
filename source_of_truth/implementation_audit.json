@@ -100,7 +100,7 @@
       "resolution": "Replaced stale CONTENT_AUDIT.md prototype claims with a deprecation/pointer notice."
     }
   ],
-  "branch_status": "merged to main and production-verified",
+  "branch_status": "asset refresh merged to main; production alias redeploy/promotion pending",
   "audited_against_commit": "309ac17426f3be0a9ac8023302fc5a2bfe1731a7",
   "pdf_review": {
     "source": "Avenzo Studio-julian (1)(1).pdf",
@@ -175,12 +175,18 @@
     }
   ],
   "asset_refresh": {
-    "status": "implemented_on_branch",
+    "status": "merged_to_main",
     "branch": "asset-refresh-2026-09-22",
     "structure_changed": false,
     "summary": "Asset-only visual refresh: page structure and business copy preserved; high-resolution banners/cards/CTA artwork substituted in place.",
     "obsolete_low_quality_assets_removed": true,
     "active_visible_assets": 10,
-    "note": "All 4 overcompressed WebPs were deleted after confirming no public HTML/CSS references remained."
+    "note": "All 4 overcompressed WebPs were deleted after confirming no public HTML/CSS references remained.",
+    "merge_commit": "393de056f4b05e39e727bea24d77920269cc6365",
+    "preview_deployment": {
+      "state": "READY",
+      "url": "https://avenzo-8e6uv29bk-julian-passebecqs-projects.vercel.app",
+      "note": "Preview contains the visible asset refresh. Production alias had not auto-promoted at the time of this audit."
+    }
   }
 }
