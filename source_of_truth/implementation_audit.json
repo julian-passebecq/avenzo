@@ -112,7 +112,7 @@
       "resolution": "Replaced stale CONTENT_AUDIT.md prototype claims with a deprecation/pointer notice."
     }
   ],
-  "branch_status": "merged to main; production verification in progress",
+  "branch_status": "merged to main and production-verified",
   "audited_against_commit": "309ac17426f3be0a9ac8023302fc5a2bfe1731a7",
   "pdf_review": {
     "source": "Avenzo Studio-julian (1)(1).pdf",
@@ -141,5 +141,35 @@
   ],
   "audit_status": "completed_and_merged",
   "production_merge_commit": "7b9c17c224da8ef79cbe1ebb8d6145e259885a2d",
-  "post_merge_hardening_commit": "8cc735c3d79fbfaff8904759f8a253a2c7e039aa"
+  "post_merge_hardening_commit": "8cc735c3d79fbfaff8904759f8a253a2c7e039aa",
+  "production_verification": {
+    "verified_at": "2026-09-22",
+    "visible_site_commit": "8cc735c3d79fbfaff8904759f8a253a2c7e039aa",
+    "audit_metadata_commit_before_this_update": "da964f634a9f07e7a0882359d39486b2388e115f",
+    "public_routes": {
+      "/": 200,
+      "/services": 200,
+      "/solutions": 200,
+      "/contact": 200
+    },
+    "internal_asset_check": "All public local assets/scripts/styles referenced by the four pages returned HTTP 200.",
+    "internal_docs_not_deployed": {
+      "/SOURCE_OF_TRUTH.json": 404,
+      "/source_of_truth/business_messages.json": 404,
+      "/BUSINESS_FEEDBACK_2026-09-22.json": 404,
+      "/README.md": 404
+    },
+    "structural_checks": {
+      "one_h1_per_public_page": true,
+      "duplicate_ids": false,
+      "cjk_in_public_html": false,
+      "portfolio_in_public_html": false,
+      "large_four_expertises_rule": true,
+      "stale_expertise_inherit_rule": false,
+      "service_title_matches_pdf": true,
+      "structured_footer_all_pages": true,
+      "requested_fonts_all_pages": true
+    },
+    "runtime_errors": "none found in last-hour scan"
+  }
 }
