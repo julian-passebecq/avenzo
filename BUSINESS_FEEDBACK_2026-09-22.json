@@ -1,0 +1,206 @@
+{
+  "source": {
+    "file": "Avenzo Studio-julian.pdf",
+    "pages": 18,
+    "received": "2026-09-22",
+    "purpose": "Business review of the public Avenzo Studio website"
+  },
+  "global": [
+    {
+      "id": "G1",
+      "pages": [
+        18
+      ],
+      "request": "Redefine H1/H2/H3 hierarchy and sizes for a more balanced website.",
+      "implementation": "Use a consistent visual type scale while preserving valid semantic heading structure for SEO."
+    },
+    {
+      "id": "G2",
+      "pages": [
+        18
+      ],
+      "request": "Replace Chinese characters with French.",
+      "implementation": "Remove CJK glyphs from public pages; use French labels such as 'Chinois' where needed."
+    },
+    {
+      "id": "G3",
+      "pages": [
+        18
+      ],
+      "request": "Improve SEO and make footer reflect the website structure.",
+      "implementation": "Add structured footer navigation, canonical/metadata, robots.txt, sitemap.xml and Organization JSON-LD."
+    },
+    {
+      "id": "G4",
+      "pages": [
+        18
+      ],
+      "request": "Make it easy to add Google/Facebook tracking later.",
+      "implementation": "Add an inactive tracking configuration/loader and documentation. No trackers load until IDs and consent are configured."
+    },
+    {
+      "id": "G5",
+      "pages": [
+        14
+      ],
+      "request": "Remove visual sequence numbers such as 1,2,3,4.",
+      "implementation": "Remove service, solution and method numbering from public UI."
+    },
+    {
+      "id": "G6",
+      "pages": [
+        8,
+        10,
+        13,
+        14,
+        17
+      ],
+      "request": "Remove old-fashioned separator lines while keeping structure.",
+      "implementation": "Use whitespace, rhythm and typography instead of visible rules/borders for primary section separation."
+    }
+  ],
+  "pages": {
+    "accueil": [
+      {
+        "id": "H1",
+        "page": 3,
+        "request": "Move navigation (Accueil, Services, Solutions, Contact) to the right, close to 'Parler de votre projet'.",
+        "implementation": "Right-align nav and CTA as one cluster."
+      },
+      {
+        "id": "H2",
+        "page": 3,
+        "request": "Put 'Ensemble, on avance' where the large 'Avenzo Studio' currently is.",
+        "implementation": "Use 'Ensemble, on avance' as hero H1."
+      },
+      {
+        "id": "H3",
+        "page": 3,
+        "request": "Delete the large 'Avenzo Studio' and the France-China map from the hero.",
+        "implementation": "Remove large brand heading and bridge map from hero; retain brand only in header/footer."
+      },
+      {
+        "id": "H4",
+        "page": 4,
+        "request": "Make '4 expertises' the main focus in large bold type instead of 'Choisissez votre point d’entrée'.",
+        "implementation": "Promote '4 expertises' to the primary section title and remove the old title."
+      },
+      {
+        "id": "H5",
+        "page": 5,
+        "request": "Delete the brown 'Avenzo Studio' label above the company introduction.",
+        "implementation": "Remove redundant eyebrow."
+      },
+      {
+        "id": "H6",
+        "page": 6,
+        "request": "Make 'Solutions' the main focus, larger, keep brown color; make 'Une combinaison...' slightly smaller.",
+        "implementation": "Promote Solutions to large brown heading; demote descriptive line."
+      },
+      {
+        "id": "H7",
+        "page": 9,
+        "request": "Make 'Pour des entreprises ambitieuses' the main heading and 'Des secteurs variés...' secondary.",
+        "implementation": "Swap visual hierarchy."
+      },
+      {
+        "id": "H8",
+        "page": 9,
+        "request": "Do not use a table/grid for the six sectors; list them simply with no lines.",
+        "implementation": "Use a simple responsive text list without borders."
+      }
+    ],
+    "services": [
+      {
+        "id": "S1",
+        "page": 8,
+        "request": "Keep the current two-column section structure but remove obvious lines.",
+        "implementation": "Preserve left title/right details layout; remove separator borders."
+      },
+      {
+        "id": "S2",
+        "page": 8,
+        "request": "Marketing & Digital Stratégie should be the main heading; 'Poser la stratégie...' should be secondary.",
+        "implementation": "Use large service-name heading followed by smaller tagline."
+      },
+      {
+        "id": "S3",
+        "page": 10,
+        "request": "Apply the same heading hierarchy to Digital & E-commerce and other service sections.",
+        "implementation": "Repeat service-name/tagline hierarchy consistently."
+      },
+      {
+        "id": "S4",
+        "page": 10,
+        "request": "Keep detailed services presented on the right but delete the lines.",
+        "implementation": "Keep two-column capability lists with whitespace only."
+      },
+      {
+        "id": "S5",
+        "page": 14,
+        "request": "Delete visible service numbers.",
+        "implementation": "Remove numbers from jump navigation and section labels."
+      }
+    ],
+    "solutions": [
+      {
+        "id": "SO1",
+        "page": 12,
+        "request": "Delete the brown 'Solutions' label on the banner because it is redundant.",
+        "implementation": "Keep only the banner H1."
+      },
+      {
+        "id": "SO2",
+        "page": 13,
+        "request": "Delete the brown 'Avenzo Studio' label in the intro.",
+        "implementation": "Remove redundant eyebrow."
+      },
+      {
+        "id": "SO3",
+        "page": 13,
+        "request": "Make each solution category such as 'Présence digitale' the main heading; the descriptive phrase should be secondary.",
+        "implementation": "Large brown category heading plus smaller descriptive subheading."
+      },
+      {
+        "id": "SO4",
+        "pages": [
+          13,
+          14
+        ],
+        "request": "Remove lines between each solution section.",
+        "implementation": "Separate sections by whitespace instead of rules."
+      },
+      {
+        "id": "SO5",
+        "page": 14,
+        "request": "Remove solution numbers 1-4.",
+        "implementation": "No visual numbering."
+      }
+    ],
+    "contact": [
+      {
+        "id": "C1",
+        "page": 16,
+        "request": "Delete the brown 'Contact' label on the banner.",
+        "implementation": "Keep only banner H1."
+      },
+      {
+        "id": "C2",
+        "page": 16,
+        "request": "Delete the brown 'Avenzo Studio' label above the contact intro.",
+        "implementation": "Remove redundant eyebrow."
+      },
+      {
+        "id": "C3",
+        "page": 17,
+        "request": "Keep the form structure but restyle left contact information and remove the line above it.",
+        "implementation": "Balance columns, use compact contact info without top border."
+      }
+    ]
+  },
+  "non_goals": [
+    "Do not reintroduce Portfolio.",
+    "Do not add tracking IDs or external trackers without consent/configuration.",
+    "Do not change the approved Cormorant Garamond / Inter font pairing."
+  ]
+}
