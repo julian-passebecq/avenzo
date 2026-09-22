@@ -60,3 +60,25 @@ Then open `http://localhost:4173`.
 - Four expertise choices use imagery instead of abstract icons
 - First expertise visual features Shanghai / Shanghai Tower
 - Homepage service images deep-link to the matching Services section
+
+
+## Business review — 2026-09-22
+
+The 18-page business feedback document has been converted into a structured implementation spec:
+
+- `BUSINESS_FEEDBACK_2026-09-22.json`
+
+Implemented direction:
+
+- hero focus: **Ensemble, on avance.**
+- no hero map or repeated large Avenzo branding
+- navigation clustered on the right next to the project CTA
+- **4 expertises** is the primary homepage expertise heading
+- redundant brown labels removed where requested
+- services keep the two-column structure but remove obvious separator lines
+- solution categories are promoted visually; section numbering and separator rules are removed
+- contact intro is rebalanced and Chinese characters are replaced by French wording
+- structured footer navigation, robots and sitemap added for SEO
+- optional Google/Meta tracking architecture added but disabled by default
+
+See `TRACKING.md` before enabling any non-essential tracking.
