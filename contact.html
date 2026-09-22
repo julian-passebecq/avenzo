@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#f4efe6" />
   <meta name="description" content="Contactez Avenzo Studio pour vos projets marketing, digital, business development, trade shows et développement international." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://avenzo-kappa.vercel.app/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Avenzo Studio" />
+  <meta property="og:description" content="Parlez-nous de votre projet marketing, digital, commercial ou international." />
+  <meta property="og:url" content="https://avenzo-kappa.vercel.app/contact" />
   <title>Contact — Avenzo Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,22 +37,19 @@
       <img src="/assets/digital-matrix.webp" alt="" class="banner-image" />
       <div class="banner-overlay"></div>
       <div class="banner-content">
-        <p class="eyebrow eyebrow-light">CONTACT</p>
         <h1>Parlons de<br><span>votre projet.</span></h1>
       </div>
     </section>
 
-    <section class="contact-layout section-shell">
-      <div class="contact-intro contact-intro-compact">
-        <p class="eyebrow">AVENZO STUDIO</p>
+    <section class="contact-layout contact-layout-balanced section-shell">
+      <div class="contact-intro contact-intro-balanced">
         <h2>Quelques lignes suffisent pour commencer.</h2>
         <p>Expliquez simplement votre objectif, votre marché et votre échéance. Nous vous répondons avec une première lecture claire du projet.</p>
-        <p class="contact-quickline">
-          <a href="mailto:contact@avenzostudios.com">contact@avenzostudios.com</a>
-          <span>France</span>
-          <span>FR · 中文 · EN</span>
-          <span>Réponse sous 48h ouvrées</span>
-        </p>
+
+        <div class="contact-info-stack" aria-label="Informations de contact">
+          <a class="contact-email" href="mailto:contact@avenzostudios.com">contact@avenzostudios.com</a>
+          <p>France · Français, Chinois, Anglais · Réponse sous 48h ouvrées</p>
+        </div>
       </div>
 
       <form class="contact-form" id="contact-form">
@@ -78,12 +81,20 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-brand"><img src="/assets/avenzo-mark.svg" alt="" /><span><strong>Avenzo Studio</strong><small>Ensemble, on avance.</small></span></div>
-    <div class="footer-links"><a href="/">Accueil</a><a href="/services">Services</a><a href="/solutions">Solutions</a></div>
-    <p>Marketing · E-commerce · B2B · International · Trade Shows</p>
+  <footer class="site-footer site-footer-structured">
+    <div class="footer-brand">
+      <img src="/assets/avenzo-mark.svg" alt="" />
+      <span><strong>Avenzo Studio</strong><small>Ensemble, on avance.</small></span>
+    </div>
+    <nav class="footer-nav" aria-label="Navigation du pied de page">
+      <div><strong>Navigation</strong><a href="/">Accueil</a><a href="/services">Services</a><a href="/solutions">Solutions</a><a href="/contact">Contact</a></div>
+      <div><strong>Expertises</strong><a href="/services#strategy">Marketing & stratégie</a><a href="/services#digital">Digital & e-commerce</a><a href="/services#growth">Business development</a><a href="/services#trade">Trade shows & international</a></div>
+    </nav>
+    <p class="footer-note">France · Europe · International</p>
   </footer>
 
   <script src="/app.js"></script>
+  <script src="/tracking-config.js"></script>
+  <script src="/tracking.js"></script>
 </body>
 </html>
