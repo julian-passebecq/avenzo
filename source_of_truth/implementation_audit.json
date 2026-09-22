@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "audited_at": "2026-09-22",
+  "repository": "julian-passebecq/avenzo",
+  "production_url": "https://avenzo-kappa.vercel.app/",
+  "current_main_commit_at_audit": "417e06d3814f501d3bfe5caeb3bd489c9d62a79a",
+  "compliance": [
+    {
+      "requirement": "Four public pages: Accueil, Services, Solutions, Contact",
+      "status": "pass"
+    },
+    {
+      "requirement": "Portfolio hidden",
+      "status": "pass"
+    },
+    {
+      "requirement": "Cormorant Garamond headings",
+      "status": "pass"
+    },
+    {
+      "requirement": "Inter body/navigation",
+      "status": "pass"
+    },
+    {
+      "requirement": "Hero focus 'Ensemble, on avance.'",
+      "status": "pass"
+    },
+    {
+      "requirement": "No France-China hero map",
+      "status": "pass"
+    },
+    {
+      "requirement": "Navigation grouped near CTA on right",
+      "status": "pass"
+    },
+    {
+      "requirement": "Service click links to detailed section",
+      "status": "pass"
+    },
+    {
+      "requirement": "No decorative Chinese characters in public HTML",
+      "status": "pass"
+    },
+    {
+      "requirement": "Structured footer / SEO metadata / sitemap / robots",
+      "status": "pass"
+    },
+    {
+      "requirement": "Tracking architecture prepared but disabled",
+      "status": "pass"
+    },
+    {
+      "requirement": "No public Portfolio",
+      "status": "pass"
+    }
+  ],
+  "open_gaps": [
+    {
+      "id": "AUDIT-001",
+      "severity": "high_visual",
+      "issue": "'4 expertises' is still rendered too small in the current homepage screenshot/code despite the explicit PDF request that it be the main large bold focus.",
+      "cause": "CSS cascade includes a later '.expertise-topline h2 { font-size: inherit; }' rule that can override the intended large '.section-title-primary' size.",
+      "required_fix": "Remove/override the conflicting rule so '4 expertises' uses the intended large heading scale."
+    },
+    {
+      "id": "AUDIT-002",
+      "severity": "medium",
+      "issue": "README contains an older 'Latest homepage direction' section saying the hero title is Avenzo Studio and that a France-China mini-map is present.",
+      "required_fix": "Replace stale README guidance with a pointer to source_of_truth/manifest.json and the 2026-09-22 business review."
+    },
+    {
+      "id": "AUDIT-003",
+      "severity": "medium",
+      "issue": "CONTENT_AUDIT.md describes an obsolete interactive layer (compact France-China hero, plane/ship/fiber animation, three themes) that is no longer canonical.",
+      "required_fix": "Mark it legacy or rewrite it to point to the canonical source-of-truth."
+    },
+    {
+      "id": "AUDIT-004",
+      "severity": "medium",
+      "issue": "Homepage first expertise card hotlinks an external Unsplash Shanghai image.",
+      "required_fix": "Before final production, localize an approved Shanghai asset or replace it with a repository-owned asset to avoid external dependency."
+    },
+    {
+      "id": "AUDIT-005",
+      "severity": "needs_confirmation",
+      "issue": "Older content document lists contact@avenzostudio.com while later domain decision uses avenzostudios.com and current code uses contact@avenzostudios.com.",
+      "required_fix": "Business owner should confirm the real mailbox before launch."
+    },
+    {
+      "id": "AUDIT-006",
+      "severity": "informational",
+      "issue": "Business-supplied images were explicitly described as banner images, while some are currently used in expertise cards.",
+      "required_fix": "Not necessarily wrong, but banner usage should remain the primary design intent."
+    }
+  ],
+  "legacy_items": [
+    {
+      "path": "avenzo-studio.html",
+      "status": "legacy_standalone_export",
+      "deployment_status": "excluded by .vercelignore",
+      "source_of_truth": false
+    },
+    {
+      "path": "dev/",
+      "status": "prototype_comparison_routes",
+      "seo_status": "blocked by robots.txt",
+      "source_of_truth": false
+    },
+    {
+      "path": "BUSINESS_FEEDBACK_2026-09-22.json",
+      "status": "useful review record",
+      "note": "Superseded as the overall canonical entrypoint by source_of_truth/manifest.json; still valid as a focused record of the 18-page PDF."
+    }
+  ]
+}
