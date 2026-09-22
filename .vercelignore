@@ -1,6 +1,15 @@
 # Legacy standalone export; not used by the live site.
 avenzo-studio.html
 
+# Internal business/source-of-truth documentation.
+# Keep in GitHub for project continuity, but do not publish as website assets.
+SOURCE_OF_TRUTH.json
+source_of_truth/
+BUSINESS_FEEDBACK_2026-09-22.json
+README.md
+CONTENT_AUDIT.md
+TRACKING.md
+
 # Local/editor artifacts
 *.zip
 *.xlsx
