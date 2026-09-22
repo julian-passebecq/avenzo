@@ -55,28 +55,10 @@
   ],
   "open_gaps": [
     {
-      "id": "AUDIT-012",
-      "severity": "high_visual",
-      "issue": "Adrien reports that the photos are pixelated and unclear. Audit confirms the four committed WebP derivatives are only 4-10 KB while the supplied originals are 2048px-wide files of roughly 0.4-1.3 MB.",
-      "required_fix": "Replace digital-matrix.webp, strategy-globe.webp, growth-city.webp and trade-city.webp with high-quality derivatives generated from the original supplied images. Do not change the approved page layout."
-    },
-    {
-      "id": "AUDIT-004",
-      "severity": "medium",
-      "issue": "Homepage first expertise card hotlinks an external Unsplash Shanghai image.",
-      "required_fix": "Before final production, localize an approved Shanghai asset or replace it with a repository-owned asset. Owner should confirm whether Shanghai Tower is still wanted."
-    },
-    {
       "id": "AUDIT-005",
       "severity": "needs_confirmation",
       "issue": "Older content document lists contact@avenzostudio.com while later domain decision uses avenzostudios.com and current code uses contact@avenzostudios.com.",
       "required_fix": "Business owner should confirm the real mailbox before launch."
-    },
-    {
-      "id": "AUDIT-006",
-      "severity": "needs_confirmation",
-      "issue": "Business-supplied images were explicitly described as banner images, while some are currently also used in homepage expertise cards.",
-      "required_fix": "Owner should confirm whether supplied images may be reused in cards or should remain banner-only."
     },
     {
       "id": "AUDIT-010",
@@ -177,5 +159,25 @@
       "requested_fonts_all_pages": true
     },
     "runtime_errors": "none found in last-hour scan"
+  },
+  "resolved_in_asset_refresh_branch": [
+    {
+      "id": "AUDIT-012",
+      "resolution": "Replaced all visible references to the overcompressed 4-10 KB WebPs with high-resolution 2048px originals or 1672px generated PNG assets."
+    },
+    {
+      "id": "AUDIT-004",
+      "resolution": "Removed the external Unsplash homepage image and replaced it with a repository-owned generated asset."
+    },
+    {
+      "id": "AUDIT-006",
+      "resolution": "Business-supplied original images are now used as page banners only, matching the owner's stated banner intent. Generated assets handle expertise cards and supporting imagery."
+    }
+  ],
+  "asset_refresh": {
+    "status": "implemented_on_branch",
+    "branch": "asset-refresh-2026-09-22",
+    "structure_changed": false,
+    "summary": "Asset-only visual refresh: page structure and business copy preserved; high-resolution banners/cards/CTA artwork substituted in place."
   }
 }
