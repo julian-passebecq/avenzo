@@ -981,3 +981,25 @@ body[data-page="home"] .service-entry-early{display:none}
   line-height:.95;
   font-weight:700;
 }
+
+
+/* High-resolution asset refresh — 2026-09-22 */
+.hero-image,
+.banner-image,
+.expertise-card img,
+.image-banner-media img{
+  image-rendering:auto;
+}
+
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(8,13,17,.94) 0%,rgba(8,13,17,.86) 48%,rgba(8,13,17,.70) 100%),
+    url("/assets/generated-network-city.png") center 54% / cover no-repeat;
+}
+.final-cta > *{
+  position:relative;
+  z-index:1;
+}
