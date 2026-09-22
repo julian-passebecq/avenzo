@@ -976,3 +976,11 @@ body[data-page="home"] .service-entry-early{display:none}
 .capability-columns-clean li::before{
   content:none;
 }
+
+
+/* Source-of-truth audit fix: PDF page 4 requires "4 expertises" to be a large bold focus. */
+.expertise-topline h2.section-title-primary{
+  font-size:clamp(46px,5vw,70px);
+  line-height:.95;
+  font-weight:700;
+}
