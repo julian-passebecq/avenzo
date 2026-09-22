@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-22",
+  "audience": "Adrien / business owner",
+  "purpose": "Questions that resolve information the business documents and PDF do not fully specify. These should guide the next design/content pass without reopening already-approved decisions.",
+  "instructions_for_use": "Ask these by category. Questions marked 'high' can materially change the next implementation. Questions marked 'medium' improve polish or launch readiness.",
+  "categories": [
+    {
+      "category": "1. Brand positioning",
+      "questions": [
+        {
+          "priority": "high",
+          "question": "Should Avenzo Studio now be presented first as a global marketing and business-development agency, with China as one specialist market, rather than as a France-China agency?",
+          "why": "Your later feedback broadened the business beyond France and China, but some older copy and visuals still emphasize China."
+        },
+        {
+          "priority": "medium",
+          "question": "Do you want to keep the line “L’accès à l’international, sans détour.” directly under “Ensemble, on avance.” on the homepage?",
+          "why": "The PDF clearly promotes “Ensemble, on avance.” but does not explicitly say whether the international-access line should remain."
+        }
+      ]
+    },
+    {
+      "category": "2. Heading hierarchy",
+      "questions": [
+        {
+          "priority": "high",
+          "question": "When you write H1 / H2 / H3 in the PDF, do you mean the visual size and importance, or do you want those exact HTML heading tags in the code?",
+          "why": "For SEO, I currently keep one technical H1 per page and style section titles at H1 scale. Visually it follows your PDF, but the HTML tags are H2/H3 inside the page."
+        },
+        {
+          "priority": "medium",
+          "question": "For Services, which exact name should be canonical everywhere: “Marketing & Digital Stratégie”, “Marketing & Digital Strategy”, or “Marketing & stratégie”?",
+          "why": "All three variants appeared during the project. The PDF specifically says “Marketing & Digital Stratégie”."
+        }
+      ]
+    },
+    {
+      "category": "3. Homepage",
+      "questions": [
+        {
+          "priority": "medium",
+          "question": "Under the large “4 expertises” heading, should the helper sentence “Choisissez une expertise…” stay, or should that area be even more minimal?",
+          "why": "The PDF says to replace “Choisissez votre point d’entrée” as the focus, but does not explicitly address the smaller helper sentence."
+        },
+        {
+          "priority": "high",
+          "question": "Should the four expertise cards use the four images you supplied, or should those supplied images be reserved only for large page banners?",
+          "why": "You said the pictures you sent are for banners, while the current homepage also uses them inside expertise cards."
+        }
+      ]
+    },
+    {
+      "category": "4. Services",
+      "questions": [
+        {
+          "priority": "medium",
+          "question": "Do you want the service capability names (SEO, Google Ads, CRM, Lead generation, etc.) to stay mostly in English, or should the public French site translate as many of them as possible?",
+          "why": "The source document mixes French page copy with English capability names."
+        },
+        {
+          "priority": "medium",
+          "question": "Do you want to keep the small sticky navigation “Stratégie / Digital / Croissance / International” at the top of the Services page?",
+          "why": "The PDF likes the section structure but does not explicitly mention this secondary navigation."
+        }
+      ]
+    },
+    {
+      "category": "5. Solutions",
+      "questions": [
+        {
+          "priority": "medium",
+          "question": "Should the solution capability summaries stay as compact English terms, or should they be translated into French?",
+          "why": "The main solution titles are French but the detailed capability summaries are mixed-language."
+        },
+        {
+          "priority": "medium",
+          "question": "Do you want to keep the full five-step method and the five principles below the four solutions?",
+          "why": "The PDF comments on hierarchy, lines and numbering, but does not say whether these lower sections should remain or be shortened."
+        }
+      ]
+    },
+    {
+      "category": "6. Contact",
+      "questions": [
+        {
+          "priority": "high",
+          "question": "Please confirm the final contact email. Is it contact@avenzostudios.com?",
+          "why": "The older document uses contact@avenzostudio.com, but you later chose the plural domain avenzostudios.com."
+        },
+        {
+          "priority": "high",
+          "question": "Should the contact form continue opening the visitor’s email app, or do you want a real form that sends directly from the website?",
+          "why": "A real form requires a small server-side endpoint/email service; the current version stores no data and opens an email draft."
+        },
+        {
+          "priority": "medium",
+          "question": "Do you want to show a phone number, city/address, LinkedIn, WeChat or other business contact channels?",
+          "why": "No confirmed public contact details besides email and France were provided."
+        }
+      ]
+    },
+    {
+      "category": "7. Languages",
+      "questions": [
+        {
+          "priority": "high",
+          "question": "Is the first public release French only, or do you want full English and Chinese versions later?",
+          "why": "The PDF asks to replace decorative Chinese characters with French, but earlier versions included language switching."
+        },
+        {
+          "priority": "medium",
+          "question": "If Chinese is added later, should it be a complete /zh version rather than decorative Chinese characters inside the French site?",
+          "why": "This keeps the French design clean while allowing a proper localized version."
+        }
+      ]
+    },
+    {
+      "category": "8. Images and banners",
+      "questions": [
+        {
+          "priority": "high",
+          "question": "Which exact image should be used for each page banner: Home, Services, Solutions and Contact?",
+          "why": "You supplied four images and said they are for banners, but the final page-to-image mapping was never explicitly confirmed."
+        },
+        {
+          "priority": "medium",
+          "question": "Do you still want Shanghai Tower specifically in the homepage expertise area?",
+          "why": "The current first expertise image is an external Unsplash image, not a repository-owned supplied asset."
+        },
+        {
+          "priority": "medium",
+          "question": "Is the current Avenzo logo/mark final, or do you expect another logo version before launch?",
+          "why": "The brand mark is used everywhere, but I do not have an explicit final-logo approval in the source material."
+        }
+      ]
+    },
+    {
+      "category": "9. Domain, SEO and legal launch details",
+      "questions": [
+        {
+          "priority": "high",
+          "question": "Is avenzostudios.com now purchased and ready to become the production domain?",
+          "why": "The current canonical URLs and sitemap still point to the temporary Vercel domain."
+        },
+        {
+          "priority": "high",
+          "question": "What legal/business name, city/address and company registration details should appear in the footer or legal notice?",
+          "why": "These details were not provided, and they matter for a professional launch and local SEO."
+        },
+        {
+          "priority": "medium",
+          "question": "Do you want a Privacy Policy, Cookie Policy and Legal Notice before analytics are activated?",
+          "why": "Google/Meta tracking normally requires consent/privacy information for European visitors."
+        }
+      ]
+    },
+    {
+      "category": "10. Analytics",
+      "questions": [
+        {
+          "priority": "medium",
+          "question": "Will you use Google Tag Manager, GA4, Meta Pixel, or all of them?",
+          "why": "The code can support them, but no IDs are configured yet."
+        },
+        {
+          "priority": "medium",
+          "question": "Do you already have a preferred cookie-consent tool, or should I choose a simple one for you?",
+          "why": "Tracking is deliberately disabled until consent handling is defined."
+        }
+      ]
+    },
+    {
+      "category": "11. Interaction and future pages",
+      "questions": [
+        {
+          "priority": "medium",
+          "question": "When a user clicks one of the four expertise cards, is going to Services and scrolling directly to that section exactly what you want?",
+          "why": "This matches your 'click and go to the relevant section' feedback, but I want to confirm the cross-page behavior versus same-page scrolling."
+        },
+        {
+          "priority": "medium",
+          "question": "Portfolio is currently hidden. Should it remain completely absent from navigation until you have real client cases?",
+          "why": "That is the current rule based on your earlier message."
+        }
+      ]
+    }
+  ]
+}
