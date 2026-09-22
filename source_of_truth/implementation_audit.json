@@ -56,25 +56,6 @@
   ],
   "open_gaps": [
     {
-      "id": "AUDIT-001",
-      "severity": "high_visual",
-      "issue": "'4 expertises' is still rendered too small in the current homepage screenshot/code despite the explicit PDF request that it be the main large bold focus.",
-      "cause": "CSS cascade includes a later '.expertise-topline h2 { font-size: inherit; }' rule that can override the intended large '.section-title-primary' size.",
-      "required_fix": "Remove/override the conflicting rule so '4 expertises' uses the intended large heading scale."
-    },
-    {
-      "id": "AUDIT-002",
-      "severity": "medium",
-      "issue": "README contains an older 'Latest homepage direction' section saying the hero title is Avenzo Studio and that a France-China mini-map is present.",
-      "required_fix": "Replace stale README guidance with a pointer to source_of_truth/manifest.json and the 2026-09-22 business review."
-    },
-    {
-      "id": "AUDIT-003",
-      "severity": "medium",
-      "issue": "CONTENT_AUDIT.md describes an obsolete interactive layer (compact France-China hero, plane/ship/fiber animation, three themes) that is no longer canonical.",
-      "required_fix": "Mark it legacy or rewrite it to point to the canonical source-of-truth."
-    },
-    {
       "id": "AUDIT-004",
       "severity": "medium",
       "issue": "Homepage first expertise card hotlinks an external Unsplash Shanghai image.",
@@ -111,5 +92,20 @@
       "status": "useful review record",
       "note": "Superseded as the overall canonical entrypoint by source_of_truth/manifest.json; still valid as a focused record of the 18-page PDF."
     }
-  ]
+  ],
+  "resolved_in_source_of_truth_branch": [
+    {
+      "id": "AUDIT-001",
+      "resolution": "Added a higher-specificity rule so '4 expertises' renders at the intended large bold scale."
+    },
+    {
+      "id": "AUDIT-002",
+      "resolution": "Rewrote README.md to point to the canonical source-of-truth and removed the stale hero/map direction."
+    },
+    {
+      "id": "AUDIT-003",
+      "resolution": "Replaced stale CONTENT_AUDIT.md prototype claims with a deprecation/pointer notice."
+    }
+  ],
+  "branch_status": "source-of-truth branch prepared; merge required for production"
 }
