@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "project": "Avenzo Studio",
+  "repository": "julian-passebecq/avenzo",
+  "updated_at": "2026-09-22",
+  "purpose": "Canonical, business-only source of truth assembled from the business documents, the 18-page visual review, business-relevant chat feedback, supplied assets, and the current implementation.",
+  "source_precedence": [
+    {
+      "priority": 1,
+      "source": "Latest explicit business review",
+      "reference": "Avenzo Studio-julian (1).pdf / 18 pages / 2026-09-22",
+      "rule": "Controls current visual hierarchy, layout, SEO, numbering, separator lines, hero composition, and contact-page review."
+    },
+    {
+      "priority": 2,
+      "source": "Latest business content document",
+      "reference": "Avenzo Studio (6).docx",
+      "note": "Avenzo Studio (5).docx is byte-identical to (6), so there is no content conflict between those two uploads.",
+      "rule": "Controls page copy, service inventories, solutions, methodology, contact fields, and sector lists unless explicitly superseded later."
+    },
+    {
+      "priority": 3,
+      "source": "Business-relevant messages from Adrien",
+      "reference": "User-supplied WhatsApp excerpts and screenshots, 2026-09-15 through 2026-09-21",
+      "rule": "Controls business intent, historical preferences, explicit likes/dislikes, page count, interaction preference, typography, banner-image intent, portfolio visibility, and domain choice."
+    },
+    {
+      "priority": 4,
+      "source": "Current repository implementation",
+      "reference": "main branch",
+      "rule": "Implementation evidence only. Code is not allowed to redefine the business requirement."
+    },
+    {
+      "priority": 5,
+      "source": "Historical prototypes / experiments",
+      "reference": "dev routes, old screenshots, avenzo-studio.html",
+      "rule": "Design inspiration only. They are not canonical unless a later business message explicitly re-approves a specific element."
+    }
+  ],
+  "filtering_policy": {
+    "included": [
+      "business model and target market",
+      "brand/domain decisions",
+      "page architecture",
+      "approved copy and service lists",
+      "design likes/dislikes",
+      "typography",
+      "interaction requirements",
+      "image usage requirements",
+      "SEO/tracking requirements",
+      "implementation feedback"
+    ],
+    "excluded": [
+      "greetings and scheduling chatter",
+      "jokes and flirtation",
+      "insults or arguments unrelated to the website",
+      "personal/sexual content",
+      "social plans",
+      "messages that do not alter a business or website decision"
+    ]
+  },
+  "conflict_resolution": [
+    "Newest explicit business instruction wins over older prototypes.",
+    "The later global-agency positioning supersedes the initial China-only framing, while China remains an important specialization.",
+    "The 2026-09-22 PDF supersedes earlier experiments that used a hero map or Chinese characters.",
+    "The plural domain avenzostudios.com supersedes avenzostudio.com according to the later business messages; purchase/DNS state must still be independently verified.",
+    "Business-supplied images are primarily intended for banners; reuse elsewhere is an implementation choice, not a business requirement.",
+    "Portfolio remains hidden until the business has client work suitable for publication."
+  ],
+  "canonical_files": [
+    {
+      "path": "source_of_truth/business_profile.json",
+      "purpose": "What the company is, who it serves, pages, domain, languages and constraints."
+    },
+    {
+      "path": "source_of_truth/content.json",
+      "purpose": "Canonical page content and capability inventories from the supplied document."
+    },
+    {
+      "path": "source_of_truth/design_preferences.json",
+      "purpose": "Visual and interaction preferences, including superseded ideas."
+    },
+    {
+      "path": "source_of_truth/business_messages.json",
+      "purpose": "Clean business-only timeline of Adrien's relevant messages."
+    },
+    {
+      "path": "source_of_truth/assets.json",
+      "purpose": "Supplied images, screenshots, hashes, intended usage and repo mappings."
+    },
+    {
+      "path": "source_of_truth/implementation_audit.json",
+      "purpose": "Current compliance, known gaps and stale-document findings."
+    }
+  ]
+}
