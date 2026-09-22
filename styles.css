@@ -642,9 +642,6 @@ body[data-page="home"] .service-entry-early{display:none}
 .expertise-topline{
   align-items:flex-end;
 }
-.expertise-topline h2{
-  font-size:inherit;
-}
 .expertise-topline>p{
   max-width:460px;
 }
