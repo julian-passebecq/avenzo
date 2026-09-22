@@ -231,7 +231,12 @@
     "Do not change the approved Cormorant Garamond / Inter font pairing."
   ],
   "validation": {
-    "branch": "adrien-feedback-2026-09-22",
-    "note": "Visual/SEO changes implemented from the 18-page business review. Tracking is prepared but intentionally disabled until IDs and consent are configured."
+    "branch": "main",
+    "note": "The PDF review was implemented and merged to main. Overall project intent now resolves through source_of_truth/manifest.json."
+  },
+  "canonical_context": {
+    "merged_to_main_commit": "417e06d3814f501d3bfe5caeb3bd489c9d62a79a",
+    "canonical_manifest": "source_of_truth/manifest.json",
+    "note": "This file remains the focused record of the 18-page PDF review. It is not the complete business source of truth."
   }
 }
