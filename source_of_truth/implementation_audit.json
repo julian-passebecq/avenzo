@@ -112,7 +112,7 @@
       "resolution": "Replaced stale CONTENT_AUDIT.md prototype claims with a deprecation/pointer notice."
     }
   ],
-  "branch_status": "final PDF audit branch prepared; preview validation required before merge",
+  "branch_status": "merged to main; production verification in progress",
   "audited_against_commit": "309ac17426f3be0a9ac8023302fc5a2bfe1731a7",
   "pdf_review": {
     "source": "Avenzo Studio-julian (1)(1).pdf",
@@ -133,6 +133,13 @@
     {
       "id": "AUDIT-009",
       "resolution": "Added a requirement-by-requirement PDF compliance matrix and owner-question register to the canonical source-of-truth."
+    },
+    {
+      "id": "AUDIT-011",
+      "resolution": "Internal source-of-truth and audit documents were found to be directly servable by the static deployment. .vercelignore now excludes SOURCE_OF_TRUTH.json, source_of_truth/, BUSINESS_FEEDBACK_2026-09-22.json, README.md, CONTENT_AUDIT.md and TRACKING.md from website output."
     }
-  ]
+  ],
+  "audit_status": "completed_and_merged",
+  "production_merge_commit": "7b9c17c224da8ef79cbe1ebb8d6145e259885a2d",
+  "post_merge_hardening_commit": "8cc735c3d79fbfaff8904759f8a253a2c7e039aa"
 }
