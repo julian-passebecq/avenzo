@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0",
+  "audited_at": "2026-09-22",
+  "source_pdf": {
+    "filename": "Avenzo Studio-julian (1)(1).pdf",
+    "sha256": "5c59f5cc07ec7c8b30ee643514bc91cf57a731cc5c8794051c67420ff1f702e2",
+    "pages": 18,
+    "note": "Byte-identical to the previously archived Avenzo Studio-julian review PDF."
+  },
+  "interpretation_rule": "Where Adrien uses H1/H2/H3 to describe visual emphasis, the implementation currently preserves one semantic H1 per page for SEO and applies H1-scale visual styling to requested section headings. This is the main item requiring owner confirmation.",
+  "requirements": [
+    {
+      "id": "P3-1",
+      "page": 3,
+      "request": "Move Accueil / Services / Solutions / Contact to the right, close to 'Parler de votre projet'.",
+      "status": "pass",
+      "evidence": [
+        "shared site header uses brand + right-aligned nav + CTA"
+      ]
+    },
+    {
+      "id": "P3-2",
+      "page": 3,
+      "request": "Put 'Ensemble, on avance' where the large Avenzo Studio title was; delete the large Avenzo Studio and map.",
+      "status": "pass",
+      "evidence": [
+        "index.html hero H1 is 'Ensemble, on avance.'",
+        "no hero bridge/map markup"
+      ]
+    },
+    {
+      "id": "P4-1",
+      "page": 4,
+      "request": "Make '4 expertises' the main focus, bold and large, instead of 'Choisissez votre point d’entrée'.",
+      "status": "pass",
+      "evidence": [
+        "index.html uses section-title-primary",
+        "styles.css explicit 46-70px bold override",
+        "old 'Choisissez votre point d’entrée' title absent"
+      ]
+    },
+    {
+      "id": "P5-1",
+      "page": 5,
+      "request": "Delete the brown Avenzo Studio label from the company introduction.",
+      "status": "pass",
+      "evidence": [
+        "index.html intro has no Avenzo Studio eyebrow"
+      ]
+    },
+    {
+      "id": "P6-1",
+      "page": 6,
+      "request": "Make 'Solutions' the main enlarged brown focus and make 'Une combinaison...' slightly smaller.",
+      "status": "pass",
+      "evidence": [
+        "solutions-focus large gold/brown styling",
+        "secondary h3 smaller"
+      ]
+    },
+    {
+      "id": "P8-1",
+      "page": 8,
+      "request": "Keep the service-section structure but remove the obvious lines.",
+      "status": "pass",
+      "evidence": [
+        "service-detail-clean border 0",
+        "capability list borders forced to 0"
+      ]
+    },
+    {
+      "id": "P8-2",
+      "page": 8,
+      "request": "Marketing & Digital Stratégie should be H1 focus; 'Poser la stratégie...' should be H2.",
+      "status": "pass_visual_semantic_question",
+      "evidence": [
+        "service title is visually larger and primary",
+        "tagline is visually secondary"
+      ],
+      "question": "Does 'H1/H2' mean visual hierarchy only, or literal HTML tags? Current implementation uses one semantic H1 per page for SEO."
+    },
+    {
+      "id": "P9-1",
+      "page": 9,
+      "request": "'Pour des entreprises ambitieuses' should be H1 focus; 'Des secteurs...' H2.",
+      "status": "pass_visual_semantic_question",
+      "evidence": [
+        "first phrase is large primary gold heading",
+        "second phrase is smaller secondary heading"
+      ],
+      "question": "Same semantic-vs-visual heading question as P8-2."
+    },
+    {
+      "id": "P9-2",
+      "page": 9,
+      "request": "Do not use a table for the six business types; make a simple list with no lines.",
+      "status": "pass",
+      "evidence": [
+        "sector-list uses plain text spans with no table borders"
+      ]
+    },
+    {
+      "id": "P10-1",
+      "page": 10,
+      "request": "Apply the same H1 hierarchy to the Digital & E-commerce service section.",
+      "status": "pass_visual_semantic_question",
+      "evidence": [
+        "Digital & E-commerce is visually primary, explanatory phrase secondary"
+      ],
+      "question": "Same semantic-vs-visual heading question as P8-2."
+    },
+    {
+      "id": "P10-2",
+      "page": 10,
+      "request": "Keep the detailed service presentation on the right but remove the lines.",
+      "status": "pass",
+      "evidence": [
+        "capability lists retained in two columns with border 0"
+      ]
+    },
+    {
+      "id": "P12-1",
+      "page": 12,
+      "request": "Delete the brown 'Solutions' label from the solutions banner.",
+      "status": "pass",
+      "evidence": [
+        "solutions.html banner contains only the main title"
+      ]
+    },
+    {
+      "id": "P13-1",
+      "page": 13,
+      "request": "Delete brown Avenzo Studio label or make it H1.",
+      "status": "pass",
+      "evidence": [
+        "redundant Avenzo Studio eyebrow deleted"
+      ]
+    },
+    {
+      "id": "P13-2",
+      "page": 13,
+      "request": "Présence digitale and the other solution categories should be H1 focus, not small brown labels.",
+      "status": "pass_visual_semantic_question",
+      "evidence": [
+        "solution-name uses large gold/brown H1-scale styling"
+      ],
+      "question": "Same semantic-vs-visual heading question as P8-2."
+    },
+    {
+      "id": "P13-3",
+      "page": 13,
+      "request": "Remove old-fashioned lines dividing solution sections.",
+      "status": "pass",
+      "evidence": [
+        "solution-row-clean border 0"
+      ]
+    },
+    {
+      "id": "P14-1",
+      "page": 14,
+      "request": "Delete visual numbers 1,2,3,4 from pages.",
+      "status": "pass",
+      "evidence": [
+        "no solution-number/detail-index markup in public pages",
+        "method list has list-style none"
+      ]
+    },
+    {
+      "id": "P16-1",
+      "page": 16,
+      "request": "Delete redundant brown Contact label and brown Avenzo Studio label.",
+      "status": "pass",
+      "evidence": [
+        "contact banner has no Contact eyebrow",
+        "contact intro has no Avenzo Studio eyebrow"
+      ]
+    },
+    {
+      "id": "P17-1",
+      "page": 17,
+      "request": "Keep the contact section but restyle the left contact information, remove the line above, and rebalance left/right.",
+      "status": "pass",
+      "evidence": [
+        "contact grid is .92fr/1.08fr",
+        "contact-info-stack border 0",
+        "left info simplified"
+      ]
+    },
+    {
+      "id": "P18-1",
+      "page": 18,
+      "request": "Redefine H1/H2/H3 sizes so the whole site is more balanced.",
+      "status": "pass_with_owner_question",
+      "evidence": [
+        "global display/heading scale added",
+        "primary/secondary headings restyled consistently"
+      ],
+      "question": "Confirm whether the requested H1/H2/H3 hierarchy is visual only or must also change literal HTML heading tags."
+    },
+    {
+      "id": "P18-2",
+      "page": 18,
+      "request": "Replace Chinese characters with French.",
+      "status": "pass",
+      "evidence": [
+        "no CJK characters in the four public HTML pages"
+      ]
+    },
+    {
+      "id": "P18-3",
+      "page": 18,
+      "request": "Improve SEO; footer should indicate site structure.",
+      "status": "pass",
+      "evidence": [
+        "structured footer navigation",
+        "canonical URLs",
+        "Open Graph metadata",
+        "Organization JSON-LD",
+        "robots.txt",
+        "sitemap.xml"
+      ]
+    },
+    {
+      "id": "P18-4",
+      "page": 18,
+      "request": "Prepare code for future Google/Facebook tracking and explain backend need.",
+      "status": "pass",
+      "evidence": [
+        "tracking-config.js",
+        "consent-gated tracking.js",
+        "TRACKING.md",
+        "tracking disabled by default"
+      ],
+      "note": "No backend is required for GTM/GA4/Meta browser tags; a consent solution is still needed before enabling non-essential tracking."
+    }
+  ],
+  "summary": {
+    "total": 22,
+    "pass": 17,
+    "pass_visual_semantic_question": 4,
+    "pass_with_owner_question": 1,
+    "fail": 0,
+    "blocking_implementation_defects": 0,
+    "owner_decisions_needed": [
+      "Literal HTML heading semantics versus visual H1/H2/H3 hierarchy"
+    ]
+  }
+}

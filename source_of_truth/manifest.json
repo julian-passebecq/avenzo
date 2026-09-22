@@ -65,7 +65,8 @@
     "The 2026-09-22 PDF supersedes earlier experiments that used a hero map or Chinese characters.",
     "The plural domain avenzostudios.com supersedes avenzostudio.com according to the later business messages; purchase/DNS state must still be independently verified.",
     "Business-supplied images are primarily intended for banners; reuse elsewhere is an implementation choice, not a business requirement.",
-    "Portfolio remains hidden until the business has client work suitable for publication."
+    "Portfolio remains hidden until the business has client work suitable for publication.",
+    "When H1/H2/H3 appears in business feedback, treat it as visual hierarchy unless the owner explicitly confirms literal HTML heading-tag semantics; preserve one semantic H1 per page for SEO in the meantime."
   ],
   "canonical_files": [
     {
@@ -95,6 +96,14 @@
     {
       "path": "source_of_truth/reference_versions.json",
       "purpose": "Historical mockups, wireframes, approvals and superseded visual ideas."
+    },
+    {
+      "path": "source_of_truth/pdf_compliance_2026-09-22.json",
+      "purpose": "Requirement-by-requirement compliance matrix for the 18-page business review."
+    },
+    {
+      "path": "source_of_truth/questions_for_owner_en.json",
+      "purpose": "English clarification questions for the business owner where source material is incomplete or ambiguous."
     }
   ]
 }

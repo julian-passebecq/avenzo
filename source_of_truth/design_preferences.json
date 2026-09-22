@@ -66,5 +66,10 @@
     "Theme-development control panels in production.",
     "Decorative Chinese characters on public pages.",
     "Too many boxes, borders and table-like section separators."
-  ]
+  ],
+  "heading_semantics": {
+    "current_implementation": "One semantic H1 per page for SEO; requested section headings use H1-scale visual styling.",
+    "uncertainty": "Adrien's PDF repeatedly says specific section labels should be H1/H2, but it is unclear whether this means visual hierarchy or literal HTML tags.",
+    "owner_question": "When you say H1 / H2 / H3, do you mean the visual size and importance, or the exact HTML heading tags in the code?"
+  }
 }
