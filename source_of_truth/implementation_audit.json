@@ -3,7 +3,6 @@
   "audited_at": "2026-09-22",
   "repository": "julian-passebecq/avenzo",
   "production_url": "https://avenzo-kappa.vercel.app/",
-  "current_main_commit_at_audit": "417e06d3814f501d3bfe5caeb3bd489c9d62a79a",
   "compliance": [
     {
       "requirement": "Four public pages: Accueil, Services, Solutions, Contact",
@@ -59,7 +58,7 @@
       "id": "AUDIT-004",
       "severity": "medium",
       "issue": "Homepage first expertise card hotlinks an external Unsplash Shanghai image.",
-      "required_fix": "Before final production, localize an approved Shanghai asset or replace it with a repository-owned asset to avoid external dependency."
+      "required_fix": "Before final production, localize an approved Shanghai asset or replace it with a repository-owned asset. Owner should confirm whether Shanghai Tower is still wanted."
     },
     {
       "id": "AUDIT-005",
@@ -69,9 +68,15 @@
     },
     {
       "id": "AUDIT-006",
-      "severity": "informational",
-      "issue": "Business-supplied images were explicitly described as banner images, while some are currently used in expertise cards.",
-      "required_fix": "Not necessarily wrong, but banner usage should remain the primary design intent."
+      "severity": "needs_confirmation",
+      "issue": "Business-supplied images were explicitly described as banner images, while some are currently also used in homepage expertise cards.",
+      "required_fix": "Owner should confirm whether supplied images may be reused in cards or should remain banner-only."
+    },
+    {
+      "id": "AUDIT-010",
+      "severity": "needs_confirmation",
+      "issue": "The PDF uses H1/H2/H3 language for section hierarchy, but the implementation intentionally keeps one semantic H1 per page and uses H1-scale styling for requested section titles.",
+      "required_fix": "Confirm whether the owner means visual hierarchy or literal HTML heading tags."
     }
   ],
   "legacy_items": [
@@ -107,5 +112,27 @@
       "resolution": "Replaced stale CONTENT_AUDIT.md prototype claims with a deprecation/pointer notice."
     }
   ],
-  "branch_status": "source-of-truth branch prepared; merge required for production"
+  "branch_status": "final PDF audit branch prepared; preview validation required before merge",
+  "audited_against_commit": "309ac17426f3be0a9ac8023302fc5a2bfe1731a7",
+  "pdf_review": {
+    "source": "Avenzo Studio-julian (1)(1).pdf",
+    "sha256": "5c59f5cc07ec7c8b30ee643514bc91cf57a731cc5c8794051c67420ff1f702e2",
+    "pages": 18,
+    "compliance_matrix": "source_of_truth/pdf_compliance_2026-09-22.json",
+    "result": "No blocking mismatch found. One interpretation question remains: visual heading hierarchy versus literal HTML H1/H2/H3 tags."
+  },
+  "resolved_in_pdf_audit_branch": [
+    {
+      "id": "AUDIT-007",
+      "resolution": "Removed the stale '.expertise-topline h2 { font-size: inherit; }' cascade rule. The explicit large '4 expertises' styling now stands without a contradictory override."
+    },
+    {
+      "id": "AUDIT-008",
+      "resolution": "Changed the first service title to the wording used in the PDF: 'Marketing & Digital Stratégie'."
+    },
+    {
+      "id": "AUDIT-009",
+      "resolution": "Added a requirement-by-requirement PDF compliance matrix and owner-question register to the canonical source-of-truth."
+    }
+  ]
 }
