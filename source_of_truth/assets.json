@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "policy": {
+    "business_instruction": "The pictures supplied by Adrien are for banners.",
+    "rule": "Treat supplied marketing images as first-class brand assets. Feedback screenshots and handwritten wireframes are evidence/reference assets, not public marketing imagery.",
+    "external_assets": "Any externally hotlinked image should be localized or deliberately documented before final production."
+  },
+  "uploaded_sources": [
+    {
+      "filename": "51581-matrix-356024.jpg (4).jpeg",
+      "sha256": "6d31ddd19277cb6a4aa8d2a81bf4d89a9f9c5782972ad854c8e40ebb811137a4",
+      "dimensions": "2048x1447",
+      "semantic_category": "digital / technology / e-commerce",
+      "repo_derivative": "assets/digital-matrix.webp",
+      "intended_use": "banner"
+    },
+    {
+      "filename": "geralt-ball-63527.jpg (4).jpeg",
+      "sha256": "387bf298dad1704a1d95ef2b6612564c4e0a777f96591ece9b0642dec142cfa4",
+      "dimensions": "2048x1447",
+      "semantic_category": "strategy / data / international / globe",
+      "repo_derivative": "assets/strategy-globe.webp",
+      "intended_use": "banner"
+    },
+    {
+      "filename": "tobiasbrunner-river-6175173.jpg (3).jpeg",
+      "sha256": "c1c25da464f768ae0f30e8e9f7184d13990d2bad08066df62d557ad1865f6a8e",
+      "dimensions": "2048x1365",
+      "semantic_category": "business / B2B / professional services / city",
+      "repo_derivative": "assets/growth-city.webp",
+      "intended_use": "banner"
+    },
+    {
+      "filename": "xegxef-city-5772121.jpg (3).jpeg",
+      "sha256": "e59df689fbd5f66ce0fd039d44550737e91e2b2a8db3a7feb6eea44b376845c8",
+      "dimensions": "2048x1365",
+      "semantic_category": "international / trade / urban market",
+      "repo_derivative": "assets/trade-city.webp",
+      "intended_use": "banner"
+    }
+  ],
+  "source_documents": [
+    {
+      "filename": "Avenzo Studio (6).docx",
+      "sha256": "cbda44209cd85d4d4bd50e39839a87622a08859821921d86685cc59eaa44edb1",
+      "role": "canonical content source"
+    },
+    {
+      "filename": "Avenzo Studio (5).docx",
+      "sha256": "cbda44209cd85d4d4bd50e39839a87622a08859821921d86685cc59eaa44edb1",
+      "role": "duplicate of (6); no separate content authority"
+    },
+    {
+      "filename": "Avenzo Studio-julian (1).pdf",
+      "sha256": "5c59f5cc07ec7c8b30ee643514bc91cf57a731cc5c8794051c67420ff1f702e2",
+      "role": "canonical latest visual/layout feedback"
+    }
+  ],
+  "reference_only_assets": [
+    {
+      "filename": "3e093548-4a6e-41a7-9b36-b6cded66d137.png",
+      "sha256": "83513bfdd0b328531c2818d771c0bf9d2b9d6a03ba08c9dbb2b5b8023ba4d706",
+      "role": "business conversation/reference screenshot"
+    },
+    {
+      "filename": "46cad407-0be4-4af7-8468-7d380168aca8.png",
+      "sha256": "82c7dbb21062b29ec60c80a872235c424939bb964028b695399a2b7e56e0ef67",
+      "role": "website feedback/reference screenshot"
+    },
+    {
+      "filename": "Capture d’écran 2026-09-19 à 16.04.31 (2).png",
+      "sha256": "4b752f68338fb1c239f283c48c908ba85e6bc0abe0cc6e609bb452654cef9c54",
+      "role": "website feedback/reference screenshot"
+    },
+    {
+      "filename": "6df80eac-5836-41b4-b67d-b4d65cf39fa8.png",
+      "sha256": "96c4879a7f3982b23a2072c8801e268a6f395fd3d7a4c923af9514ce4f04e02d",
+      "role": "handwritten-wireframe conversation screenshot"
+    },
+    {
+      "filename": "2668394c-d3ad-4905-8c06-8c34534f571c.png",
+      "sha256": "96c4879a7f3982b23a2072c8801e268a6f395fd3d7a4c923af9514ce4f04e02d",
+      "role": "duplicate of 6df80eac-...; same bytes"
+    },
+    {
+      "filename": "21e7e874-4a71-4f18-b767-7297497b619d.png",
+      "sha256": "1fba26323ffe37c7341dc1e27e5aab9d1f70e4a2cb6225305cf0f46fb5b81585",
+      "role": "conversation/reference screenshot"
+    }
+  ],
+  "implementation_notes": [
+    "The live homepage currently also uses an external Unsplash Shanghai image for the first expertise card. This is not one of the four supplied business assets and should be localized or replaced before final production.",
+    "The original supplied images were explicitly described as banner images; expertise-card usage is an implementation choice, not a canonical requirement."
+  ]
+}
