@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "primary_source": "Avenzo Studio (6).docx",
+  "duplicate_source_note": "Avenzo Studio (5).docx has the exact same SHA-256 as Avenzo Studio (6).docx and is a duplicate.",
+  "editorial_policy": "Preserve the business meaning and inventories. Spelling/grammar can be normalized in implementation, but any substantive rewrite must be marked as editorial rather than presented as source text.",
+  "home": {
+    "source_tagline": "L’accès à l’internationale , sans détour",
+    "implementation_tagline": "L’accès à l’international, sans détour.",
+    "introduction": "Nous accompagnons les entreprises dans leur stratégie digitale, leur développement commercial et leurs projets de croissance, de la présence en ligne à l'acquisition, jusqu'aux salons professionnels internationaux.",
+    "ctas": [
+      "Découvrir nos services",
+      "Parler de votre projet"
+    ],
+    "four_expertises": [
+      {
+        "label": "STRATÉGIE",
+        "title": "Marketing & Digital Stratégie",
+        "description": "Stratégie marketing, positionnement, communication, acquisition et développement de clientèle."
+      },
+      {
+        "label": "DIGITAL",
+        "title": "Digital & E-commerce",
+        "description": "Sites internet, e-commerce, réseaux sociaux, contenus, SEO, SEA et campagnes digitales."
+      },
+      {
+        "label": "GROISSANCE",
+        "title": "Business Development",
+        "description": "Prospection, acquisition, CRM, développement commercial et accompagnement des entreprises."
+      },
+      {
+        "label": "TRADE SHOWS",
+        "title": "Trade Shows & International Development",
+        "description": "Préparation et accompagnement de projets liés aux salons professionnels, notamment à l’international et en Chine."
+      }
+    ],
+    "sector_intro": "Créé pour les entreprises ambitieuses",
+    "sectors": [
+      "Luxury & Lifestyle",
+      "E-commerce & Retail",
+      "B2B & Professional Services",
+      "Hospitality & Tourism",
+      "Food & Beverage",
+      "International Business"
+    ]
+  },
+  "services": {
+    "page_title": "Quatre expertises, un même interlocuteur",
+    "families": {
+      "marketing_and_digital_strategy": [
+        "Marketing strategy",
+        "Brand strategy",
+        "Positioning",
+        "Market & competitor analysis",
+        "Communication strategy",
+        "Customer acquisition",
+        "Pricing & value proposition",
+        "Go-to-market strategy",
+        "Marketing project management"
+      ],
+      "digital_and_ecommerce": [
+        "Website creation",
+        "Website management",
+        "E-commerce",
+        "Shopify",
+        "Landing pages",
+        "UX / digital experience",
+        "SEO",
+        "SEA",
+        "Google Ads",
+        "Meta Ads",
+        "Social media management",
+        "Email marketing",
+        "CRM",
+        "Digital content"
+      ],
+      "business_development": [
+        "Commercial strategy",
+        "Lead generation",
+        "B2B prospecting",
+        "Client acquisition",
+        "Sales support",
+        "CRM",
+        "Partnership development",
+        "Market development",
+        "International business development"
+      ],
+      "trade_shows_and_international_development": [
+        "Trade show strategy",
+        "Event concept",
+        "Exhibitor strategy",
+        "Booth project coordination",
+        "Supplier coordination",
+        "International sourcing",
+        "China market support",
+        "Pre-event communication",
+        "Lead generation",
+        "On-site commercial support",
+        "Post-event lead follow-up"
+      ]
+    },
+    "geography_source_text": "France · Europe · Chine · Internationale",
+    "canonical_geography": "France · Europe · International, with China as specialist capability",
+    "cta": "Parler de votre projet"
+  },
+  "solutions": {
+    "intro_title": "Née d’un aller-retour permanent entre les marchés",
+    "intro_body": "Avenzo Studio a été créé pour aider les entreprises à réunir marketing, digital et développement commercial au sein d’une approche unique et flexible.",
+    "categories": [
+      {
+        "name": "Présence digitale",
+        "title": "Renforcer votre présence digitale",
+        "audience": "Pour une entreprise qui démarre ou qui veut professionnaliser sa présence digitale.",
+        "capabilities": [
+          "Website",
+          "Brand positioning",
+          "Social media",
+          "SEO foundation",
+          "Google Business",
+          "Content"
+        ]
+      },
+      {
+        "name": "Croissance",
+        "title": "Construire votre moteur d’acquisition",
+        "audience": "Pour une entreprise qui existe déjà et veut développer ses ventes.",
+        "capabilities": [
+          "Marketing strategy",
+          "SEO / SEA",
+          "Meta Ads",
+          "Google Ads",
+          "CRM",
+          "Content",
+          "Lead generation",
+          "Prospection"
+        ]
+      },
+      {
+        "name": "Développement",
+        "title": "S’étendre sur de nouveaux marchés",
+        "audience": "Pour une entreprise qui veut se développer en France ou à l'international.",
+        "capabilities": [
+          "Market research",
+          "Go-to-market",
+          "Commercial development",
+          "Trade shows",
+          "International sourcing",
+          "Lead generation",
+          "China / Europe business support"
+        ]
+      },
+      {
+        "name": "Personnalisation",
+        "title": "Un projet de développement sur mesure",
+        "audience": "Chaque entreprise est unique. Nous concevons une combinaison sur mesure de stratégie, d’expertise digitale et de développement commercial, adaptée à vos objectifs."
+      }
+    ],
+    "method": [
+      {
+        "phase": "Découvrir",
+        "label": "Analyse",
+        "description": "Nous analysons votre entreprise, votre marché, vos clients et vos objectifs."
+      },
+      {
+        "phase": "Définir",
+        "label": "Stratégie",
+        "description": "Nous définissons la stratégie, les priorités et les actions à mettre en place."
+      },
+      {
+        "phase": "Créer",
+        "label": "Construire",
+        "description": "Nous créons les outils, contenus, campagnes et supports nécessaires."
+      },
+      {
+        "phase": "Développement",
+        "label": "Activer",
+        "description": "Nous lançons les actions d'acquisition et de développement commercial."
+      },
+      {
+        "phase": "Optimiser",
+        "label": "Améliorer",
+        "description": "Nous analysons les résultats et faisons évoluer la stratégie."
+      }
+    ],
+    "closing": "Avec Avenzo, on avance ensemble.",
+    "principles": [
+      {
+        "name": "Marketing thinking",
+        "description": "Une vision stratégique avant de passer à l'exécution."
+      },
+      {
+        "name": "Digital expertise",
+        "description": "Web, e-commerce, SEO, advertising, CRM et contenu."
+      },
+      {
+        "name": "Esprit commercial",
+        "description": "Chaque action digitale doit pouvoir contribuer au développement de l'entreprise."
+      },
+      {
+        "name": "Vision internationale",
+        "description": "Une approche adaptée aux entreprises qui souhaitent travailler au-delà de leur marché local."
+      },
+      {
+        "name": "Flexible collaboration",
+        "description": "Une expertise disponible à la mission, au projet ou dans la durée."
+      }
+    ]
+  },
+  "contact": {
+    "intro": "Nous accompagnons les entreprises dans leur développement digital et commercial.",
+    "detail": "De la stratégie marketing à la création digitale, de l'acquisition au développement commercial, jusqu'aux projets de salons professionnels internationaux, nous réunissons les expertises nécessaires pour transformer vos ambitions en projets concrets.",
+    "title": "Parlons de votre projet",
+    "helper": "Marché visé, échéance, objectif — quelques lignes suffisent. Réponse sous 48h ouvrées.",
+    "needs": [
+      "Marketing strategy",
+      "Website / E-commerce",
+      "SEO / SEA",
+      "Social media",
+      "Advertising",
+      "Business development",
+      "Trade show",
+      "International development",
+      "Other"
+    ],
+    "fields": [
+      "Nom et Prénom",
+      "Entreprise",
+      "Adresse mail",
+      "Votre projet"
+    ],
+    "cta": "Envoyer le message",
+    "base": "France",
+    "languages": [
+      "Français",
+      "Mandarin",
+      "Anglais"
+    ]
+  }
+}
