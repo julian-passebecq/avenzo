@@ -13,6 +13,8 @@
     "source_of_truth/business_messages.json",
     "source_of_truth/assets.json",
     "source_of_truth/implementation_audit.json",
-    "source_of_truth/reference_versions.json"
+    "source_of_truth/reference_versions.json",
+    "source_of_truth/pdf_compliance_2026-09-22.json",
+    "source_of_truth/questions_for_owner_en.json"
   ]
 }
