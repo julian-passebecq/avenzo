@@ -11,32 +11,44 @@
       "sha256": "6d31ddd19277cb6a4aa8d2a81bf4d89a9f9c5782972ad854c8e40ebb811137a4",
       "dimensions": "2048x1447",
       "semantic_category": "digital / technology / e-commerce",
-      "repo_derivative": "assets/digital-matrix.webp",
-      "intended_use": "banner"
+      "intended_use": "banner",
+      "repo_source": "51581-matrix-356024.jpg (6).jpeg",
+      "github_blob_sha": "2c070d10aebd2994a367a4eb699e6d3fe7162914",
+      "repo_source_bytes": 1666836,
+      "production_asset": "assets/original-digital-matrix.jpg"
     },
     {
       "filename": "geralt-ball-63527.jpg (4).jpeg",
       "sha256": "387bf298dad1704a1d95ef2b6612564c4e0a777f96591ece9b0642dec142cfa4",
       "dimensions": "2048x1447",
       "semantic_category": "strategy / data / international / globe",
-      "repo_derivative": "assets/strategy-globe.webp",
-      "intended_use": "banner"
+      "intended_use": "banner",
+      "repo_source": "geralt-ball-63527.jpg (6).jpeg",
+      "github_blob_sha": "61a1dd48160815150885197066fd3ae66fa0a762",
+      "repo_source_bytes": 299806,
+      "production_asset": "assets/original-strategy-globe.jpg"
     },
     {
       "filename": "tobiasbrunner-river-6175173.jpg (3).jpeg",
       "sha256": "c1c25da464f768ae0f30e8e9f7184d13990d2bad08066df62d557ad1865f6a8e",
       "dimensions": "2048x1365",
       "semantic_category": "business / B2B / professional services / city",
-      "repo_derivative": "assets/growth-city.webp",
-      "intended_use": "banner"
+      "intended_use": "banner",
+      "repo_source": "tobiasbrunner-river-6175173.jpg (5).jpeg",
+      "github_blob_sha": "25658318f838449fd909d688a1a8ace244ebfbed",
+      "repo_source_bytes": 5032926,
+      "production_asset": "assets/original-growth-city.jpg"
     },
     {
       "filename": "xegxef-city-5772121.jpg (3).jpeg",
       "sha256": "e59df689fbd5f66ce0fd039d44550737e91e2b2a8db3a7feb6eea44b376845c8",
       "dimensions": "2048x1365",
       "semantic_category": "international / trade / urban market",
-      "repo_derivative": "assets/trade-city.webp",
-      "intended_use": "banner"
+      "intended_use": "banner",
+      "repo_source": "xegxef-city-5772121.jpg (5).jpeg",
+      "github_blob_sha": "37f902bf024c7f231b00f730386507aeaec1204d",
+      "repo_source_bytes": 2627035,
+      "production_asset": "assets/original-trade-city.jpg"
     }
   ],
   "source_documents": [
@@ -89,8 +101,9 @@
     }
   ],
   "implementation_notes": [
-    "The live homepage currently also uses an external Unsplash Shanghai image for the first expertise card. This is not one of the four supplied business assets and should be localized or replaced before final production.",
-    "The original supplied images were explicitly described as banner images; expertise-card usage is an implementation choice, not a canonical requirement."
+    "The homepage no longer hotlinks an external Unsplash image.",
+    "The four business-supplied originals are now used as large page banners, matching Adrien's explicit instruction that the supplied pictures are for banners.",
+    "Generated assets are used for expertise cards and supporting editorial surfaces so the approved structure stays intact."
   ],
   "quality_audit": {
     "audited_at": "2026-09-22",
@@ -127,6 +140,79 @@
       }
     ],
     "conclusion": "The clarity issue is an asset-encoding problem, not a lack of resolution in Adrien's originals.",
-    "required_fix": "Regenerate the four repository derivatives from the original 2048px files at high quality and replace the current tiny WebPs. Keep the layout unchanged."
+    "required_fix": "Regenerate the four repository derivatives from the original 2048px files at high quality and replace the current tiny WebPs. Keep the layout unchanged.",
+    "status": "resolved_on_main",
+    "resolution": "The 4-10 KB WebP derivatives are no longer used by the public pages. High-resolution originals and 1672px generated PNG assets now drive all visible photography/artwork.",
+    "obsolete_derivatives_removed": true,
+    "obsolete_derivatives": [
+      "assets/digital-matrix.webp",
+      "assets/strategy-globe.webp",
+      "assets/growth-city.webp",
+      "assets/trade-city.webp"
+    ]
+  },
+  "production_asset_library": {
+    "refreshed_at": "2026-09-22",
+    "rule": "High-resolution originals are reserved for page banners. Generated assets support expertise cards, editorial imagery and CTA backgrounds without changing the approved page structure.",
+    "banner_assets": [
+      {
+        "usage": "Home hero",
+        "path": "assets/original-trade-city.jpg",
+        "source": "xegxef-city-5772121.jpg (5).jpeg",
+        "dimensions": "2048x1365"
+      },
+      {
+        "usage": "Services banner",
+        "path": "assets/original-strategy-globe.jpg",
+        "source": "geralt-ball-63527.jpg (6).jpeg",
+        "dimensions": "2048x1447"
+      },
+      {
+        "usage": "Solutions banner",
+        "path": "assets/original-growth-city.jpg",
+        "source": "tobiasbrunner-river-6175173.jpg (5).jpeg",
+        "dimensions": "2048x1365"
+      },
+      {
+        "usage": "Contact banner",
+        "path": "assets/original-digital-matrix.jpg",
+        "source": "51581-matrix-356024.jpg (6).jpeg",
+        "dimensions": "2048x1447"
+      }
+    ],
+    "generated_assets": [
+      {
+        "usage": "Marketing & stratégie card",
+        "path": "assets/generated-network-earth.png",
+        "dimensions": "1672x941"
+      },
+      {
+        "usage": "Digital & e-commerce card",
+        "path": "assets/generated-network-midnight.png",
+        "dimensions": "1672x941"
+      },
+      {
+        "usage": "Business development card",
+        "path": "assets/generated-global-cybercity.png",
+        "dimensions": "1672x941"
+      },
+      {
+        "usage": "Trade shows & international card",
+        "path": "assets/generated-global-expo.png",
+        "dimensions": "1672x941"
+      },
+      {
+        "usage": "Homepage editorial image band",
+        "path": "assets/generated-shanghai-skyline.png",
+        "dimensions": "1672x941"
+      },
+      {
+        "usage": "Final CTA background",
+        "path": "assets/generated-network-city.png",
+        "dimensions": "1672x941"
+      }
+    ],
+    "external_hotlinks_remaining": false,
+    "status": "merged_to_main"
   }
 }
