@@ -195,5 +195,18 @@
     "new_images_used_publicly": 7,
     "reserve_images": 2,
     "generated_assets_publicly_referenced": false
+  },
+  "visual_correction_2026_09_24": {
+    "status": "implemented_on_branch",
+    "branch": "visual-height-contact-fix-2026-09-24",
+    "issues": [
+      "Homepage expertise cards rendered as excessively tall vertical image bands.",
+      "Contact banner still used the legacy Matrix image and felt visually inconsistent with the latest owner photo set."
+    ],
+    "changes": [
+      "Bound expertise-card media height and disable grid stretching while preserving the four-column/two-column/one-column structure.",
+      "Use owner-office-night.jpg for Contact and reduce Contact banner height."
+    ],
+    "structure_changed": false
   }
 }

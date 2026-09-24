@@ -1003,3 +1003,43 @@ body[data-page="home"] .service-entry-early{display:none}
   position:relative;
   z-index:1;
 }
+
+
+/* Visual correction — 2026-09-24
+   Prevent expertise media from stretching into tall vertical bands. */
+.expertise-grid{
+  align-items:start;
+}
+.expertise-card{
+  align-self:start;
+  align-content:start;
+  grid-template-rows:auto auto;
+}
+.expertise-card img{
+  display:block;
+  align-self:start;
+  width:100%;
+  height:clamp(138px,10.5vw,170px);
+  aspect-ratio:auto;
+  object-fit:cover;
+}
+.expertise-card-copy{
+  align-self:start;
+  padding:2px 0 4px;
+}
+
+/* Contact should read as a compact business banner, not a second hero. */
+body[data-page="contact"] .banner-contact{
+  min-height:330px;
+}
+body[data-page="contact"] .banner-contact .banner-image{
+  object-position:center 52%;
+}
+
+@media(max-width:1000px){
+  .expertise-card img{height:220px}
+}
+@media(max-width:680px){
+  .expertise-card img{height:190px}
+  body[data-page="contact"] .banner-contact{min-height:270px}
+}

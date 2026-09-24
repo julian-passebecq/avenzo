@@ -259,7 +259,7 @@
         "source": "WhatsApp Image 2026-09-23 at 23.51.06 (1).jpeg",
         "production": "assets/owner-office-night.jpg",
         "dimensions": "1600x900",
-        "usage": "Homepage Solutions visual",
+        "usage": "Homepage Solutions visual + Contact banner",
         "status": "active"
       },
       {
@@ -283,14 +283,18 @@
         "usage": "Solutions banner"
       },
       {
-        "path": "assets/original-digital-matrix.jpg",
-        "usage": "Contact banner"
-      },
-      {
         "path": "assets/original-trade-city.jpg",
         "usage": "Final CTA background"
       }
     ],
-    "generated_assets_publicly_referenced": false
+    "generated_assets_publicly_referenced": false,
+    "contact_banner": {
+      "path": "assets/owner-office-night.jpg",
+      "reason": "Wide owner-supplied business/office image is more coherent with the Contact page than the legacy Matrix artwork."
+    },
+    "layout_correction": {
+      "issue": "Homepage expertise images stretched vertically in the browser, creating oversized visual bands.",
+      "fix": "Explicit non-stretch grid alignment plus bounded responsive image heights; page structure unchanged."
+    }
   }
 }
