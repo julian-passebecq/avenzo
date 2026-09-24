@@ -1043,3 +1043,29 @@ body[data-page="contact"] .banner-contact .banner-image{
   .expertise-card img{height:190px}
   body[data-page="contact"] .banner-contact{min-height:270px}
 }
+
+
+/* Home viewport balance — 2026-09-24
+   Shorter hero + slightly taller expertise media so the first screen feels better proportioned. */
+body[data-page="home"] .hero-v8{
+  min-height:420px;
+}
+body[data-page="home"] .hero-v8 .hero-content{
+  padding-block:58px;
+}
+body[data-page="home"] .expertise-section{
+  padding-top:38px;
+}
+body[data-page="home"] .expertise-card img{
+  height:clamp(180px,12vw,215px);
+}
+
+@media(max-width:1000px){
+  body[data-page="home"] .hero-v8{min-height:400px}
+  body[data-page="home"] .expertise-card img{height:230px}
+}
+@media(max-width:680px){
+  body[data-page="home"] .hero-v8{min-height:390px}
+  body[data-page="home"] .hero-v8 .hero-content{padding-block:44px}
+  body[data-page="home"] .expertise-card img{height:205px}
+}

@@ -208,5 +208,17 @@
       "Use owner-office-night.jpg for Contact and reduce Contact banner height."
     ],
     "structure_changed": false
+  },
+  "home_viewport_balance_2026_09_24": {
+    "status": "implemented_on_branch",
+    "branch": "home-viewport-balance-2026-09-24",
+    "structure_changed": false,
+    "changes": [
+      "Reduce homepage hero minimum height from 500px to 420px on desktop.",
+      "Reduce hero vertical content padding to 58px on desktop.",
+      "Reduce expertise-section top padding slightly.",
+      "Increase homepage expertise image height to a responsive 180–215px desktop range, with tuned tablet/mobile values."
+    ],
+    "intent": "Free vertical space from the main image banner and redistribute it to the four expertise cards so more of the core offering is visible in the first viewport."
   }
 }
