@@ -101,9 +101,9 @@
     }
   ],
   "implementation_notes": [
-    "The homepage no longer hotlinks an external Unsplash image.",
-    "The four business-supplied originals are now used as large page banners, matching Adrien's explicit instruction that the supplied pictures are for banners.",
-    "Generated assets are used for expertise cards and supporting editorial surfaces so the approved structure stays intact."
+    "Adrien's four original images are now visible together on the homepage in the four expertise entries, matching the earlier approved visual direction.",
+    "Generated assets are used for page banners and supporting surfaces rather than replacing the owner's selected expertise imagery.",
+    "No external Unsplash image is used."
   ],
   "quality_audit": {
     "audited_at": "2026-09-22",
@@ -152,67 +152,56 @@
     ]
   },
   "production_asset_library": {
-    "refreshed_at": "2026-09-22",
-    "rule": "High-resolution originals are reserved for page banners. Generated assets support expertise cards, editorial imagery and CTA backgrounds without changing the approved page structure.",
-    "banner_assets": [
+    "refreshed_at": "2026-09-24",
+    "rationale": "Adrien's four supplied images must be immediately visible in the four homepage expertise banners/cards. Generated imagery supports page-level banners and secondary visual surfaces without replacing the owner's chosen images.",
+    "owner_supplied_homepage_expertise_assets": [
+      {
+        "usage": "Marketing & stratégie",
+        "path": "assets/original-strategy-globe.jpg",
+        "source": "geralt-ball-63527.jpg (6).jpeg"
+      },
+      {
+        "usage": "Digital & e-commerce",
+        "path": "assets/original-digital-matrix.jpg",
+        "source": "51581-matrix-356024.jpg (6).jpeg"
+      },
+      {
+        "usage": "Business development",
+        "path": "assets/original-growth-city.jpg",
+        "source": "tobiasbrunner-river-6175173.jpg (5).jpeg"
+      },
+      {
+        "usage": "Trade shows & international",
+        "path": "assets/original-trade-city.jpg",
+        "source": "xegxef-city-5772121.jpg (5).jpeg"
+      }
+    ],
+    "generated_page_banner_assets": [
       {
         "usage": "Home hero",
-        "path": "assets/original-trade-city.jpg",
-        "source": "xegxef-city-5772121.jpg (5).jpeg",
-        "dimensions": "2048x1365"
+        "path": "assets/generated-global-cybercity.png"
       },
       {
         "usage": "Services banner",
-        "path": "assets/original-strategy-globe.jpg",
-        "source": "geralt-ball-63527.jpg (6).jpeg",
-        "dimensions": "2048x1447"
+        "path": "assets/generated-network-earth.png"
       },
       {
         "usage": "Solutions banner",
-        "path": "assets/original-growth-city.jpg",
-        "source": "tobiasbrunner-river-6175173.jpg (5).jpeg",
-        "dimensions": "2048x1365"
+        "path": "assets/generated-shanghai-skyline.png"
       },
       {
         "usage": "Contact banner",
-        "path": "assets/original-digital-matrix.jpg",
-        "source": "51581-matrix-356024.jpg (6).jpeg",
-        "dimensions": "2048x1447"
-      }
-    ],
-    "generated_assets": [
-      {
-        "usage": "Marketing & stratégie card",
-        "path": "assets/generated-network-earth.png",
-        "dimensions": "1672x941"
+        "path": "assets/generated-global-expo.png"
       },
       {
-        "usage": "Digital & e-commerce card",
-        "path": "assets/generated-network-midnight.png",
-        "dimensions": "1672x941"
-      },
-      {
-        "usage": "Business development card",
-        "path": "assets/generated-global-cybercity.png",
-        "dimensions": "1672x941"
-      },
-      {
-        "usage": "Trade shows & international card",
-        "path": "assets/generated-global-expo.png",
-        "dimensions": "1672x941"
-      },
-      {
-        "usage": "Homepage editorial image band",
-        "path": "assets/generated-shanghai-skyline.png",
-        "dimensions": "1672x941"
+        "usage": "Homepage Solutions visual",
+        "path": "assets/generated-network-midnight.png"
       },
       {
         "usage": "Final CTA background",
-        "path": "assets/generated-network-city.png",
-        "dimensions": "1672x941"
+        "path": "assets/generated-network-city.png"
       }
     ],
-    "external_hotlinks_remaining": false,
-    "status": "merged_to_main"
+    "external_hotlinks_remaining": false
   }
 }
