@@ -101,9 +101,10 @@
     }
   ],
   "implementation_notes": [
-    "Adrien's four original images are now visible together on the homepage in the four expertise entries, matching the earlier approved visual direction.",
-    "Generated assets are used for page banners and supporting surfaces rather than replacing the owner's selected expertise imagery.",
-    "No external Unsplash image is used."
+    "Nine new owner-supplied WhatsApp photos were reviewed visually and registered with clean production aliases.",
+    "Seven of the nine new photos are used on public surfaces; two are deliberately kept in reserve because forcing them into the current aspect ratios or positioning would reduce quality/coherence.",
+    "The approved page structure, typography, copy, navigation and interaction model are unchanged.",
+    "Generated artwork remains archived in the repository but is no longer referenced by the public HTML/CSS."
   ],
   "quality_audit": {
     "audited_at": "2026-09-22",
@@ -203,5 +204,93 @@
       }
     ],
     "external_hotlinks_remaining": false
+  },
+  "latest_owner_photo_batch": {
+    "received": "2026-09-24",
+    "source_commit": "3f34e413a6a8f9be3668c57a3eb1d436a6350f34",
+    "count": 9,
+    "rule": "Latest owner-supplied photography takes priority over generated artwork where composition fits the approved layout.",
+    "assets": [
+      {
+        "source": "WhatsApp Image 2026-09-23 at 23.49.47 (1).jpeg",
+        "production": "assets/owner-spiral-structure.jpg",
+        "dimensions": "1599x1066",
+        "usage": "Home hero",
+        "status": "active"
+      },
+      {
+        "source": "WhatsApp Image 2026-09-23 at 23.50.18 (1).jpeg",
+        "production": "assets/owner-global-network.jpg",
+        "dimensions": "1600x846",
+        "usage": "Trade shows & international card",
+        "status": "active"
+      },
+      {
+        "source": "WhatsApp Image 2026-09-23 at 23.50.19 (1).jpeg",
+        "production": "assets/owner-blue-corporate.jpg",
+        "dimensions": "1600x1280",
+        "usage": "Business development card",
+        "status": "active"
+      },
+      {
+        "source": "WhatsApp Image 2026-09-23 at 23.50.28 (1).jpeg",
+        "production": "assets/owner-london-heritage.jpg",
+        "dimensions": "1600x1066",
+        "usage": "Reserve",
+        "status": "reserve",
+        "reason": "Geographically specific London imagery is not forced into the current global positioning."
+      },
+      {
+        "source": "WhatsApp Image 2026-09-23 at 23.50.32 (1).jpeg",
+        "production": "assets/owner-digital-abstract.jpg",
+        "dimensions": "1599x1066",
+        "usage": "Digital & e-commerce card",
+        "status": "active"
+      },
+      {
+        "source": "WhatsApp Image 2026-09-23 at 23.50.58 (1).jpeg",
+        "production": "assets/owner-white-tower.jpg",
+        "dimensions": "1001x1599",
+        "usage": "Reserve",
+        "status": "reserve",
+        "reason": "Portrait composition is a poor fit for the current wide banners/cards."
+      },
+      {
+        "source": "WhatsApp Image 2026-09-23 at 23.51.06 (1).jpeg",
+        "production": "assets/owner-office-night.jpg",
+        "dimensions": "1600x900",
+        "usage": "Homepage Solutions visual",
+        "status": "active"
+      },
+      {
+        "source": "WhatsApp Image 2026-09-23 at 23.51.15 (1).jpeg",
+        "production": "assets/owner-concrete-spiral.jpg",
+        "dimensions": "1600x1066",
+        "usage": "Marketing & stratégie card",
+        "status": "active"
+      },
+      {
+        "source": "WhatsApp Image 2026-09-23 at 23.51.23 (1).jpeg",
+        "production": "assets/owner-modern-facade.jpg",
+        "dimensions": "1600x1067",
+        "usage": "Services banner",
+        "status": "active"
+      }
+    ],
+    "retained_owner_assets": [
+      {
+        "path": "assets/original-growth-city.jpg",
+        "usage": "Solutions banner"
+      },
+      {
+        "path": "assets/original-digital-matrix.jpg",
+        "usage": "Contact banner"
+      },
+      {
+        "path": "assets/original-trade-city.jpg",
+        "usage": "Final CTA background"
+      }
+    ],
+    "generated_assets_publicly_referenced": false
   }
 }
