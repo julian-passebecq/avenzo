@@ -175,18 +175,15 @@
     }
   ],
   "asset_refresh": {
-    "status": "merged_to_main",
-    "branch": "asset-refresh-2026-09-22",
+    "status": "implemented_on_branch",
+    "branch": "owner-images-remap-2026-09-24",
     "structure_changed": false,
-    "summary": "Asset-only visual refresh: page structure and business copy preserved; high-resolution banners/cards/CTA artwork substituted in place.",
-    "obsolete_low_quality_assets_removed": true,
-    "active_visible_assets": 10,
-    "note": "All 4 overcompressed WebPs were deleted after confirming no public HTML/CSS references remained.",
-    "merge_commit": "393de056f4b05e39e727bea24d77920269cc6365",
-    "preview_deployment": {
-      "state": "READY",
-      "url": "https://avenzo-8e6uv29bk-julian-passebecqs-projects.vercel.app",
-      "note": "Preview contains the visible asset refresh. Production alias had not auto-promoted at the time of this audit."
+    "summary": "Image remap only. No business copy, page architecture, typography, or interaction model changed."
+  },
+  "resolved_in_owner_images_remap": [
+    {
+      "id": "AUDIT-013",
+      "resolution": "Corrected the image-priority regression: the four business-supplied images are restored to the homepage expertise cards, while generated assets are assigned to page banners and secondary surfaces."
     }
-  }
+  ]
 }
