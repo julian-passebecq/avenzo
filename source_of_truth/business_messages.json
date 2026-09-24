@@ -169,6 +169,13 @@
       "raw": "les photos sont surpixelisé pas claire du tout",
       "normalized_business_meaning": "The website images are visibly pixelated/overcompressed and not sharp enough. Image clarity must be improved without changing the approved layout.",
       "status": "active_high_priority_visual_quality"
+    },
+    {
+      "timestamp": "2026-09-24",
+      "speaker": "Julian relaying Adrien feedback",
+      "raw": "we dont put the good pictures he sent u on his website",
+      "normalized_business_meaning": "Adrien expects the four images he supplied to remain clearly visible in the website, especially the four homepage expertise entries. Generated imagery should complement, not displace, his selected visuals.",
+      "status": "implemented_in_owner_images_remap"
     }
   ],
   "excluded_examples": [
