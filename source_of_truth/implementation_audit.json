@@ -185,5 +185,15 @@
       "id": "AUDIT-013",
       "resolution": "Corrected the image-priority regression: the four business-supplied images are restored to the homepage expertise cards, while generated assets are assigned to page banners and secondary surfaces."
     }
-  ]
+  ],
+  "latest_owner_asset_refresh": {
+    "date": "2026-09-24",
+    "status": "implemented_on_branch",
+    "branch": "owner-photo-refresh-2026-09-24",
+    "structure_changed": false,
+    "raw_images_received": 9,
+    "new_images_used_publicly": 7,
+    "reserve_images": 2,
+    "generated_assets_publicly_referenced": false
+  }
 }
