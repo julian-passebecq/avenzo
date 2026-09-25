@@ -1413,3 +1413,103 @@ body[data-page="home"] .final-cta-secondary{
     line-height:1.5;
   }
 }
+
+
+/* iPhone homepage trial V2 — 2026-09-25
+   More compact, more obviously mobile-native. */
+.expertise-help-mobile{display:none}
+
+@media(max-width:680px){
+  body[data-page="home"] .site-header{
+    min-height:62px;
+    padding-inline:15px;
+  }
+  body[data-page="home"] .brand img{
+    width:32px;
+    height:32px;
+  }
+  body[data-page="home"] .brand strong{
+    font-size:19px;
+  }
+  body[data-page="home"] .brand small{
+    font-size:6px;
+    letter-spacing:.15em;
+  }
+  body[data-page="home"] .menu-toggle{
+    padding:8px 13px;
+    font-size:12px;
+  }
+
+  body[data-page="home"] .hero-v8{
+    min-height:292px;
+  }
+  body[data-page="home"] .hero-v8 .hero-content{
+    padding:26px 18px 29px;
+  }
+  body[data-page="home"] .hero-v8 h1{
+    max-width:300px;
+    font-size:44px;
+    line-height:.88;
+  }
+  body[data-page="home"] .hero-v8 .hero-tagline{
+    margin-top:15px;
+    font-size:18px;
+    line-height:1.08;
+  }
+  body[data-page="home"] .hero-v8 .hero-lead{
+    max-width:315px;
+    margin-top:9px;
+    font-size:14.5px;
+    line-height:1.48;
+  }
+
+  body[data-page="home"] .expertise-section{
+    padding:24px 0 42px;
+  }
+  body[data-page="home"] .expertise-topline{
+    width:92vw;
+    margin-bottom:15px;
+    gap:7px;
+  }
+  body[data-page="home"] .expertise-topline h2.section-title-primary{
+    font-size:38px;
+    line-height:.96;
+  }
+  body[data-page="home"] .expertise-topline>p{
+    font-size:13.5px;
+    line-height:1.45;
+  }
+  body[data-page="home"] .expertise-help-desktop{
+    display:none;
+  }
+  body[data-page="home"] .expertise-help-mobile{
+    display:inline;
+  }
+
+  body[data-page="home"] .expertise-grid{
+    gap:10px;
+    padding:0 4vw 8px;
+    scroll-padding-inline:4vw;
+  }
+  body[data-page="home"] .expertise-card{
+    flex:0 0 74vw;
+    max-width:290px;
+    padding:8px;
+  }
+  body[data-page="home"] .expertise-card img{
+    height:142px;
+  }
+  body[data-page="home"] .expertise-card-copy strong{
+    font-size:20px;
+    line-height:1.02;
+  }
+  body[data-page="home"] .expertise-card-copy small{
+    margin-top:5px;
+    font-size:11.5px;
+    line-height:1.42;
+  }
+  body[data-page="home"] .expertise-card>span{
+    width:29px;
+    height:29px;
+  }
+}
