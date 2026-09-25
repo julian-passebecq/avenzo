@@ -1552,9 +1552,13 @@ body[data-page="home"] .final-cta-secondary{
   background:#eee8de;
   color:var(--ink);
 }
-.language-switch [aria-hidden="true"]{
-  font-size:13px;
-  line-height:1;
+.lang-flag{
+  display:block;
+  width:18px;
+  height:12px;
+  flex:0 0 auto;
+  border-radius:2px;
+  box-shadow:0 0 0 1px rgba(0,0,0,.08);
 }
 .lang-code{
   line-height:1;
@@ -1591,8 +1595,9 @@ body[data-page="home"] .final-cta-secondary{
     font-size:8px;
     letter-spacing:0;
   }
-  .language-switch [aria-hidden="true"]{
-    font-size:11px;
+  .lang-flag{
+    width:16px;
+    height:11px;
   }
   .lang-code{
     font-size:8px;
