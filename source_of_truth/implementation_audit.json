@@ -247,15 +247,17 @@
     "feedback_record": "source_of_truth/adrien_feedback_2026-09-25.json"
   },
   "iphone_home_trial_2026_09_25": {
-    "status": "preview_only",
+    "status": "preview_only_v2",
     "branch": "iphone-home-carousel-trial-2026-09-25",
     "production_changed": false,
     "scope": "Homepage at <=680px only",
     "changes": [
-      "Reduce mobile header height slightly.",
-      "Reduce homepage hero to 340px minimum height and H1 to 48px.",
-      "Keep body copy at readable 15px+ values after Adrien's typography feedback.",
-      "Turn the four expertise cards into a native horizontal scroll-snap carousel with the next card partially visible.",
+      "Compact mobile header to 62px minimum.",
+      "Reduce homepage hero to 292px minimum height and H1 to 44px.",
+      "Keep readable body text at 14.5px+ in the hero.",
+      "Use a shorter mobile-only swipe instruction while preserving the full desktop helper text.",
+      "Render expertise cards at 74vw / max 290px so substantially more of the next card is visible.",
+      "Reduce mobile expertise image height to 142px so card title and description enter the viewport sooner.",
       "Keep desktop and tablet layouts unchanged."
     ]
   }
