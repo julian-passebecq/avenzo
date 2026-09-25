@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-09-25",
+  "source": "Avenzo Studio-25092026.pdf",
+  "reviewer": "Adrien",
+  "pages": 13,
+  "interpretation_rule": "Apply the requested visual hierarchy without introducing duplicate semantic H1 elements.",
+  "items": [
+    {
+      "page": 3,
+      "area": "Solutions - Notre méthode",
+      "feedback": "'Notre méthode' should be the dominant heading, larger than 'Découvrir. Définir. Créer. Activer. Améliorer.'",
+      "implementation": "Promote 'Notre méthode' to an H1-scale H2 and restyle the sequence as a secondary H3."
+    },
+    {
+      "page": 3,
+      "area": "Solutions - Ce qui guide notre travail",
+      "feedback": "Same hierarchy issue; the section title should be visually stronger.",
+      "implementation": "Promote 'Ce qui guide notre travail' to an H1-scale H2 above the five principles."
+    },
+    {
+      "page": 3,
+      "area": "Site-wide readability",
+      "feedback": "Body text across the site is too small and out of proportion with H1/H2.",
+      "implementation": "Increase major client-facing body, helper, list, CTA and navigation typography with responsive values."
+    },
+    {
+      "page": 4,
+      "area": "Homepage final CTA",
+      "feedback": "'Un projet en tête ?' should be bigger.",
+      "implementation": "Make it the primary CTA heading and place 'Parlons de ce que vous voulez faire avancer.' beneath it as a secondary line."
+    },
+    {
+      "page": 4,
+      "area": "Footer / SEO links",
+      "feedback": "Bottom-of-site SEO/navigation text is too small.",
+      "implementation": "Increase footer headings, links, brand subline and geographic note."
+    },
+    {
+      "page": 6,
+      "area": "Services hero",
+      "feedback": "Delete the brown 'SERVICES' text at the top; this had already been requested.",
+      "implementation": "Remove the hero eyebrow entirely."
+    },
+    {
+      "page": 7,
+      "area": "Services detail content",
+      "feedback": "Body and service-list text is too small and difficult to read.",
+      "implementation": "Increase service descriptive copy, capability lists and jump navigation."
+    },
+    {
+      "page": 9,
+      "area": "Services final CTA",
+      "feedback": "Make 'France, Europe, International' and 'Parler de votre projet' bigger.",
+      "implementation": "Increase final CTA eyebrow/meta text and CTA button label/padding."
+    },
+    {
+      "page": 10,
+      "area": "Solutions final CTA",
+      "feedback": "No separate written correction on this page.",
+      "implementation": "No content-specific change invented; it benefits from the shared CTA readability increase."
+    },
+    {
+      "page": 12,
+      "area": "Contact",
+      "feedback": "Text is too small and difficult for clients to read.",
+      "implementation": "Increase intro paragraph, contact metadata, form legend, checkbox labels, field labels, inputs/textarea and form note."
+    }
+  ]
+}
