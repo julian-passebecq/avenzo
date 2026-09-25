@@ -1069,3 +1069,245 @@ body[data-page="home"] .expertise-card img{
   body[data-page="home"] .hero-v8 .hero-content{padding-block:44px}
   body[data-page="home"] .expertise-card img{height:205px}
 }
+
+
+/* Adrien feedback pass — 2026-09-25
+   Readability first: stronger section hierarchy and larger client-facing copy. */
+body{
+  font-size:16px;
+  line-height:1.55;
+}
+.main-nav a{
+  font-size:13px;
+}
+.header-cta{
+  font-size:13px;
+}
+.hero-v8 .hero-lead{
+  font-size:15px;
+  line-height:1.6;
+}
+.expertise-topline>p{
+  font-size:12px;
+  line-height:1.6;
+}
+.expertise-card-copy small{
+  font-size:11px;
+  line-height:1.5;
+}
+.intro-copy>p:last-child,
+.solutions-intro>p:last-child,
+.solution-copy>p:last-child,
+.contact-intro>p{
+  font-size:16px;
+  line-height:1.7;
+}
+.image-banner-copy>p:not(.eyebrow){
+  font-size:15px;
+  line-height:1.7;
+}
+.button,
+.text-link{
+  font-size:13px;
+}
+
+/* Services: Adrien specifically flagged the right-column copy and capability lists. */
+.service-jump-clean a{
+  font-size:12px;
+}
+.service-detail-clean .service-detail-body>p{
+  max-width:720px;
+  font-size:16px;
+  line-height:1.7;
+}
+.capability-columns-clean li{
+  padding:8px 0;
+  font-size:13px;
+  line-height:1.55;
+}
+
+/* Solutions: section name is the primary title; sequence is secondary. */
+.method-heading-clean{
+  margin-bottom:42px;
+}
+.method-primary-title,
+.principles-primary-title{
+  margin:0;
+  color:var(--gold);
+  font:700 clamp(52px,5.8vw,78px)/.9 var(--title);
+  letter-spacing:-.04em;
+}
+.method-sequence{
+  max-width:980px;
+  margin:16px 0 0;
+  font:600 clamp(32px,3.7vw,50px)/.98 var(--title);
+  letter-spacing:-.025em;
+  color:var(--ink);
+}
+.method-line-clean strong{
+  font-size:27px;
+  line-height:1.05;
+}
+.method-line-clean p{
+  margin-top:12px;
+  font-size:13px;
+  line-height:1.6;
+}
+.principles-clean{
+  padding-bottom:120px;
+}
+.principles-primary-title{
+  margin-bottom:40px;
+}
+.principle-line-clean strong{
+  display:block;
+  font:600 23px/1.08 var(--title);
+}
+.principle-line-clean p{
+  margin:10px 0 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+.solution-row-clean .solution-list{
+  font-size:13px;
+  line-height:1.75;
+}
+
+/* Home CTA: "Un projet en tête ?" is the primary section title, not an eyebrow. */
+body[data-page="home"] .final-cta-primary{
+  max-width:760px;
+  margin:0;
+  color:#e7c67e;
+  font:700 clamp(48px,5.4vw,74px)/.9 var(--title);
+  letter-spacing:-.04em;
+}
+body[data-page="home"] .final-cta-secondary{
+  max-width:760px;
+  margin:16px 0 0;
+  color:var(--white);
+  font:600 clamp(28px,3.2vw,42px)/.98 var(--title);
+  letter-spacing:-.025em;
+}
+
+/* CTA labels and actions called out in the Services feedback. */
+.final-cta .eyebrow{
+  margin-bottom:16px;
+  font-size:14px;
+  font-weight:600;
+  line-height:1.35;
+  letter-spacing:.14em;
+}
+.final-cta .button{
+  min-width:190px;
+  font-size:13px;
+  padding:16px 20px;
+}
+
+/* Contact: client-facing copy, options and form labels were too small. */
+.contact-intro-balanced>p{
+  font-size:16px!important;
+  line-height:1.7!important;
+}
+.contact-info-stack p{
+  font-size:13px!important;
+  line-height:1.65!important;
+}
+.contact-form legend{
+  font-size:28px;
+}
+.need-grid{
+  gap:12px 24px;
+}
+.need-grid label{
+  font-size:13px;
+  line-height:1.45;
+}
+.form-grid label{
+  font-size:11px;
+  line-height:1.4;
+}
+.form-grid input,
+.form-grid textarea{
+  font-size:13px;
+  line-height:1.5;
+}
+.form-note{
+  font-size:11px;
+  line-height:1.55;
+}
+
+/* Footer / SEO navigation: increase legibility without changing information architecture. */
+.site-footer{
+  font-size:11px;
+}
+.footer-brand small{
+  font-size:10px;
+  line-height:1.4;
+}
+.footer-nav{
+  gap:48px;
+}
+.footer-nav>div{
+  gap:9px;
+}
+.footer-nav strong{
+  font-size:11px;
+  line-height:1.4;
+}
+.footer-nav a{
+  font-size:12px;
+  line-height:1.5;
+}
+.footer-note{
+  font-size:11px;
+  line-height:1.5;
+}
+
+@media(max-width:1000px){
+  .method-primary-title,
+  .principles-primary-title{
+    font-size:clamp(48px,7vw,66px);
+  }
+  .method-sequence{
+    font-size:clamp(30px,4.7vw,42px);
+  }
+}
+@media(max-width:680px){
+  body{
+    font-size:16px;
+  }
+  .main-nav a{
+    font-size:14px;
+  }
+  .method-primary-title,
+  .principles-primary-title{
+    font-size:46px;
+  }
+  .method-sequence{
+    font-size:30px;
+  }
+  .method-line-clean strong,
+  .principle-line-clean strong{
+    font-size:25px;
+  }
+  .method-line-clean p,
+  .principle-line-clean p{
+    font-size:14px;
+  }
+  body[data-page="home"] .final-cta-primary{
+    font-size:46px;
+  }
+  body[data-page="home"] .final-cta-secondary{
+    font-size:30px;
+  }
+  .final-cta .eyebrow{
+    font-size:13px;
+  }
+  .footer-nav a{
+    font-size:13px;
+  }
+  .footer-note{
+    font-size:12px;
+  }
+}
