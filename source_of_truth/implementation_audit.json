@@ -245,5 +245,18 @@
     "structure_changed": false,
     "semantic_heading_policy": "Keep one H1 per page; use H1-scale visual styling for Adrien's requested section-title hierarchy.",
     "feedback_record": "source_of_truth/adrien_feedback_2026-09-25.json"
+  },
+  "iphone_home_trial_2026_09_25": {
+    "status": "preview_only",
+    "branch": "iphone-home-carousel-trial-2026-09-25",
+    "production_changed": false,
+    "scope": "Homepage at <=680px only",
+    "changes": [
+      "Reduce mobile header height slightly.",
+      "Reduce homepage hero to 340px minimum height and H1 to 48px.",
+      "Keep body copy at readable 15px+ values after Adrien's typography feedback.",
+      "Turn the four expertise cards into a native horizontal scroll-snap carousel with the next card partially visible.",
+      "Keep desktop and tablet layouts unchanged."
+    ]
   }
 }
