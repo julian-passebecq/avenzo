@@ -59,12 +59,6 @@
       "severity": "needs_confirmation",
       "issue": "Older content document lists contact@avenzostudio.com while later domain decision uses avenzostudios.com and current code uses contact@avenzostudios.com.",
       "required_fix": "Business owner should confirm the real mailbox before launch."
-    },
-    {
-      "id": "AUDIT-010",
-      "severity": "needs_confirmation",
-      "issue": "The PDF uses H1/H2/H3 language for section hierarchy, but the implementation intentionally keeps one semantic H1 per page and uses H1-scale styling for requested section titles.",
-      "required_fix": "Confirm whether the owner means visual hierarchy or literal HTML heading tags."
     }
   ],
   "legacy_items": [
@@ -220,5 +214,36 @@
       "Increase homepage expertise image height to a responsive 180–215px desktop range, with tuned tablet/mobile values."
     ],
     "intent": "Free vertical space from the main image banner and redistribute it to the four expertise cards so more of the core offering is visible in the first viewport."
+  },
+  "resolved_in_adrien_feedback_2026_09_25": [
+    {
+      "id": "AUDIT-015",
+      "resolution": "Interpreted Adrien's H1 language as visual hierarchy while retaining one semantic HTML H1 per page. 'Notre méthode' and 'Ce qui guide notre travail' are now H1-scale section headings, with their explanatory content visually subordinate."
+    },
+    {
+      "id": "AUDIT-016",
+      "resolution": "Promoted 'Un projet en tête ?' to the primary homepage CTA heading and demoted the explanatory sentence to a secondary line."
+    },
+    {
+      "id": "AUDIT-017",
+      "resolution": "Removed the redundant brown 'SERVICES' eyebrow from the Services hero."
+    },
+    {
+      "id": "AUDIT-018",
+      "resolution": "Raised client-facing body, service capability, solutions method/principle, CTA, footer/SEO navigation and Contact form typography to readable desktop/mobile sizes."
+    },
+    {
+      "id": "AUDIT-019",
+      "resolution": "Increased 'France · Europe · International' and 'Parler de votre projet' sizing in final CTAs."
+    }
+  ],
+  "adrien_feedback_2026_09_25": {
+    "source": "Avenzo Studio-25092026.pdf",
+    "pages": 13,
+    "status": "implemented_on_branch",
+    "branch": "adrien-feedback-2026-09-25",
+    "structure_changed": false,
+    "semantic_heading_policy": "Keep one H1 per page; use H1-scale visual styling for Adrien's requested section-title hierarchy.",
+    "feedback_record": "source_of_truth/adrien_feedback_2026-09-25.json"
   }
 }
