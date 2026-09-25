@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://avenzo-kappa.vercel.app/</loc></url>
-  <url><loc>https://avenzo-kappa.vercel.app/services</loc></url>
-  <url><loc>https://avenzo-kappa.vercel.app/solutions</loc></url>
-  <url><loc>https://avenzo-kappa.vercel.app/contact</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://avenzo-kappa.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://avenzo-kappa.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avenzo-kappa.vercel.app/en/" />
+  </url>
+  <url>
+    <loc>https://avenzo-kappa.vercel.app/services</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://avenzo-kappa.vercel.app/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avenzo-kappa.vercel.app/en/services" />
+  </url>
+  <url>
+    <loc>https://avenzo-kappa.vercel.app/solutions</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://avenzo-kappa.vercel.app/solutions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avenzo-kappa.vercel.app/en/solutions" />
+  </url>
+  <url>
+    <loc>https://avenzo-kappa.vercel.app/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://avenzo-kappa.vercel.app/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avenzo-kappa.vercel.app/en/contact" />
+  </url>
+  <url><loc>https://avenzo-kappa.vercel.app/en/</loc></url>
+  <url><loc>https://avenzo-kappa.vercel.app/en/services</loc></url>
+  <url><loc>https://avenzo-kappa.vercel.app/en/solutions</loc></url>
+  <url><loc>https://avenzo-kappa.vercel.app/en/contact</loc></url>
 </urlset>
