@@ -260,5 +260,22 @@
       "Reduce mobile expertise image height to 142px so card title and description enter the viewport sooner.",
       "Keep desktop and tablet layouts unchanged."
     ]
+  },
+  "bilingual_fr_en_2026_09_25": {
+    "status": "preview_only",
+    "branch": "iphone-home-carousel-trial-2026-09-25",
+    "production_changed": false,
+    "source_review": {
+      "latest_adrien_pdf": "No explicit instruction found for language-switch placement in Avenzo Studio-25092026.pdf.",
+      "prior_audit": "Avenzo DEV01 audit warns that flag-only language buttons are ambiguous and asks for visible/accessibility labels and current-language state."
+    },
+    "implementation": [
+      "French remains the default root language.",
+      "English mirrors all four public pages under /en/.",
+      "Compact FR/EN switch is placed between navigation and CTA on desktop and between brand and Menu on mobile.",
+      "Both flag and FR/EN code are visible; links include full Français / English accessible labels and current-language state.",
+      "All public copy, metadata, form labels, form note, accessibility labels and contact-email output have English equivalents.",
+      "Canonical and hreflang tags plus sitemap entries are included for both languages."
+    ]
   }
 }
