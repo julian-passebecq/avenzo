@@ -1,0 +1,372 @@
+/* Avenzo France–China coded visual concept.
+   No raster artwork: maps, routes, vehicles and ribbon are SVG/CSS. */
+
+.china-flow-page{
+  --trade-gold:#c9963f;
+  --trade-gold-soft:#d9b77c;
+  --trade-map:#8b8f8d;
+  --trade-map-line:rgba(255,255,255,.72);
+  --trade-paper:#fbf8f1;
+}
+
+/* Header ribbon */
+.china-flow-page .site-header{
+  position:relative;
+  overflow:hidden;
+}
+.china-flow-page .site-header > *:not(.china-ribbon){
+  position:relative;
+  z-index:2;
+}
+.china-ribbon{
+  position:absolute;
+  z-index:1;
+  left:27%;
+  right:45%;
+  top:0;
+  bottom:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  gap:18px;
+  pointer-events:none;
+  color:#9b8e7c;
+  opacity:.22;
+  font-family:"Cormorant Garamond","Noto Serif SC","Songti SC",serif;
+  font-size:30px;
+  font-weight:600;
+  letter-spacing:.08em;
+  white-space:nowrap;
+}
+.china-ribbon span{
+  display:inline-block;
+  animation:glyphDrift 8s ease-in-out infinite alternate;
+}
+.china-ribbon span:nth-child(2){animation-delay:-2s}
+.china-ribbon span:nth-child(3){animation-delay:-4s}
+.china-ribbon span:nth-child(4){animation-delay:-6s}
+.china-ribbon-line{
+  position:absolute;
+  left:8%;
+  right:6%;
+  top:58%;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--trade-gold-soft),transparent);
+  transform:rotate(-2deg);
+  opacity:.7;
+}
+.china-ribbon-line::before,
+.china-ribbon-line::after{
+  content:"";
+  position:absolute;
+  width:5px;
+  height:5px;
+  border:1px solid var(--trade-gold);
+  border-radius:50%;
+  top:-3px;
+}
+.china-ribbon-line::before{left:18%}
+.china-ribbon-line::after{right:8%}
+
+@keyframes glyphDrift{
+  from{transform:translate3d(-5px,-1px,0);opacity:.65}
+  to{transform:translate3d(7px,2px,0);opacity:1}
+}
+
+/* Hero: deliberately a little shorter and more centered than production. */
+.china-flow-page .hero-v8{
+  min-height:345px;
+}
+.china-flow-page .hero-v8 .china-flow-hero-content{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding-block:48px;
+}
+.china-flow-page .hero-v8 h1{
+  max-width:860px;
+  margin-inline:auto;
+  font-size:clamp(58px,5.1vw,78px);
+}
+.china-flow-page .hero-v8 .hero-tagline{
+  margin-top:14px;
+}
+.china-flow-page .hero-v8 .hero-lead{
+  max-width:860px;
+  margin-top:9px;
+}
+
+/* Trade scene */
+.china-trade-section{
+  position:relative;
+  width:100%;
+  max-width:none;
+  padding:30px 0 38px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 32%,rgba(210,185,140,.075),transparent 34%),
+    linear-gradient(180deg,#fbf8f1 0%,#fdfbf6 100%);
+}
+.china-trade-section::before{
+  content:"";
+  position:absolute;
+  inset:38px 0 0;
+  pointer-events:none;
+  opacity:.19;
+  background:
+    radial-gradient(ellipse at 10% 72%,rgba(150,142,126,.14),transparent 20%),
+    radial-gradient(ellipse at 90% 72%,rgba(150,142,126,.14),transparent 20%);
+}
+.china-flow-page .trade-topline{
+  position:relative;
+  z-index:4;
+  margin-bottom:0;
+  align-items:end;
+}
+.china-flow-page .trade-topline .section-title-primary{
+  font-size:clamp(52px,4.8vw,72px);
+}
+.china-flow-page .trade-topline>p{
+  max-width:390px;
+  margin-bottom:8px;
+}
+
+.trade-scene{
+  position:relative;
+  width:min(96vw,1600px);
+  min-height:352px;
+  margin:0 auto;
+  padding:26px 165px 25px;
+}
+.trade-card-grid{
+  position:relative;
+  z-index:4;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:13px;
+  width:min(100%,970px);
+  margin:28px auto 0;
+}
+.china-flow-page .trade-card-grid .expertise-card{
+  min-width:0;
+  padding:8px;
+  border-radius:10px;
+}
+.china-flow-page .trade-card-grid .expertise-card img{
+  height:145px;
+  border-radius:6px;
+}
+.china-flow-page .trade-card-grid .expertise-card-copy{
+  min-height:48px;
+  padding:7px 2px 2px;
+}
+.china-flow-page .trade-card-grid .expertise-card-copy strong{
+  font-size:18px;
+  line-height:1.02;
+}
+.china-flow-page .trade-card-grid .expertise-card-copy small{
+  margin-top:4px;
+  font-size:10px;
+  line-height:1.28;
+}
+.china-flow-page .trade-card-grid .expertise-card>span{
+  width:29px;
+  height:29px;
+  right:8px;
+  bottom:8px;
+  font-size:13px;
+}
+
+/* Decorative coded maps */
+.country-map{
+  position:absolute;
+  z-index:2;
+  width:142px;
+  top:44px;
+  opacity:.22;
+  pointer-events:none;
+  filter:saturate(.7);
+}
+.country-map-france{left:10px}
+.country-map-china{right:6px;width:154px}
+.country-map svg{display:block;width:100%;height:auto}
+.country-map .map-fill{
+  fill:var(--trade-map);
+  stroke:#7f817e;
+  stroke-width:1.1;
+}
+.country-map .map-lines{
+  fill:none;
+  stroke:var(--trade-map-line);
+  stroke-width:1.2;
+  opacity:.85;
+}
+.country-map .map-island{fill:var(--trade-map)}
+.country-map .map-node{
+  fill:#fffaf0;
+  stroke:var(--trade-gold);
+  stroke-width:3;
+}
+.country-map .map-node-core{fill:var(--trade-gold)}
+
+/* Transport routes */
+.trade-routes{
+  position:absolute;
+  z-index:3;
+  inset:0;
+  width:100%;
+  height:100%;
+  overflow:visible;
+  pointer-events:none;
+}
+.route-path{
+  fill:none;
+  stroke:var(--trade-gold);
+  stroke-width:1.45;
+  stroke-dasharray:5 8;
+  opacity:.73;
+  vector-effect:non-scaling-stroke;
+  animation:routeDash 8s linear infinite;
+}
+.route-sea{
+  opacity:.55;
+  animation-direction:reverse;
+}
+@keyframes routeDash{
+  to{stroke-dashoffset:-52}
+}
+.route-vehicle{
+  fill:var(--trade-gold);
+  stroke:none;
+  opacity:.76;
+  transform-box:fill-box;
+  transform-origin:center;
+  pointer-events:auto;
+  cursor:pointer;
+  outline:none;
+  filter:drop-shadow(0 1px 0 rgba(255,255,255,.55));
+  transition:opacity .2s ease,filter .2s ease;
+}
+.route-vehicle:hover,
+.route-vehicle:focus{
+  opacity:1;
+  filter:drop-shadow(0 0 5px rgba(201,150,63,.28));
+}
+.route-plane{transform:scale(.78)}
+.route-ship{transform:scale(.7)}
+.route-vehicle .ship-wave{
+  fill:none;
+  stroke:var(--trade-gold);
+  stroke-width:1.3;
+}
+
+/* Tiny harbor hints only; nothing heavy under the cards. */
+.trade-scene::before,
+.trade-scene::after{
+  content:"";
+  position:absolute;
+  z-index:1;
+  bottom:26px;
+  width:92px;
+  height:28px;
+  opacity:.09;
+  background:
+    linear-gradient(90deg,transparent 0 8%,#686b69 8% 11%,transparent 11% 19%,#686b69 19% 23%,transparent 23% 31%,#686b69 31% 35%,transparent 35%),
+    linear-gradient(#686b69,#686b69) 0 88%/100% 1px no-repeat;
+}
+.trade-scene::before{left:18px}
+.trade-scene::after{right:18px}
+
+/* A small concept tag so nobody mistakes the subsite for production. */
+.china-flow-page::after{
+  content:"Concept France ↔ Chine";
+  position:fixed;
+  z-index:30;
+  right:14px;
+  bottom:14px;
+  padding:6px 9px;
+  border:1px solid rgba(201,150,63,.3);
+  border-radius:999px;
+  background:rgba(251,248,241,.92);
+  color:#8a744e;
+  font:600 9px/1 Inter,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  backdrop-filter:blur(8px);
+}
+
+@media(max-width:1180px){
+  .china-ribbon{display:none}
+  .trade-scene{
+    padding-inline:85px;
+  }
+  .country-map{
+    width:106px;
+    opacity:.16;
+  }
+  .country-map-china{width:116px}
+}
+@media(max-width:900px){
+  .country-map,
+  .trade-routes,
+  .trade-scene::before,
+  .trade-scene::after{
+    display:none;
+  }
+  .trade-scene{
+    width:100%;
+    min-height:0;
+    padding:0;
+  }
+  .trade-card-grid{
+    width:92vw;
+    margin:18px auto 0;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:680px){
+  .china-flow-page .hero-v8{
+    min-height:280px;
+  }
+  .china-flow-page .hero-v8 .china-flow-hero-content{
+    align-items:flex-start;
+    text-align:left;
+    padding-block:25px 28px;
+  }
+  .china-flow-page .hero-v8 h1{
+    font-size:42px;
+    line-height:.89;
+  }
+  .china-flow-page .china-trade-section{
+    padding-top:22px;
+  }
+  .china-flow-page .trade-topline{
+    width:92vw;
+    margin-inline:auto;
+  }
+  .china-flow-page .trade-card-grid{
+    display:flex;
+    width:100%;
+    overflow-x:auto;
+    gap:10px;
+    margin-top:14px;
+    padding:0 4vw 8px;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+  }
+  .china-flow-page .trade-card-grid::-webkit-scrollbar{display:none}
+  .china-flow-page .trade-card-grid .expertise-card{
+    flex:0 0 72vw;
+    max-width:282px;
+    scroll-snap-align:start;
+  }
+  .china-flow-page::after{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .china-ribbon span,
+  .route-path{
+    animation:none!important;
+  }
+}
