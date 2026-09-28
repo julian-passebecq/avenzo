@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Avenzo Studio accompagne les entreprises en stratégie, digital, business development et développement international." />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="color-scheme" content="only light" />
   <link rel="alternate" hreflang="fr" href="https://avenzo-kappa.vercel.app/" />
   <link rel="alternate" hreflang="en" href="https://avenzo-kappa.vercel.app/en/" />
   <link rel="alternate" hreflang="x-default" href="https://avenzo-kappa.vercel.app/" />
@@ -14,7 +15,7 @@
   <meta property="og:title" content="Avenzo Studio — Ensemble, on avance" />
   <meta property="og:description" content="Stratégie, digital, développement commercial et projets internationaux." />
   <meta property="og:url" content="https://avenzo-kappa.vercel.app/" />
-  <title>Avenzo Studio — Ensemble, on avance</title>
+  <title>Avenzo Studio — Concept France ↔ Chine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -115,14 +116,23 @@
           </svg>
         </div>
 
-        <svg class="trade-routes" viewBox="0 0 1600 430" preserveAspectRatio="none" aria-hidden="true">
-          <path id="air-route" class="route-path route-air" d="M150 126 C 500 10, 1090 10, 1450 126"/>
-          <path id="sea-route" class="route-path route-sea" d="M150 324 C 510 428, 1090 428, 1450 324"/>
-          <g class="route-vehicle route-plane" data-route-id="air-route" data-speed="15000" tabindex="0" role="button" aria-label="Flux aérien France Chine. Cliquer pour inverser le trajet.">
-            <path d="M-11-2 0-2 8-10 11-9 6-2 13 0 13 2 6 2 11 9 8 10 0 2-11 2-15 7-17 7-14 0-17-7-15-7Z"/>
+        <svg class="trade-routes" viewBox="0 0 1600 340" preserveAspectRatio="xMidYMid meet" role="group" aria-label="Flux aériens et maritimes entre la France et la Chine">
+          <g class="route-channel route-channel-air">
+            <path id="air-route" class="route-path route-air" d="M145 116 C 500 8, 1100 8, 1455 116"/>
+            <path class="route-flow route-flow-air" d="M145 116 C 500 8, 1100 8, 1455 116"/>
           </g>
-          <g class="route-vehicle route-ship" data-route-id="sea-route" data-speed="20500" data-direction="-1" tabindex="0" role="button" aria-label="Flux maritime Chine France. Cliquer pour inverser le trajet.">
-            <path d="M-15-1h30l-4 8H-11Zm4-7h6v7h-6Zm8-5h7v12h-7Zm9 4h5v8H6Z"/>
+          <g class="route-channel route-channel-sea">
+            <path id="sea-route" class="route-path route-sea" d="M145 274 C 480 352, 1120 352, 1455 274"/>
+            <path class="route-flow route-flow-sea" d="M145 274 C 480 352, 1120 352, 1455 274"/>
+          </g>
+
+          <g class="route-vehicle route-plane" data-route-id="air-route" data-speed="17000" data-scale=".62" tabindex="0" role="button" aria-label="Flux aérien France Chine. Cliquer pour inverser le trajet.">
+            <circle class="vehicle-halo" r="18"/>
+            <path class="vehicle-shape" d="M-11-2 0-2 8-10 11-9 6-2 13 0 13 2 6 2 11 9 8 10 0 2-11 2-15 7-17 7-14 0-17-7-15-7Z"/>
+          </g>
+          <g class="route-vehicle route-ship" data-route-id="sea-route" data-speed="22000" data-direction="-1" data-scale=".58" tabindex="0" role="button" aria-label="Flux maritime Chine France. Cliquer pour inverser le trajet.">
+            <circle class="vehicle-halo" r="18"/>
+            <path class="vehicle-shape" d="M-15-1h30l-4 8H-11Zm4-7h6v7h-6Zm8-5h7v12h-7Zm9 4h5v8H6Z"/>
             <path class="ship-wave" d="M-17 11q5-4 10 0t10 0 10 0"/>
           </g>
         </svg>
