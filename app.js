@@ -43,8 +43,19 @@ if (contactForm) {
     const email = (data.get('email') || '').toString().trim();
     const project = (data.get('project') || '').toString().trim();
 
-    const subject = encodeURIComponent(`Projet Avenzo — ${company || name || 'nouvelle demande'}`);
-    const body = encodeURIComponent([
+    const isEnglish = document.documentElement.lang.toLowerCase().startsWith('en');
+    const subject = encodeURIComponent(isEnglish
+      ? `Avenzo project — ${company || name || 'new enquiry'}`
+      : `Projet Avenzo — ${company || name || 'nouvelle demande'}`);
+    const body = encodeURIComponent((isEnglish ? [
+      `Name: ${name}`,
+      `Company: ${company || '—'}`,
+      `Email: ${email}`,
+      `Needs: ${needs.length ? needs.join(', ') : 'Not specified'}`,
+      '',
+      'Project:',
+      project
+    ] : [
       `Nom : ${name}`,
       `Entreprise : ${company || '—'}`,
       `Email : ${email}`,
@@ -52,7 +63,7 @@ if (contactForm) {
       '',
       'Projet :',
       project
-    ].join('\n'));
+    ]).join('\n'));
 
     window.location.href = `mailto:contact@avenzostudios.com?subject=${subject}&body=${body}`;
   });
