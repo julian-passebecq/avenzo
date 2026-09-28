@@ -247,9 +247,9 @@
     "feedback_record": "source_of_truth/adrien_feedback_2026-09-25.json"
   },
   "iphone_home_trial_2026_09_25": {
-    "status": "preview_only_v2",
+    "status": "final_production",
     "branch": "iphone-home-carousel-trial-2026-09-25",
-    "production_changed": false,
+    "production_changed": true,
     "scope": "Homepage at <=680px only",
     "changes": [
       "Compact mobile header to 62px minimum.",
@@ -262,9 +262,9 @@
     ]
   },
   "bilingual_fr_en_2026_09_25": {
-    "status": "preview_only",
+    "status": "final_production",
     "branch": "iphone-home-carousel-trial-2026-09-25",
-    "production_changed": false,
+    "production_changed": true,
     "source_review": {
       "latest_adrien_pdf": "No explicit instruction found for language-switch placement in Avenzo Studio-25092026.pdf.",
       "prior_audit": "Avenzo DEV01 audit warns that flag-only language buttons are ambiguous and asks for visible/accessibility labels and current-language state."
@@ -276,6 +276,17 @@
       "Both flag and FR/EN code are visible; links include full Français / English accessible labels and current-language state.",
       "All public copy, metadata, form labels, form note, accessibility labels and contact-email output have English equivalents.",
       "Canonical and hreflang tags plus sitemap entries are included for both languages."
+    ]
+  },
+  "final_release_2026_09_28": {
+    "status": "production_release_requested",
+    "source_pr": 10,
+    "includes": [
+      "iPhone homepage V2 with compact hero and horizontal expertise carousel",
+      "Full FR/EN public site",
+      "Real SVG France/UK language flags with accessible FR/EN labels",
+      "English clean routes, canonical/hreflang and sitemap",
+      "Bilingual contact email output"
     ]
   }
 }
