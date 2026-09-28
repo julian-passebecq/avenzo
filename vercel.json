@@ -40,6 +40,10 @@
       "destination": "/dev/editorial/index.html"
     },
     {
+      "source": "/dev/china-flow",
+      "destination": "/dev/china-flow/index.html"
+    },
+    {
       "source": "/dev/cinematic",
       "destination": "/dev/cinematic/index.html"
     }
