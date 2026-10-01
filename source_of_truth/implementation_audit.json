@@ -288,5 +288,24 @@
       "English clean routes, canonical/hreflang and sitemap",
       "Bilingual contact email output"
     ]
+  },
+  "mobile_home_overflow_fix_2026_10_01": {
+    "status": "implemented_on_branch",
+    "branch": "fix/mobile-home-overflow-2026-10-01",
+    "issue_source": "User-provided WhatsApp screenshots of the normal production site on a phone.",
+    "diagnosis": [
+      "Phone landscape widths above 680px fell back to the tablet two-column expertise grid, producing oversized cards.",
+      "The page had no final global horizontal-overflow guard, so wide mobile combinations could pan the whole document instead of only the expertise rail.",
+      "The intro section and header needed explicit min-width/max-width guards for narrow devices."
+    ],
+    "changes": [
+      "Confine horizontal scrolling to the expertise rail and clip document-level horizontal overflow.",
+      "Keep the expertise carousel behavior in portrait phones with bounded card widths.",
+      "Add a dedicated phone-landscape breakpoint up to 950px using compact 220px swipe cards.",
+      "Force the homepage intro section to one safe column on phones and landscape phones.",
+      "Harden very narrow headers below 420px without removing FR/EN."
+    ],
+    "desktop_changed": false,
+    "dev_china_flow_changed": false
   }
 }
